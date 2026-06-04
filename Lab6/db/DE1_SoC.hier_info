@@ -11,18 +11,18 @@ E => note_input_datapath:ni_d.E
 F => note_input_datapath:ni_d.F
 G => note_input_datapath:ni_d.G
 stop => note_input_datapath:ni_d.stop
-full <= note_input_datapath:ni_d.full
-RAM_addr[0] <= note_input_datapath:ni_d.RAM_addr[0]
-RAM_addr[1] <= note_input_datapath:ni_d.RAM_addr[1]
-RAM_addr[2] <= note_input_datapath:ni_d.RAM_addr[2]
-RAM_addr[3] <= note_input_datapath:ni_d.RAM_addr[3]
-RAM_addr[4] <= note_input_datapath:ni_d.RAM_addr[4]
-RAM_addr[5] <= note_input_datapath:ni_d.RAM_addr[5]
-RAM_addr[6] <= note_input_datapath:ni_d.RAM_addr[6]
-RAM_din[0] <= note_input_datapath:ni_d.RAM_din[0]
-RAM_din[1] <= note_input_datapath:ni_d.RAM_din[1]
-RAM_din[2] <= note_input_datapath:ni_d.RAM_din[2]
-RAM_wren <= note_input_datapath:ni_d.RAM_wren
+full << note_input_datapath:ni_d.full
+RAM_addr[0] << note_input_datapath:ni_d.RAM_addr[0]
+RAM_addr[1] << note_input_datapath:ni_d.RAM_addr[1]
+RAM_addr[2] << note_input_datapath:ni_d.RAM_addr[2]
+RAM_addr[3] << note_input_datapath:ni_d.RAM_addr[3]
+RAM_addr[4] << note_input_datapath:ni_d.RAM_addr[4]
+RAM_addr[5] << note_input_datapath:ni_d.RAM_addr[5]
+RAM_addr[6] << note_input_datapath:ni_d.RAM_addr[6]
+RAM_din[0] << note_input_datapath:ni_d.RAM_din[0]
+RAM_din[1] << note_input_datapath:ni_d.RAM_din[1]
+RAM_din[2] << note_input_datapath:ni_d.RAM_din[2]
+RAM_wren << note_input_datapath:ni_d.RAM_wren
 
 
 |note_input|note_input_controller:ni_c
@@ -30,7 +30,7 @@ clk => ps~1.DATAIN
 reset => ps.OUTPUTSELECT
 reset => ps.OUTPUTSELECT
 reset => ps.OUTPUTSELECT
-reset => ps.OUTPUTSELECT
+reset => ps.S0.DATAIN
 start => ns.OUTPUTSELECT
 start => ns.OUTPUTSELECT
 start => Selector2.IN2

@@ -23,6 +23,10 @@ module note_input_tb (); //line_drawer_tb
 		E<=0; F<=0; G<=0;
 		reset <= 1; stop <= 0;@(posedge clk);
 		reset <= 0; 			 @(posedge clk);
+		//TEST 1: add notes A->G, 1 per slot in RAM.
+		// Fill remainder of RAM with A, until full signal is asserted
+		// When Full is asserted, no new notes will be loaded (wren disabled)
+		// Max # notes loaded to RAM is 120 (addr 1110111)
 		A <= 1;					 @(posedge clk);
 		A <= 0; B <= 1;		 @(posedge clk);
 		B <= 0; C <= 1;		 @(posedge clk);
@@ -30,9 +34,22 @@ module note_input_tb (); //line_drawer_tb
 		D <= 0; E <= 1;		 @(posedge clk);
 		E <= 0; F <= 1;		 @(posedge clk);
 		F <= 0; G <= 1;		 @(posedge clk);
-		G <= 0;					 @(posedge clk);
-		A <= 1;     repeat(50)@(posedge clk);
+		G <= 0; A <= 1;		 @(posedge clk);
+		for(i=0; i<120; i++) begin
+			if(full) begin
+				$display("DONE LOADING! Full = %0d. Wren = %0d. T = %4t", full, RAM_wren, $time); @(posedge clk);												
+				break;
+			end
+			$display("Loading. Full = %0d. Wren = %0d. T= %4t", full, RAM_wren, $time); @(posedge clk);
+		end
+		// FUll asserted, no new values should load (din won't update, wren = 0)
+		A <= 0; B <= 1;		 @(posedge clk);
+		B <= 0; C <= 1;
 		A <= 0; reset <= 1;	 @(posedge clk);
+		
+		// TEST 2: stop loading when stop asserted
+		//         even if notes continue to update
+		//			  wren should disable and full should assert
 		
 		$stop;																				
 	

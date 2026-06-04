@@ -30,7 +30,7 @@ module note_input_controller (clk, reset, start, note_press_A, note_press_B, not
 					ns = S3;
 				end else if (!note_press_A && !note_press_B && !note_press_C &&
 								 !note_press_D && !note_press_E && !note_press_F && !note_press_G) begin
-					ns = S0;
+					ns = S1;
 				end else begin
 					ns = S2;
 				end
@@ -47,7 +47,7 @@ module note_input_controller (clk, reset, start, note_press_A, note_press_B, not
   end //always_comb
   
   	// FSM Outputs - control signals
-	assign reset_wren = (ps == S2) && !addr_eq_max && !still_pressed;
+	assign reset_wren = ((ps == S2) && !addr_eq_max && !still_pressed) | (ps == S3);
 	assign set_din_A = (ps == S1) && note_press_A;
 	assign set_din_B = (ps == S1) && note_press_B;
 	assign set_din_C = (ps == S1) && note_press_C;
