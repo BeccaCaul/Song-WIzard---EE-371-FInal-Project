@@ -6,7 +6,7 @@ module note_input_datapath (clk, reset, A, B, C, D, E, F, G, stop,
 									 set_din_F, set_din_G, set_wren, song_full, incr_addr, load_regs,
                             RAM_addr, RAM_din, RAM_wren, full, start, 
 									 note_press_A, note_press_B, note_press_C, note_press_D,
-									 note_press_E, note_press_F, note_press_G, addr_eq_max, still_pressed);
+									 note_press_E, note_press_F, note_press_G, addr_eq_max, still_pressed, stop_load);
 	
 	// port definitions
 	
@@ -18,7 +18,7 @@ module note_input_datapath (clk, reset, A, B, C, D, E, F, G, stop,
 	output logic RAM_wren;
 	output logic full;
 	output logic start, note_press_A, note_press_B, note_press_C, note_press_D, 
-                note_press_E, note_press_F, note_press_G, addr_eq_max, still_pressed; //status signals
+                note_press_E, note_press_F, note_press_G, addr_eq_max, still_pressed, stop_load; //status signals
 	//control signals
 	input logic reset_wren, set_din_A, set_din_B, set_din_C, set_din_D, set_din_E, set_din_F, set_din_G, 
 	            set_wren, song_full, incr_addr, load_regs;
@@ -93,6 +93,7 @@ module note_input_datapath (clk, reset, A, B, C, D, E, F, G, stop,
 								  (E && RAM_din == E_ID) |
 								  (F && RAM_din == F_ID) |
 								  (G && RAM_din == G_ID);
+	assign stop_load = stop;
 	
 
 

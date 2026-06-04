@@ -26,7 +26,7 @@ module note_input(clk, reset, A, B, C, D, E, F, G, stop,
 	//define status and control signals
 	//status
 	logic start, note_press_A, note_press_B, note_press_C, note_press_D, 
-         note_press_E, note_press_F, note_press_G, addr_eq_max, still_pressed;
+         note_press_E, note_press_F, note_press_G, addr_eq_max, still_pressed, stop_load;
 			
 	//control
 	logic reset_wren, set_din_A, set_din_B, set_din_C, set_din_D, set_din_E, 

@@ -14,6 +14,7 @@ add wave -noupdate /note_input_tb/full
 add wave -noupdate /note_input_tb/RAM_wren
 add wave -noupdate /note_input_tb/RAM_addr
 add wave -noupdate /note_input_tb/RAM_din
+add wave -noupdate /note_input_tb/dut/ni_d/stop_load
 add wave -noupdate /note_input_tb/dut/ni_c/clk
 add wave -noupdate /note_input_tb/dut/ni_c/reset
 add wave -noupdate /note_input_tb/dut/ni_c/start
@@ -40,7 +41,7 @@ add wave -noupdate /note_input_tb/dut/ni_c/incr_addr
 add wave -noupdate /note_input_tb/dut/ni_c/ps
 add wave -noupdate /note_input_tb/dut/ni_c/ns
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {136 ps} 0}
+WaveRestoreCursors {{Cursor 1} {19250 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 246
 configure wave -valuecolwidth 100
@@ -56,4 +57,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ps
 update
-WaveRestoreZoom {0 ps} {1522 ps}
+WaveRestoreZoom {18704 ps} {20226 ps}

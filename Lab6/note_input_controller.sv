@@ -4,7 +4,7 @@
 // status signals (inputs): start, note_press_X, addr_eq_max, still_pressed
 // control signals (outputs): reset_wren, set_din, set_wren, song_full
 //
-module note_input_controller (clk, reset, start, note_press_A, note_press_B, note_press_C, note_press_D, 
+module note_input_controller (clk, reset, start, stop_load, note_press_A, note_press_B, note_press_C, note_press_D, 
                               note_press_E, note_press_F, note_press_G, addr_eq_max, still_pressed,
 										reset_wren, set_din_A, set_din_B, set_din_C, set_din_D, set_din_E, set_din_F, set_din_G,
 										set_wren, song_full, incr_addr, load_regs);
@@ -12,7 +12,7 @@ module note_input_controller (clk, reset, start, note_press_A, note_press_B, not
 	//port definitions
 	input logic clk, reset;
 	input logic start, note_press_A, note_press_B, note_press_C, note_press_D, 
-               note_press_E, note_press_F, note_press_G, addr_eq_max, still_pressed; //status signals
+               note_press_E, note_press_F, note_press_G, addr_eq_max, still_pressed, stop_load; //status signals
 	//control signals
 	output logic reset_wren, set_din_A, set_din_B, set_din_C, set_din_D, set_din_E, set_din_F, set_din_G, 
 	             set_wren, song_full, incr_addr, load_regs;
@@ -37,8 +37,10 @@ module note_input_controller (clk, reset, start, note_press_A, note_press_B, not
 			 S2:
 				if (addr_eq_max) begin
 					ns = S3;
-				end else if (still_pressed) begin
+				end else if (still_pressed && !stop_load) begin
 					ns = S2;
+				end else if (still_pressed && stop_load) begin
+					ns = S3;
 				end else begin
 					ns = S1;
 				end
@@ -47,7 +49,8 @@ module note_input_controller (clk, reset, start, note_press_A, note_press_B, not
   end //always_comb
   
   	// FSM Outputs - control signals
-	assign reset_wren = ((ps == S2) && !addr_eq_max && !still_pressed) | (ps == S3);
+	assign reset_wren = ((ps == S2) && !addr_eq_max && !still_pressed) | (ps == S3) | 
+							  ((ps == S2) && !addr_eq_max && still_pressed && stop_load);
 	assign set_din_A = (ps == S1) && note_press_A;
 	assign set_din_B = (ps == S1) && note_press_B;
 	assign set_din_C = (ps == S1) && note_press_C;

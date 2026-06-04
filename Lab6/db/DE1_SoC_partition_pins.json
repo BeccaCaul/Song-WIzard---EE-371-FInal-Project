@@ -60,11 +60,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "F",
+					"strict" : false
+				},
+				{
 					"name" : "E",
 					"strict" : false
 				},
 				{
-					"name" : "F",
+					"name" : "D",
 					"strict" : false
 				},
 				{
@@ -76,19 +80,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "D",
-					"strict" : false
-				},
-				{
 					"name" : "A",
 					"strict" : false
 				},
 				{
-					"name" : "reset",
+					"name" : "stop",
 					"strict" : false
 				},
 				{
-					"name" : "stop",
+					"name" : "reset",
 					"strict" : false
 				}
 			]

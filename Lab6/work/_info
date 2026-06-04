@@ -32,7 +32,7 @@ Z5 !s108 1779489986.000000
 !i113 1
 Z6 tCvgOpt 0
 vaudio_codec
-Z7 !s110 1780596289
+Z7 !s110 1780602977
 !i10b 1
 !s100 43h1ad@K@aG98IRVc4i1M1
 Il5jdb3Yg0[LkkDZXocg4G2
@@ -46,7 +46,7 @@ R4
 r1
 !s85 0
 31
-Z10 !s108 1780596289.000000
+Z10 !s108 1780602977.000000
 !s107 ./audio_codec.v|
 !s90 -reportprogress|300|./audio_codec.v|
 !i113 1
@@ -383,7 +383,7 @@ R10
 R6
 vclock_divider_8_tb
 R0
-!s110 1780596290
+R7
 !i10b 1
 !s100 zc7>8Xc_h_MNdehF54zi@0
 IlD<`Kn[T>o`AbR:zRX7V31
@@ -405,7 +405,7 @@ R10
 !i113 1
 R6
 vclock_generator
-R7
+Z20 !s110 1780602976
 !i10b 1
 !s100 39OA<gKn`aijkLgT:8]8i2
 IHQWDYoAc:2;9RO8;SJLV:0
@@ -419,14 +419,14 @@ R4
 r1
 !s85 0
 31
-R10
+Z21 !s108 1780602976.000000
 !s107 ./clock_generator.v|
 !s90 -reportprogress|300|./clock_generator.v|
 !i113 1
 R6
 vD_FF
 R0
-Z20 !s110 1778526940
+Z22 !s110 1778526940
 !i10b 1
 !s100 XA<k6@Q]OR@MP_9YOj6HW0
 I@K2z[aV4A7kUE[4U48dS01
@@ -442,7 +442,7 @@ R4
 r1
 !s85 0
 31
-Z21 !s108 1778526940.000000
+Z23 !s108 1778526940.000000
 !s107 ./D_FF.sv|
 !s90 -reportprogress|300|./D_FF.sv|
 !i113 1
@@ -450,7 +450,7 @@ R6
 n@d_@f@f
 vDE1_SoC
 R0
-Z22 !s110 1780596288
+R20
 !i10b 1
 !s100 H0[nd9nDO`UW5EzWZU?bI2
 IYmgnASd8JCm8HzYEmmSbd2
@@ -466,7 +466,7 @@ R4
 r1
 !s85 0
 31
-Z23 !s108 1780596288.000000
+R21
 !s107 ./DE1_SoC.sv|
 !s90 -reportprogress|300|./DE1_SoC.sv|
 !i113 1
@@ -474,7 +474,7 @@ R6
 n@d@e1_@so@c
 vDE1_SoC_tb
 R0
-R20
+R22
 !i10b 1
 !s100 ocQM;FZQ@RO[;2eY8J?:S0
 I>V<1?6aQcV5N2]cSkjF[02
@@ -490,7 +490,7 @@ R4
 r1
 !s85 0
 31
-R21
+R23
 !s107 ./DE1_SoC_tb.sv|
 !s90 -reportprogress|300|./DE1_SoC_tb.sv|
 !i113 1
@@ -659,7 +659,7 @@ Z50 !s90 -reportprogress|300|./note_input_tb.sv|
 R6
 vnoise_gen
 R0
-R22
+R20
 !i10b 1
 !s100 _nMfB40VAYYKFoDL@c_lY0
 IoP_e1C^l<[GV=7QiXOcWg3
@@ -675,14 +675,14 @@ R4
 r1
 !s85 0
 31
-R23
+R21
 Z55 !s107 ./noise_gen.sv|
 Z56 !s90 -reportprogress|300|./noise_gen.sv|
 !i113 1
 R6
 vnoise_gen_testbench
 R0
-R22
+R20
 !i10b 1
 !s100 ``;@?X[J89_UljO9KJh^Z1
 ILo2^CaYCk5Lzi`fD7`Q491
@@ -698,22 +698,22 @@ R4
 r1
 !s85 0
 31
-R23
+R21
 R55
 R56
 !i113 1
 R6
 vnote_input
 R0
-R22
+R20
 !i10b 1
-!s100 RQCF6F@[9ZRFd40Fj=YEz0
-IK^iB7f3:24mM9^N[9k5=C0
+!s100 ^MDF4^A0YiocAf6<k9@`U2
+IgnngaPMd6T4;h2kZJh@I^2
 R2
 R28
 S1
 R8
-w1780531786
+w1780599636
 R30
 R31
 L0 19
@@ -721,22 +721,22 @@ R4
 r1
 !s85 0
 31
-R23
+Z57 !s108 1780602975.000000
 R33
 R34
 !i113 1
 R6
 vnote_input_controller
 R0
-R22
+Z58 !s110 1780602975
 !i10b 1
-!s100 eA[X6:b?Pg`V@ZL`M]T[`3
-In7nU:dLoGZ5ZQhAOUo`Bk1
+!s100 V;1V@^]ffMg[de::]2_590
+I[Qz7RzYce[F[SgY4INSzC1
 R2
 R35
 S1
 R8
-w1780593935
+w1780600009
 R36
 R37
 L0 7
@@ -744,22 +744,22 @@ R4
 r1
 !s85 0
 31
-Z57 !s108 1780596287.000000
+R57
 R38
 R39
 !i113 1
 R6
 vnote_input_datapath
 R0
-Z58 !s110 1780596287
+R58
 !i10b 1
-!s100 RMbn_aAl=NiE`M6V8;e`c1
-IW1FO9=YmROjW0`k4[e_281
+!s100 @[z:d42FE6D[W4a<:C46o1
+I`^NG_f_572@[DKF@_0WCm0
 R2
 R40
 S1
 R8
-w1780532864
+w1780599615
 R41
 R42
 L0 4
@@ -776,13 +776,13 @@ vnote_input_tb
 R0
 R58
 !i10b 1
-!s100 NP[HNUGeXBaTMR;7X@I012
-IVlZ=056lF?o6?eA]`IULo3
+!s100 WC:Aa_D:AM0e`_gzPcN0h1
+Ii09BNYVda;bX@f^kmNmG63
 R2
 R46
 S1
 R8
-w1780596273
+w1780602970
 R47
 R48
 L0 2
@@ -790,7 +790,7 @@ R4
 r1
 !s85 0
 31
-R57
+!s108 1780602974.000000
 R49
 R50
 !i113 1
@@ -816,7 +816,7 @@ Z61 !s108 1776291232.000000
 !i113 1
 R6
 vram32x8
-R20
+R22
 !i10b 1
 !s100 k^gZ1mD7nd2mH^KF:n7AY0
 I1E^h`BAFC6[Bb_zbZCaHK3
@@ -830,7 +830,7 @@ R4
 r1
 !s85 0
 31
-R21
+R23
 !s107 ./ram32x8.v|
 !s90 -reportprogress|300|./ram32x8.v|
 !i113 1

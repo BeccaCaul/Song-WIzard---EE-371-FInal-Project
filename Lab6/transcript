@@ -798,3 +798,4817 @@ do runlab.do
 # ** Note: $stop    : ./note_input_tb.sv(54)
 #    Time: 13150 ps  Iteration: 1  Instance: /note_input_tb
 # Break in Module note_input_tb at ./note_input_tb.sv line 54
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:31:12 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_tb.sv 
+# -- Compiling module note_input_tb
+# 
+# Top level modules:
+# 	note_input_tb
+# End time: 11:31:13 on Jun 04,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:31:13 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_datapath.sv 
+# -- Compiling module note_input_datapath
+# 
+# Top level modules:
+# 	note_input_datapath
+# End time: 11:31:13 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:31:13 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_controller.sv 
+# -- Compiling module note_input_controller
+# 
+# Top level modules:
+# 	note_input_controller
+# End time: 11:31:13 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:31:13 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input.sv 
+# -- Compiling module note_input
+# 
+# Top level modules:
+# 	note_input
+# End time: 11:31:14 on Jun 04,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:31:14 on Jun 04,2026
+# vlog -reportprogress 300 ./noise_gen.sv 
+# -- Compiling module noise_gen
+# -- Compiling module noise_gen_testbench
+# 
+# Top level modules:
+# 	noise_gen_testbench
+# End time: 11:31:14 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:31:14 on Jun 04,2026
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 11:31:14 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:31:14 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_generator.v 
+# -- Compiling module clock_generator
+# 
+# Top level modules:
+# 	clock_generator
+# End time: 11:31:14 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:31:14 on Jun 04,2026
+# vlog -reportprogress 300 ./audio_codec.v 
+# -- Compiling module audio_codec
+# 
+# Top level modules:
+# 	audio_codec
+# End time: 11:31:15 on Jun 04,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:31:15 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_divider_8.sv 
+# -- Compiling module clock_divider_8
+# 
+# Top level modules:
+# 	clock_divider_8
+# End time: 11:31:15 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:31:15 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_divider_8_tb.sv 
+# -- Compiling module clock_divider_8_tb
+# 
+# Top level modules:
+# 	clock_divider_8_tb
+# End time: 11:31:15 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 11:31:18 on Jun 04,2026, Elapsed time: 0:26:25
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work note_input_tb -Lf altera_mf_ver 
+# Start time: 11:31:18 on Jun 04,2026
+# Loading sv_std.std
+# Loading work.note_input_tb
+# Loading work.note_input
+# Loading work.note_input_controller
+# Loading work.note_input_datapath
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: mflessa  Hostname: EE-347PC07  ProcessID: 18752
+#           Attempting to use alternate WLF file "./wlftnamfkz".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftnamfkz
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Loading. Full = 0. Wren = 0. T= 1750
+# Loading. Full = 0. Wren = 1. T= 1850
+# Loading. Full = 0. Wren = 1. T= 1950
+# Loading. Full = 0. Wren = 1. T= 2050
+# Loading. Full = 0. Wren = 1. T= 2150
+# Loading. Full = 0. Wren = 1. T= 2250
+# Loading. Full = 0. Wren = 1. T= 2350
+# Loading. Full = 0. Wren = 1. T= 2450
+# Loading. Full = 0. Wren = 1. T= 2550
+# Loading. Full = 0. Wren = 1. T= 2650
+# Loading. Full = 0. Wren = 1. T= 2750
+# Loading. Full = 0. Wren = 1. T= 2850
+# Loading. Full = 0. Wren = 1. T= 2950
+# Loading. Full = 0. Wren = 1. T= 3050
+# Loading. Full = 0. Wren = 1. T= 3150
+# Loading. Full = 0. Wren = 1. T= 3250
+# Loading. Full = 0. Wren = 1. T= 3350
+# Loading. Full = 0. Wren = 1. T= 3450
+# Loading. Full = 0. Wren = 1. T= 3550
+# Loading. Full = 0. Wren = 1. T= 3650
+# Loading. Full = 0. Wren = 1. T= 3750
+# Loading. Full = 0. Wren = 1. T= 3850
+# Loading. Full = 0. Wren = 1. T= 3950
+# Loading. Full = 0. Wren = 1. T= 4050
+# Loading. Full = 0. Wren = 1. T= 4150
+# Loading. Full = 0. Wren = 1. T= 4250
+# Loading. Full = 0. Wren = 1. T= 4350
+# Loading. Full = 0. Wren = 1. T= 4450
+# Loading. Full = 0. Wren = 1. T= 4550
+# Loading. Full = 0. Wren = 1. T= 4650
+# Loading. Full = 0. Wren = 1. T= 4750
+# Loading. Full = 0. Wren = 1. T= 4850
+# Loading. Full = 0. Wren = 1. T= 4950
+# Loading. Full = 0. Wren = 1. T= 5050
+# Loading. Full = 0. Wren = 1. T= 5150
+# Loading. Full = 0. Wren = 1. T= 5250
+# Loading. Full = 0. Wren = 1. T= 5350
+# Loading. Full = 0. Wren = 1. T= 5450
+# Loading. Full = 0. Wren = 1. T= 5550
+# Loading. Full = 0. Wren = 1. T= 5650
+# Loading. Full = 0. Wren = 1. T= 5750
+# Loading. Full = 0. Wren = 1. T= 5850
+# Loading. Full = 0. Wren = 1. T= 5950
+# Loading. Full = 0. Wren = 1. T= 6050
+# Loading. Full = 0. Wren = 1. T= 6150
+# Loading. Full = 0. Wren = 1. T= 6250
+# Loading. Full = 0. Wren = 1. T= 6350
+# Loading. Full = 0. Wren = 1. T= 6450
+# Loading. Full = 0. Wren = 1. T= 6550
+# Loading. Full = 0. Wren = 1. T= 6650
+# Loading. Full = 0. Wren = 1. T= 6750
+# Loading. Full = 0. Wren = 1. T= 6850
+# Loading. Full = 0. Wren = 1. T= 6950
+# Loading. Full = 0. Wren = 1. T= 7050
+# Loading. Full = 0. Wren = 1. T= 7150
+# Loading. Full = 0. Wren = 1. T= 7250
+# Loading. Full = 0. Wren = 1. T= 7350
+# Loading. Full = 0. Wren = 1. T= 7450
+# Loading. Full = 0. Wren = 1. T= 7550
+# Loading. Full = 0. Wren = 1. T= 7650
+# Loading. Full = 0. Wren = 1. T= 7750
+# Loading. Full = 0. Wren = 1. T= 7850
+# Loading. Full = 0. Wren = 1. T= 7950
+# Loading. Full = 0. Wren = 1. T= 8050
+# Loading. Full = 0. Wren = 1. T= 8150
+# Loading. Full = 0. Wren = 1. T= 8250
+# Loading. Full = 0. Wren = 1. T= 8350
+# Loading. Full = 0. Wren = 1. T= 8450
+# Loading. Full = 0. Wren = 1. T= 8550
+# Loading. Full = 0. Wren = 1. T= 8650
+# Loading. Full = 0. Wren = 1. T= 8750
+# Loading. Full = 0. Wren = 1. T= 8850
+# Loading. Full = 0. Wren = 1. T= 8950
+# Loading. Full = 0. Wren = 1. T= 9050
+# Loading. Full = 0. Wren = 1. T= 9150
+# Loading. Full = 0. Wren = 1. T= 9250
+# Loading. Full = 0. Wren = 1. T= 9350
+# Loading. Full = 0. Wren = 1. T= 9450
+# Loading. Full = 0. Wren = 1. T= 9550
+# Loading. Full = 0. Wren = 1. T= 9650
+# Loading. Full = 0. Wren = 1. T= 9750
+# Loading. Full = 0. Wren = 1. T= 9850
+# Loading. Full = 0. Wren = 1. T= 9950
+# Loading. Full = 0. Wren = 1. T= 10050
+# Loading. Full = 0. Wren = 1. T= 10150
+# Loading. Full = 0. Wren = 1. T= 10250
+# Loading. Full = 0. Wren = 1. T= 10350
+# Loading. Full = 0. Wren = 1. T= 10450
+# Loading. Full = 0. Wren = 1. T= 10550
+# Loading. Full = 0. Wren = 1. T= 10650
+# Loading. Full = 0. Wren = 1. T= 10750
+# Loading. Full = 0. Wren = 1. T= 10850
+# Loading. Full = 0. Wren = 1. T= 10950
+# Loading. Full = 0. Wren = 1. T= 11050
+# Loading. Full = 0. Wren = 1. T= 11150
+# Loading. Full = 0. Wren = 1. T= 11250
+# Loading. Full = 0. Wren = 1. T= 11350
+# Loading. Full = 0. Wren = 1. T= 11450
+# Loading. Full = 0. Wren = 1. T= 11550
+# Loading. Full = 0. Wren = 1. T= 11650
+# Loading. Full = 0. Wren = 1. T= 11750
+# Loading. Full = 0. Wren = 1. T= 11850
+# Loading. Full = 0. Wren = 1. T= 11950
+# Loading. Full = 0. Wren = 1. T= 12050
+# Loading. Full = 0. Wren = 1. T= 12150
+# Loading. Full = 0. Wren = 1. T= 12250
+# Loading. Full = 0. Wren = 1. T= 12350
+# Loading. Full = 0. Wren = 1. T= 12450
+# Loading. Full = 0. Wren = 1. T= 12550
+# Loading. Full = 0. Wren = 1. T= 12650
+# Loading. Full = 0. Wren = 1. T= 12750
+# Loading. Full = 0. Wren = 1. T= 12850
+# Loading. Full = 0. Wren = 1. T= 12950
+# Loading. Full = 0. Wren = 1. T= 13050
+# DONE LOADING! Full = 1. Wren = 0. T = 13150
+# ** Note: $stop    : ./note_input_tb.sv(54)
+#    Time: 13450 ps  Iteration: 1  Instance: /note_input_tb
+# Break in Module note_input_tb at ./note_input_tb.sv line 54
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:34:08 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_tb.sv 
+# -- Compiling module note_input_tb
+# 
+# Top level modules:
+# 	note_input_tb
+# End time: 11:34:08 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:34:08 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_datapath.sv 
+# -- Compiling module note_input_datapath
+# 
+# Top level modules:
+# 	note_input_datapath
+# End time: 11:34:09 on Jun 04,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:34:09 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_controller.sv 
+# -- Compiling module note_input_controller
+# 
+# Top level modules:
+# 	note_input_controller
+# End time: 11:34:09 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:34:09 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input.sv 
+# -- Compiling module note_input
+# 
+# Top level modules:
+# 	note_input
+# End time: 11:34:09 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:34:09 on Jun 04,2026
+# vlog -reportprogress 300 ./noise_gen.sv 
+# -- Compiling module noise_gen
+# -- Compiling module noise_gen_testbench
+# 
+# Top level modules:
+# 	noise_gen_testbench
+# End time: 11:34:09 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:34:09 on Jun 04,2026
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 11:34:10 on Jun 04,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:34:10 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_generator.v 
+# -- Compiling module clock_generator
+# 
+# Top level modules:
+# 	clock_generator
+# End time: 11:34:10 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:34:10 on Jun 04,2026
+# vlog -reportprogress 300 ./audio_codec.v 
+# -- Compiling module audio_codec
+# 
+# Top level modules:
+# 	audio_codec
+# End time: 11:34:10 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:34:10 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_divider_8.sv 
+# -- Compiling module clock_divider_8
+# 
+# Top level modules:
+# 	clock_divider_8
+# End time: 11:34:11 on Jun 04,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:34:11 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_divider_8_tb.sv 
+# -- Compiling module clock_divider_8_tb
+# 
+# Top level modules:
+# 	clock_divider_8_tb
+# End time: 11:34:11 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 11:34:20 on Jun 04,2026, Elapsed time: 0:03:02
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work note_input_tb -Lf altera_mf_ver 
+# Start time: 11:34:20 on Jun 04,2026
+# Loading sv_std.std
+# Loading work.note_input_tb
+# Loading work.note_input
+# Loading work.note_input_controller
+# Loading work.note_input_datapath
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: mflessa  Hostname: EE-347PC07  ProcessID: 18752
+#           Attempting to use alternate WLF file "./wlft51i77k".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft51i77k
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Loading. Full = 0. Wren = 0. T= 1650
+# Loading. Full = 0. Wren = 1. T= 1750
+# Loading. Full = 0. Wren = 1. T= 1850
+# Loading. Full = 0. Wren = 1. T= 1950
+# Loading. Full = 0. Wren = 1. T= 2050
+# Loading. Full = 0. Wren = 1. T= 2150
+# Loading. Full = 0. Wren = 1. T= 2250
+# Loading. Full = 0. Wren = 1. T= 2350
+# Loading. Full = 0. Wren = 1. T= 2450
+# Loading. Full = 0. Wren = 1. T= 2550
+# Loading. Full = 0. Wren = 1. T= 2650
+# Loading. Full = 0. Wren = 1. T= 2750
+# Loading. Full = 0. Wren = 1. T= 2850
+# Loading. Full = 0. Wren = 1. T= 2950
+# Loading. Full = 0. Wren = 1. T= 3050
+# Loading. Full = 0. Wren = 1. T= 3150
+# Loading. Full = 0. Wren = 1. T= 3250
+# Loading. Full = 0. Wren = 1. T= 3350
+# Loading. Full = 0. Wren = 1. T= 3450
+# Loading. Full = 0. Wren = 1. T= 3550
+# Loading. Full = 0. Wren = 1. T= 3650
+# Loading. Full = 0. Wren = 1. T= 3750
+# Loading. Full = 0. Wren = 1. T= 3850
+# Loading. Full = 0. Wren = 1. T= 3950
+# Loading. Full = 0. Wren = 1. T= 4050
+# Loading. Full = 0. Wren = 1. T= 4150
+# Loading. Full = 0. Wren = 1. T= 4250
+# Loading. Full = 0. Wren = 1. T= 4350
+# Loading. Full = 0. Wren = 1. T= 4450
+# Loading. Full = 0. Wren = 1. T= 4550
+# Loading. Full = 0. Wren = 1. T= 4650
+# Loading. Full = 0. Wren = 1. T= 4750
+# Loading. Full = 0. Wren = 1. T= 4850
+# Loading. Full = 0. Wren = 1. T= 4950
+# Loading. Full = 0. Wren = 1. T= 5050
+# Loading. Full = 0. Wren = 1. T= 5150
+# Loading. Full = 0. Wren = 1. T= 5250
+# Loading. Full = 0. Wren = 1. T= 5350
+# Loading. Full = 0. Wren = 1. T= 5450
+# Loading. Full = 0. Wren = 1. T= 5550
+# Loading. Full = 0. Wren = 1. T= 5650
+# Loading. Full = 0. Wren = 1. T= 5750
+# Loading. Full = 0. Wren = 1. T= 5850
+# Loading. Full = 0. Wren = 1. T= 5950
+# Loading. Full = 0. Wren = 1. T= 6050
+# Loading. Full = 0. Wren = 1. T= 6150
+# Loading. Full = 0. Wren = 1. T= 6250
+# Loading. Full = 0. Wren = 1. T= 6350
+# Loading. Full = 0. Wren = 1. T= 6450
+# Loading. Full = 0. Wren = 1. T= 6550
+# Loading. Full = 0. Wren = 1. T= 6650
+# Loading. Full = 0. Wren = 1. T= 6750
+# Loading. Full = 0. Wren = 1. T= 6850
+# Loading. Full = 0. Wren = 1. T= 6950
+# Loading. Full = 0. Wren = 1. T= 7050
+# Loading. Full = 0. Wren = 1. T= 7150
+# Loading. Full = 0. Wren = 1. T= 7250
+# Loading. Full = 0. Wren = 1. T= 7350
+# Loading. Full = 0. Wren = 1. T= 7450
+# Loading. Full = 0. Wren = 1. T= 7550
+# Loading. Full = 0. Wren = 1. T= 7650
+# Loading. Full = 0. Wren = 1. T= 7750
+# Loading. Full = 0. Wren = 1. T= 7850
+# Loading. Full = 0. Wren = 1. T= 7950
+# Loading. Full = 0. Wren = 1. T= 8050
+# Loading. Full = 0. Wren = 1. T= 8150
+# Loading. Full = 0. Wren = 1. T= 8250
+# Loading. Full = 0. Wren = 1. T= 8350
+# Loading. Full = 0. Wren = 1. T= 8450
+# Loading. Full = 0. Wren = 1. T= 8550
+# Loading. Full = 0. Wren = 1. T= 8650
+# Loading. Full = 0. Wren = 1. T= 8750
+# Loading. Full = 0. Wren = 1. T= 8850
+# Loading. Full = 0. Wren = 1. T= 8950
+# Loading. Full = 0. Wren = 1. T= 9050
+# Loading. Full = 0. Wren = 1. T= 9150
+# Loading. Full = 0. Wren = 1. T= 9250
+# Loading. Full = 0. Wren = 1. T= 9350
+# Loading. Full = 0. Wren = 1. T= 9450
+# Loading. Full = 0. Wren = 1. T= 9550
+# Loading. Full = 0. Wren = 1. T= 9650
+# Loading. Full = 0. Wren = 1. T= 9750
+# Loading. Full = 0. Wren = 1. T= 9850
+# Loading. Full = 0. Wren = 1. T= 9950
+# Loading. Full = 0. Wren = 1. T= 10050
+# Loading. Full = 0. Wren = 1. T= 10150
+# Loading. Full = 0. Wren = 1. T= 10250
+# Loading. Full = 0. Wren = 1. T= 10350
+# Loading. Full = 0. Wren = 1. T= 10450
+# Loading. Full = 0. Wren = 1. T= 10550
+# Loading. Full = 0. Wren = 1. T= 10650
+# Loading. Full = 0. Wren = 1. T= 10750
+# Loading. Full = 0. Wren = 1. T= 10850
+# Loading. Full = 0. Wren = 1. T= 10950
+# Loading. Full = 0. Wren = 1. T= 11050
+# Loading. Full = 0. Wren = 1. T= 11150
+# Loading. Full = 0. Wren = 1. T= 11250
+# Loading. Full = 0. Wren = 1. T= 11350
+# Loading. Full = 0. Wren = 1. T= 11450
+# Loading. Full = 0. Wren = 1. T= 11550
+# Loading. Full = 0. Wren = 1. T= 11650
+# Loading. Full = 0. Wren = 1. T= 11750
+# Loading. Full = 0. Wren = 1. T= 11850
+# Loading. Full = 0. Wren = 1. T= 11950
+# Loading. Full = 0. Wren = 1. T= 12050
+# Loading. Full = 0. Wren = 1. T= 12150
+# Loading. Full = 0. Wren = 1. T= 12250
+# Loading. Full = 0. Wren = 1. T= 12350
+# Loading. Full = 0. Wren = 1. T= 12450
+# Loading. Full = 0. Wren = 1. T= 12550
+# Loading. Full = 0. Wren = 1. T= 12650
+# Loading. Full = 0. Wren = 1. T= 12750
+# Loading. Full = 0. Wren = 1. T= 12850
+# Loading. Full = 0. Wren = 1. T= 12950
+# Loading. Full = 0. Wren = 1. T= 13050
+# DONE LOADING! Full = 1. Wren = 0. T = 13150
+# ** Note: $stop    : ./note_input_tb.sv(54)
+#    Time: 13450 ps  Iteration: 1  Instance: /note_input_tb
+# Break in Module note_input_tb at ./note_input_tb.sv line 54
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:49:33 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_tb.sv 
+# -- Compiling module note_input_tb
+# 
+# Top level modules:
+# 	note_input_tb
+# End time: 11:49:33 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:49:33 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_datapath.sv 
+# -- Compiling module note_input_datapath
+# 
+# Top level modules:
+# 	note_input_datapath
+# End time: 11:49:33 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:49:33 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_controller.sv 
+# -- Compiling module note_input_controller
+# 
+# Top level modules:
+# 	note_input_controller
+# End time: 11:49:34 on Jun 04,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:49:34 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input.sv 
+# -- Compiling module note_input
+# 
+# Top level modules:
+# 	note_input
+# End time: 11:49:34 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:49:34 on Jun 04,2026
+# vlog -reportprogress 300 ./noise_gen.sv 
+# -- Compiling module noise_gen
+# -- Compiling module noise_gen_testbench
+# 
+# Top level modules:
+# 	noise_gen_testbench
+# End time: 11:49:34 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:49:34 on Jun 04,2026
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 11:49:34 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:49:34 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_generator.v 
+# -- Compiling module clock_generator
+# 
+# Top level modules:
+# 	clock_generator
+# End time: 11:49:35 on Jun 04,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:49:35 on Jun 04,2026
+# vlog -reportprogress 300 ./audio_codec.v 
+# -- Compiling module audio_codec
+# 
+# Top level modules:
+# 	audio_codec
+# End time: 11:49:35 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:49:35 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_divider_8.sv 
+# -- Compiling module clock_divider_8
+# 
+# Top level modules:
+# 	clock_divider_8
+# End time: 11:49:35 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:49:35 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_divider_8_tb.sv 
+# -- Compiling module clock_divider_8_tb
+# 
+# Top level modules:
+# 	clock_divider_8_tb
+# End time: 11:49:35 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 11:49:38 on Jun 04,2026, Elapsed time: 0:15:18
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work note_input_tb -Lf altera_mf_ver 
+# Start time: 11:49:38 on Jun 04,2026
+# Loading sv_std.std
+# Loading work.note_input_tb
+# Loading work.note_input
+# Loading work.note_input_controller
+# Loading work.note_input_datapath
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: mflessa  Hostname: EE-347PC07  ProcessID: 18752
+#           Attempting to use alternate WLF file "./wlft64bn1r".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft64bn1r
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Loading. Full = 0. Wren = 0. T= 1650
+# Loading. Full = 0. Wren = 1. T= 1750
+# Loading. Full = 0. Wren = 1. T= 1850
+# Loading. Full = 0. Wren = 1. T= 1950
+# Loading. Full = 0. Wren = 1. T= 2050
+# Loading. Full = 0. Wren = 1. T= 2150
+# Loading. Full = 0. Wren = 1. T= 2250
+# Loading. Full = 0. Wren = 1. T= 2350
+# Loading. Full = 0. Wren = 1. T= 2450
+# Loading. Full = 0. Wren = 1. T= 2550
+# Loading. Full = 0. Wren = 1. T= 2650
+# Loading. Full = 0. Wren = 1. T= 2750
+# Loading. Full = 0. Wren = 1. T= 2850
+# Loading. Full = 0. Wren = 1. T= 2950
+# Loading. Full = 0. Wren = 1. T= 3050
+# Loading. Full = 0. Wren = 1. T= 3150
+# Loading. Full = 0. Wren = 1. T= 3250
+# Loading. Full = 0. Wren = 1. T= 3350
+# Loading. Full = 0. Wren = 1. T= 3450
+# Loading. Full = 0. Wren = 1. T= 3550
+# Loading. Full = 0. Wren = 1. T= 3650
+# Loading. Full = 0. Wren = 1. T= 3750
+# Loading. Full = 0. Wren = 1. T= 3850
+# Loading. Full = 0. Wren = 1. T= 3950
+# Loading. Full = 0. Wren = 1. T= 4050
+# Loading. Full = 0. Wren = 1. T= 4150
+# Loading. Full = 0. Wren = 1. T= 4250
+# Loading. Full = 0. Wren = 1. T= 4350
+# Loading. Full = 0. Wren = 1. T= 4450
+# Loading. Full = 0. Wren = 1. T= 4550
+# Loading. Full = 0. Wren = 1. T= 4650
+# Loading. Full = 0. Wren = 1. T= 4750
+# Loading. Full = 0. Wren = 1. T= 4850
+# Loading. Full = 0. Wren = 1. T= 4950
+# Loading. Full = 0. Wren = 1. T= 5050
+# Loading. Full = 0. Wren = 1. T= 5150
+# Loading. Full = 0. Wren = 1. T= 5250
+# Loading. Full = 0. Wren = 1. T= 5350
+# Loading. Full = 0. Wren = 1. T= 5450
+# Loading. Full = 0. Wren = 1. T= 5550
+# Loading. Full = 0. Wren = 1. T= 5650
+# Loading. Full = 0. Wren = 1. T= 5750
+# Loading. Full = 0. Wren = 1. T= 5850
+# Loading. Full = 0. Wren = 1. T= 5950
+# Loading. Full = 0. Wren = 1. T= 6050
+# Loading. Full = 0. Wren = 1. T= 6150
+# Loading. Full = 0. Wren = 1. T= 6250
+# Loading. Full = 0. Wren = 1. T= 6350
+# Loading. Full = 0. Wren = 1. T= 6450
+# Loading. Full = 0. Wren = 1. T= 6550
+# Loading. Full = 0. Wren = 1. T= 6650
+# Loading. Full = 0. Wren = 1. T= 6750
+# Loading. Full = 0. Wren = 1. T= 6850
+# Loading. Full = 0. Wren = 1. T= 6950
+# Loading. Full = 0. Wren = 1. T= 7050
+# Loading. Full = 0. Wren = 1. T= 7150
+# Loading. Full = 0. Wren = 1. T= 7250
+# Loading. Full = 0. Wren = 1. T= 7350
+# Loading. Full = 0. Wren = 1. T= 7450
+# Loading. Full = 0. Wren = 1. T= 7550
+# Loading. Full = 0. Wren = 1. T= 7650
+# Loading. Full = 0. Wren = 1. T= 7750
+# Loading. Full = 0. Wren = 1. T= 7850
+# Loading. Full = 0. Wren = 1. T= 7950
+# Loading. Full = 0. Wren = 1. T= 8050
+# Loading. Full = 0. Wren = 1. T= 8150
+# Loading. Full = 0. Wren = 1. T= 8250
+# Loading. Full = 0. Wren = 1. T= 8350
+# Loading. Full = 0. Wren = 1. T= 8450
+# Loading. Full = 0. Wren = 1. T= 8550
+# Loading. Full = 0. Wren = 1. T= 8650
+# Loading. Full = 0. Wren = 1. T= 8750
+# Loading. Full = 0. Wren = 1. T= 8850
+# Loading. Full = 0. Wren = 1. T= 8950
+# Loading. Full = 0. Wren = 1. T= 9050
+# Loading. Full = 0. Wren = 1. T= 9150
+# Loading. Full = 0. Wren = 1. T= 9250
+# Loading. Full = 0. Wren = 1. T= 9350
+# Loading. Full = 0. Wren = 1. T= 9450
+# Loading. Full = 0. Wren = 1. T= 9550
+# Loading. Full = 0. Wren = 1. T= 9650
+# Loading. Full = 0. Wren = 1. T= 9750
+# Loading. Full = 0. Wren = 1. T= 9850
+# Loading. Full = 0. Wren = 1. T= 9950
+# Loading. Full = 0. Wren = 1. T= 10050
+# Loading. Full = 0. Wren = 1. T= 10150
+# Loading. Full = 0. Wren = 1. T= 10250
+# Loading. Full = 0. Wren = 1. T= 10350
+# Loading. Full = 0. Wren = 1. T= 10450
+# Loading. Full = 0. Wren = 1. T= 10550
+# Loading. Full = 0. Wren = 1. T= 10650
+# Loading. Full = 0. Wren = 1. T= 10750
+# Loading. Full = 0. Wren = 1. T= 10850
+# Loading. Full = 0. Wren = 1. T= 10950
+# Loading. Full = 0. Wren = 1. T= 11050
+# Loading. Full = 0. Wren = 1. T= 11150
+# Loading. Full = 0. Wren = 1. T= 11250
+# Loading. Full = 0. Wren = 1. T= 11350
+# Loading. Full = 0. Wren = 1. T= 11450
+# Loading. Full = 0. Wren = 1. T= 11550
+# Loading. Full = 0. Wren = 1. T= 11650
+# Loading. Full = 0. Wren = 1. T= 11750
+# Loading. Full = 0. Wren = 1. T= 11850
+# Loading. Full = 0. Wren = 1. T= 11950
+# Loading. Full = 0. Wren = 1. T= 12050
+# Loading. Full = 0. Wren = 1. T= 12150
+# Loading. Full = 0. Wren = 1. T= 12250
+# Loading. Full = 0. Wren = 1. T= 12350
+# Loading. Full = 0. Wren = 1. T= 12450
+# Loading. Full = 0. Wren = 1. T= 12550
+# Loading. Full = 0. Wren = 1. T= 12650
+# Loading. Full = 0. Wren = 1. T= 12750
+# Loading. Full = 0. Wren = 1. T= 12850
+# Loading. Full = 0. Wren = 1. T= 12950
+# Loading. Full = 0. Wren = 1. T= 13050
+# DONE LOADING! Full = 1. Wren = 0. T = 13150
+# Loading. Full = 1. Wren = 0. Stop = 0. T= 13550
+# Loading. Full = 0. Wren = 0. Stop = 0. T= 13650
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 13750
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 13850
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 13950
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14050
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14150
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14250
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14350
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14450
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14550
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14650
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14750
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14850
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14950
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15050
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15150
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15250
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15350
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15450
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15550
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15650
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15750
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15850
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15950
+# DONE LOADING! Stop = 1. Full = 0. Wren = 1. T = 16150
+# ** Note: $stop    : ./note_input_tb.sv(68)
+#    Time: 16350 ps  Iteration: 1  Instance: /note_input_tb
+# Break in Module note_input_tb at ./note_input_tb.sv line 68
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:55:12 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_tb.sv 
+# -- Compiling module note_input_tb
+# 
+# Top level modules:
+# 	note_input_tb
+# End time: 11:55:12 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:55:12 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_datapath.sv 
+# -- Compiling module note_input_datapath
+# 
+# Top level modules:
+# 	note_input_datapath
+# End time: 11:55:13 on Jun 04,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:55:13 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_controller.sv 
+# -- Compiling module note_input_controller
+# 
+# Top level modules:
+# 	note_input_controller
+# End time: 11:55:13 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:55:13 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input.sv 
+# -- Compiling module note_input
+# 
+# Top level modules:
+# 	note_input
+# End time: 11:55:13 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:55:13 on Jun 04,2026
+# vlog -reportprogress 300 ./noise_gen.sv 
+# -- Compiling module noise_gen
+# -- Compiling module noise_gen_testbench
+# 
+# Top level modules:
+# 	noise_gen_testbench
+# End time: 11:55:14 on Jun 04,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:55:14 on Jun 04,2026
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 11:55:14 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:55:14 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_generator.v 
+# -- Compiling module clock_generator
+# 
+# Top level modules:
+# 	clock_generator
+# End time: 11:55:14 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:55:14 on Jun 04,2026
+# vlog -reportprogress 300 ./audio_codec.v 
+# -- Compiling module audio_codec
+# 
+# Top level modules:
+# 	audio_codec
+# End time: 11:55:14 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:55:14 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_divider_8.sv 
+# -- Compiling module clock_divider_8
+# 
+# Top level modules:
+# 	clock_divider_8
+# End time: 11:55:15 on Jun 04,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:55:15 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_divider_8_tb.sv 
+# -- Compiling module clock_divider_8_tb
+# 
+# Top level modules:
+# 	clock_divider_8_tb
+# End time: 11:55:15 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 11:55:16 on Jun 04,2026, Elapsed time: 0:05:38
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work note_input_tb -Lf altera_mf_ver 
+# Start time: 11:55:16 on Jun 04,2026
+# Loading sv_std.std
+# Loading work.note_input_tb
+# Loading work.note_input
+# Loading work.note_input_controller
+# Loading work.note_input_datapath
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: mflessa  Hostname: EE-347PC07  ProcessID: 18752
+#           Attempting to use alternate WLF file "./wlft0z0c8e".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft0z0c8e
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Loading. Full = 0. Wren = 0. T= 1650
+# Loading. Full = 0. Wren = 1. T= 1750
+# Loading. Full = 0. Wren = 1. T= 1850
+# Loading. Full = 0. Wren = 1. T= 1950
+# Loading. Full = 0. Wren = 1. T= 2050
+# Loading. Full = 0. Wren = 1. T= 2150
+# Loading. Full = 0. Wren = 1. T= 2250
+# Loading. Full = 0. Wren = 1. T= 2350
+# Loading. Full = 0. Wren = 1. T= 2450
+# Loading. Full = 0. Wren = 1. T= 2550
+# Loading. Full = 0. Wren = 1. T= 2650
+# Loading. Full = 0. Wren = 1. T= 2750
+# Loading. Full = 0. Wren = 1. T= 2850
+# Loading. Full = 0. Wren = 1. T= 2950
+# Loading. Full = 0. Wren = 1. T= 3050
+# Loading. Full = 0. Wren = 1. T= 3150
+# Loading. Full = 0. Wren = 1. T= 3250
+# Loading. Full = 0. Wren = 1. T= 3350
+# Loading. Full = 0. Wren = 1. T= 3450
+# Loading. Full = 0. Wren = 1. T= 3550
+# Loading. Full = 0. Wren = 1. T= 3650
+# Loading. Full = 0. Wren = 1. T= 3750
+# Loading. Full = 0. Wren = 1. T= 3850
+# Loading. Full = 0. Wren = 1. T= 3950
+# Loading. Full = 0. Wren = 1. T= 4050
+# Loading. Full = 0. Wren = 1. T= 4150
+# Loading. Full = 0. Wren = 1. T= 4250
+# Loading. Full = 0. Wren = 1. T= 4350
+# Loading. Full = 0. Wren = 1. T= 4450
+# Loading. Full = 0. Wren = 1. T= 4550
+# Loading. Full = 0. Wren = 1. T= 4650
+# Loading. Full = 0. Wren = 1. T= 4750
+# Loading. Full = 0. Wren = 1. T= 4850
+# Loading. Full = 0. Wren = 1. T= 4950
+# Loading. Full = 0. Wren = 1. T= 5050
+# Loading. Full = 0. Wren = 1. T= 5150
+# Loading. Full = 0. Wren = 1. T= 5250
+# Loading. Full = 0. Wren = 1. T= 5350
+# Loading. Full = 0. Wren = 1. T= 5450
+# Loading. Full = 0. Wren = 1. T= 5550
+# Loading. Full = 0. Wren = 1. T= 5650
+# Loading. Full = 0. Wren = 1. T= 5750
+# Loading. Full = 0. Wren = 1. T= 5850
+# Loading. Full = 0. Wren = 1. T= 5950
+# Loading. Full = 0. Wren = 1. T= 6050
+# Loading. Full = 0. Wren = 1. T= 6150
+# Loading. Full = 0. Wren = 1. T= 6250
+# Loading. Full = 0. Wren = 1. T= 6350
+# Loading. Full = 0. Wren = 1. T= 6450
+# Loading. Full = 0. Wren = 1. T= 6550
+# Loading. Full = 0. Wren = 1. T= 6650
+# Loading. Full = 0. Wren = 1. T= 6750
+# Loading. Full = 0. Wren = 1. T= 6850
+# Loading. Full = 0. Wren = 1. T= 6950
+# Loading. Full = 0. Wren = 1. T= 7050
+# Loading. Full = 0. Wren = 1. T= 7150
+# Loading. Full = 0. Wren = 1. T= 7250
+# Loading. Full = 0. Wren = 1. T= 7350
+# Loading. Full = 0. Wren = 1. T= 7450
+# Loading. Full = 0. Wren = 1. T= 7550
+# Loading. Full = 0. Wren = 1. T= 7650
+# Loading. Full = 0. Wren = 1. T= 7750
+# Loading. Full = 0. Wren = 1. T= 7850
+# Loading. Full = 0. Wren = 1. T= 7950
+# Loading. Full = 0. Wren = 1. T= 8050
+# Loading. Full = 0. Wren = 1. T= 8150
+# Loading. Full = 0. Wren = 1. T= 8250
+# Loading. Full = 0. Wren = 1. T= 8350
+# Loading. Full = 0. Wren = 1. T= 8450
+# Loading. Full = 0. Wren = 1. T= 8550
+# Loading. Full = 0. Wren = 1. T= 8650
+# Loading. Full = 0. Wren = 1. T= 8750
+# Loading. Full = 0. Wren = 1. T= 8850
+# Loading. Full = 0. Wren = 1. T= 8950
+# Loading. Full = 0. Wren = 1. T= 9050
+# Loading. Full = 0. Wren = 1. T= 9150
+# Loading. Full = 0. Wren = 1. T= 9250
+# Loading. Full = 0. Wren = 1. T= 9350
+# Loading. Full = 0. Wren = 1. T= 9450
+# Loading. Full = 0. Wren = 1. T= 9550
+# Loading. Full = 0. Wren = 1. T= 9650
+# Loading. Full = 0. Wren = 1. T= 9750
+# Loading. Full = 0. Wren = 1. T= 9850
+# Loading. Full = 0. Wren = 1. T= 9950
+# Loading. Full = 0. Wren = 1. T= 10050
+# Loading. Full = 0. Wren = 1. T= 10150
+# Loading. Full = 0. Wren = 1. T= 10250
+# Loading. Full = 0. Wren = 1. T= 10350
+# Loading. Full = 0. Wren = 1. T= 10450
+# Loading. Full = 0. Wren = 1. T= 10550
+# Loading. Full = 0. Wren = 1. T= 10650
+# Loading. Full = 0. Wren = 1. T= 10750
+# Loading. Full = 0. Wren = 1. T= 10850
+# Loading. Full = 0. Wren = 1. T= 10950
+# Loading. Full = 0. Wren = 1. T= 11050
+# Loading. Full = 0. Wren = 1. T= 11150
+# Loading. Full = 0. Wren = 1. T= 11250
+# Loading. Full = 0. Wren = 1. T= 11350
+# Loading. Full = 0. Wren = 1. T= 11450
+# Loading. Full = 0. Wren = 1. T= 11550
+# Loading. Full = 0. Wren = 1. T= 11650
+# Loading. Full = 0. Wren = 1. T= 11750
+# Loading. Full = 0. Wren = 1. T= 11850
+# Loading. Full = 0. Wren = 1. T= 11950
+# Loading. Full = 0. Wren = 1. T= 12050
+# Loading. Full = 0. Wren = 1. T= 12150
+# Loading. Full = 0. Wren = 1. T= 12250
+# Loading. Full = 0. Wren = 1. T= 12350
+# Loading. Full = 0. Wren = 1. T= 12450
+# Loading. Full = 0. Wren = 1. T= 12550
+# Loading. Full = 0. Wren = 1. T= 12650
+# Loading. Full = 0. Wren = 1. T= 12750
+# Loading. Full = 0. Wren = 1. T= 12850
+# Loading. Full = 0. Wren = 1. T= 12950
+# Loading. Full = 0. Wren = 1. T= 13050
+# DONE LOADING! Full = 1. Wren = 0. T = 13150
+# Loading. Full = 1. Wren = 0. Stop = 0. T= 13550
+# Loading. Full = 0. Wren = 0. Stop = 0. T= 13650
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 13750
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 13850
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 13950
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14050
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14150
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14250
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14350
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14450
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14550
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14650
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14750
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14850
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14950
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15050
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15150
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15250
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15350
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15450
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15550
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15650
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15750
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15850
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15950
+# DONE LOADING! Stop = 1. Full = 0. Wren = 1. T = 16150
+# ** Note: $stop    : ./note_input_tb.sv(68)
+#    Time: 16350 ps  Iteration: 1  Instance: /note_input_tb
+# Break in Module note_input_tb at ./note_input_tb.sv line 68
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:00:51 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_tb.sv 
+# -- Compiling module note_input_tb
+# 
+# Top level modules:
+# 	note_input_tb
+# End time: 12:00:51 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:00:51 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_datapath.sv 
+# -- Compiling module note_input_datapath
+# 
+# Top level modules:
+# 	note_input_datapath
+# End time: 12:00:51 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:00:51 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_controller.sv 
+# -- Compiling module note_input_controller
+# 
+# Top level modules:
+# 	note_input_controller
+# End time: 12:00:52 on Jun 04,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:00:52 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input.sv 
+# -- Compiling module note_input
+# 
+# Top level modules:
+# 	note_input
+# End time: 12:00:52 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:00:52 on Jun 04,2026
+# vlog -reportprogress 300 ./noise_gen.sv 
+# -- Compiling module noise_gen
+# -- Compiling module noise_gen_testbench
+# 
+# Top level modules:
+# 	noise_gen_testbench
+# End time: 12:00:52 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:00:52 on Jun 04,2026
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 12:00:52 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:00:52 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_generator.v 
+# -- Compiling module clock_generator
+# 
+# Top level modules:
+# 	clock_generator
+# End time: 12:00:53 on Jun 04,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:00:53 on Jun 04,2026
+# vlog -reportprogress 300 ./audio_codec.v 
+# -- Compiling module audio_codec
+# 
+# Top level modules:
+# 	audio_codec
+# End time: 12:00:53 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:00:53 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_divider_8.sv 
+# -- Compiling module clock_divider_8
+# 
+# Top level modules:
+# 	clock_divider_8
+# End time: 12:00:53 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:00:53 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_divider_8_tb.sv 
+# -- Compiling module clock_divider_8_tb
+# 
+# Top level modules:
+# 	clock_divider_8_tb
+# End time: 12:00:54 on Jun 04,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 12:00:55 on Jun 04,2026, Elapsed time: 0:05:39
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work note_input_tb -Lf altera_mf_ver 
+# Start time: 12:00:55 on Jun 04,2026
+# Loading sv_std.std
+# Loading work.note_input_tb
+# Loading work.note_input
+# Loading work.note_input_controller
+# Loading work.note_input_datapath
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: mflessa  Hostname: EE-347PC07  ProcessID: 18752
+#           Attempting to use alternate WLF file "./wlft1q71e3".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft1q71e3
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Loading. Full = 0. Wren = 0. T= 1650
+# Loading. Full = 0. Wren = 1. T= 1750
+# Loading. Full = 0. Wren = 1. T= 1850
+# Loading. Full = 0. Wren = 1. T= 1950
+# Loading. Full = 0. Wren = 1. T= 2050
+# Loading. Full = 0. Wren = 1. T= 2150
+# Loading. Full = 0. Wren = 1. T= 2250
+# Loading. Full = 0. Wren = 1. T= 2350
+# Loading. Full = 0. Wren = 1. T= 2450
+# Loading. Full = 0. Wren = 1. T= 2550
+# Loading. Full = 0. Wren = 1. T= 2650
+# Loading. Full = 0. Wren = 1. T= 2750
+# Loading. Full = 0. Wren = 1. T= 2850
+# Loading. Full = 0. Wren = 1. T= 2950
+# Loading. Full = 0. Wren = 1. T= 3050
+# Loading. Full = 0. Wren = 1. T= 3150
+# Loading. Full = 0. Wren = 1. T= 3250
+# Loading. Full = 0. Wren = 1. T= 3350
+# Loading. Full = 0. Wren = 1. T= 3450
+# Loading. Full = 0. Wren = 1. T= 3550
+# Loading. Full = 0. Wren = 1. T= 3650
+# Loading. Full = 0. Wren = 1. T= 3750
+# Loading. Full = 0. Wren = 1. T= 3850
+# Loading. Full = 0. Wren = 1. T= 3950
+# Loading. Full = 0. Wren = 1. T= 4050
+# Loading. Full = 0. Wren = 1. T= 4150
+# Loading. Full = 0. Wren = 1. T= 4250
+# Loading. Full = 0. Wren = 1. T= 4350
+# Loading. Full = 0. Wren = 1. T= 4450
+# Loading. Full = 0. Wren = 1. T= 4550
+# Loading. Full = 0. Wren = 1. T= 4650
+# Loading. Full = 0. Wren = 1. T= 4750
+# Loading. Full = 0. Wren = 1. T= 4850
+# Loading. Full = 0. Wren = 1. T= 4950
+# Loading. Full = 0. Wren = 1. T= 5050
+# Loading. Full = 0. Wren = 1. T= 5150
+# Loading. Full = 0. Wren = 1. T= 5250
+# Loading. Full = 0. Wren = 1. T= 5350
+# Loading. Full = 0. Wren = 1. T= 5450
+# Loading. Full = 0. Wren = 1. T= 5550
+# Loading. Full = 0. Wren = 1. T= 5650
+# Loading. Full = 0. Wren = 1. T= 5750
+# Loading. Full = 0. Wren = 1. T= 5850
+# Loading. Full = 0. Wren = 1. T= 5950
+# Loading. Full = 0. Wren = 1. T= 6050
+# Loading. Full = 0. Wren = 1. T= 6150
+# Loading. Full = 0. Wren = 1. T= 6250
+# Loading. Full = 0. Wren = 1. T= 6350
+# Loading. Full = 0. Wren = 1. T= 6450
+# Loading. Full = 0. Wren = 1. T= 6550
+# Loading. Full = 0. Wren = 1. T= 6650
+# Loading. Full = 0. Wren = 1. T= 6750
+# Loading. Full = 0. Wren = 1. T= 6850
+# Loading. Full = 0. Wren = 1. T= 6950
+# Loading. Full = 0. Wren = 1. T= 7050
+# Loading. Full = 0. Wren = 1. T= 7150
+# Loading. Full = 0. Wren = 1. T= 7250
+# Loading. Full = 0. Wren = 1. T= 7350
+# Loading. Full = 0. Wren = 1. T= 7450
+# Loading. Full = 0. Wren = 1. T= 7550
+# Loading. Full = 0. Wren = 1. T= 7650
+# Loading. Full = 0. Wren = 1. T= 7750
+# Loading. Full = 0. Wren = 1. T= 7850
+# Loading. Full = 0. Wren = 1. T= 7950
+# Loading. Full = 0. Wren = 1. T= 8050
+# Loading. Full = 0. Wren = 1. T= 8150
+# Loading. Full = 0. Wren = 1. T= 8250
+# Loading. Full = 0. Wren = 1. T= 8350
+# Loading. Full = 0. Wren = 1. T= 8450
+# Loading. Full = 0. Wren = 1. T= 8550
+# Loading. Full = 0. Wren = 1. T= 8650
+# Loading. Full = 0. Wren = 1. T= 8750
+# Loading. Full = 0. Wren = 1. T= 8850
+# Loading. Full = 0. Wren = 1. T= 8950
+# Loading. Full = 0. Wren = 1. T= 9050
+# Loading. Full = 0. Wren = 1. T= 9150
+# Loading. Full = 0. Wren = 1. T= 9250
+# Loading. Full = 0. Wren = 1. T= 9350
+# Loading. Full = 0. Wren = 1. T= 9450
+# Loading. Full = 0. Wren = 1. T= 9550
+# Loading. Full = 0. Wren = 1. T= 9650
+# Loading. Full = 0. Wren = 1. T= 9750
+# Loading. Full = 0. Wren = 1. T= 9850
+# Loading. Full = 0. Wren = 1. T= 9950
+# Loading. Full = 0. Wren = 1. T= 10050
+# Loading. Full = 0. Wren = 1. T= 10150
+# Loading. Full = 0. Wren = 1. T= 10250
+# Loading. Full = 0. Wren = 1. T= 10350
+# Loading. Full = 0. Wren = 1. T= 10450
+# Loading. Full = 0. Wren = 1. T= 10550
+# Loading. Full = 0. Wren = 1. T= 10650
+# Loading. Full = 0. Wren = 1. T= 10750
+# Loading. Full = 0. Wren = 1. T= 10850
+# Loading. Full = 0. Wren = 1. T= 10950
+# Loading. Full = 0. Wren = 1. T= 11050
+# Loading. Full = 0. Wren = 1. T= 11150
+# Loading. Full = 0. Wren = 1. T= 11250
+# Loading. Full = 0. Wren = 1. T= 11350
+# Loading. Full = 0. Wren = 1. T= 11450
+# Loading. Full = 0. Wren = 1. T= 11550
+# Loading. Full = 0. Wren = 1. T= 11650
+# Loading. Full = 0. Wren = 1. T= 11750
+# Loading. Full = 0. Wren = 1. T= 11850
+# Loading. Full = 0. Wren = 1. T= 11950
+# Loading. Full = 0. Wren = 1. T= 12050
+# Loading. Full = 0. Wren = 1. T= 12150
+# Loading. Full = 0. Wren = 1. T= 12250
+# Loading. Full = 0. Wren = 1. T= 12350
+# Loading. Full = 0. Wren = 1. T= 12450
+# Loading. Full = 0. Wren = 1. T= 12550
+# Loading. Full = 0. Wren = 1. T= 12650
+# Loading. Full = 0. Wren = 1. T= 12750
+# Loading. Full = 0. Wren = 1. T= 12850
+# Loading. Full = 0. Wren = 1. T= 12950
+# Loading. Full = 0. Wren = 1. T= 13050
+# DONE LOADING! Full = 1. Wren = 0. T = 13150
+# Loading. Full = 1. Wren = 0. Stop = 0. T= 13550
+# Loading. Full = 0. Wren = 0. Stop = 0. T= 13650
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 13750
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 13850
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 13950
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14050
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14150
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14250
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14350
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14450
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14550
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14650
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14750
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14850
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14950
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15050
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15150
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15250
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15350
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15450
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15550
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15650
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15750
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15850
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15950
+# DONE LOADING! Stop = 1. Full = 0. Wren = 1. T = 16150
+# ** Note: $stop    : ./note_input_tb.sv(68)
+#    Time: 16350 ps  Iteration: 1  Instance: /note_input_tb
+# Break in Module note_input_tb at ./note_input_tb.sv line 68
+add wave -position 14  sim:/note_input_tb/dut/ni_d/stop_load
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf U:/EE_371/Lab6/note_input_wave.do
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:01:38 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_tb.sv 
+# -- Compiling module note_input_tb
+# 
+# Top level modules:
+# 	note_input_tb
+# End time: 12:01:39 on Jun 04,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:01:39 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_datapath.sv 
+# -- Compiling module note_input_datapath
+# 
+# Top level modules:
+# 	note_input_datapath
+# End time: 12:01:39 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:01:39 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_controller.sv 
+# -- Compiling module note_input_controller
+# 
+# Top level modules:
+# 	note_input_controller
+# End time: 12:01:39 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:01:39 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input.sv 
+# -- Compiling module note_input
+# 
+# Top level modules:
+# 	note_input
+# End time: 12:01:40 on Jun 04,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:01:40 on Jun 04,2026
+# vlog -reportprogress 300 ./noise_gen.sv 
+# -- Compiling module noise_gen
+# -- Compiling module noise_gen_testbench
+# 
+# Top level modules:
+# 	noise_gen_testbench
+# End time: 12:01:40 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:01:40 on Jun 04,2026
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 12:01:40 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:01:40 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_generator.v 
+# -- Compiling module clock_generator
+# 
+# Top level modules:
+# 	clock_generator
+# End time: 12:01:40 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:01:40 on Jun 04,2026
+# vlog -reportprogress 300 ./audio_codec.v 
+# -- Compiling module audio_codec
+# 
+# Top level modules:
+# 	audio_codec
+# End time: 12:01:41 on Jun 04,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:01:41 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_divider_8.sv 
+# -- Compiling module clock_divider_8
+# 
+# Top level modules:
+# 	clock_divider_8
+# End time: 12:01:41 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:01:41 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_divider_8_tb.sv 
+# -- Compiling module clock_divider_8_tb
+# 
+# Top level modules:
+# 	clock_divider_8_tb
+# End time: 12:01:41 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:01:42 on Jun 04,2026, Elapsed time: 0:00:47
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work note_input_tb -Lf altera_mf_ver 
+# Start time: 12:01:42 on Jun 04,2026
+# Loading sv_std.std
+# Loading work.note_input_tb
+# Loading work.note_input
+# Loading work.note_input_controller
+# Loading work.note_input_datapath
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: mflessa  Hostname: EE-347PC07  ProcessID: 18752
+#           Attempting to use alternate WLF file "./wlft4gw1tn".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft4gw1tn
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Loading. Full = 0. Wren = 0. T= 1650
+# Loading. Full = 0. Wren = 1. T= 1750
+# Loading. Full = 0. Wren = 1. T= 1850
+# Loading. Full = 0. Wren = 1. T= 1950
+# Loading. Full = 0. Wren = 1. T= 2050
+# Loading. Full = 0. Wren = 1. T= 2150
+# Loading. Full = 0. Wren = 1. T= 2250
+# Loading. Full = 0. Wren = 1. T= 2350
+# Loading. Full = 0. Wren = 1. T= 2450
+# Loading. Full = 0. Wren = 1. T= 2550
+# Loading. Full = 0. Wren = 1. T= 2650
+# Loading. Full = 0. Wren = 1. T= 2750
+# Loading. Full = 0. Wren = 1. T= 2850
+# Loading. Full = 0. Wren = 1. T= 2950
+# Loading. Full = 0. Wren = 1. T= 3050
+# Loading. Full = 0. Wren = 1. T= 3150
+# Loading. Full = 0. Wren = 1. T= 3250
+# Loading. Full = 0. Wren = 1. T= 3350
+# Loading. Full = 0. Wren = 1. T= 3450
+# Loading. Full = 0. Wren = 1. T= 3550
+# Loading. Full = 0. Wren = 1. T= 3650
+# Loading. Full = 0. Wren = 1. T= 3750
+# Loading. Full = 0. Wren = 1. T= 3850
+# Loading. Full = 0. Wren = 1. T= 3950
+# Loading. Full = 0. Wren = 1. T= 4050
+# Loading. Full = 0. Wren = 1. T= 4150
+# Loading. Full = 0. Wren = 1. T= 4250
+# Loading. Full = 0. Wren = 1. T= 4350
+# Loading. Full = 0. Wren = 1. T= 4450
+# Loading. Full = 0. Wren = 1. T= 4550
+# Loading. Full = 0. Wren = 1. T= 4650
+# Loading. Full = 0. Wren = 1. T= 4750
+# Loading. Full = 0. Wren = 1. T= 4850
+# Loading. Full = 0. Wren = 1. T= 4950
+# Loading. Full = 0. Wren = 1. T= 5050
+# Loading. Full = 0. Wren = 1. T= 5150
+# Loading. Full = 0. Wren = 1. T= 5250
+# Loading. Full = 0. Wren = 1. T= 5350
+# Loading. Full = 0. Wren = 1. T= 5450
+# Loading. Full = 0. Wren = 1. T= 5550
+# Loading. Full = 0. Wren = 1. T= 5650
+# Loading. Full = 0. Wren = 1. T= 5750
+# Loading. Full = 0. Wren = 1. T= 5850
+# Loading. Full = 0. Wren = 1. T= 5950
+# Loading. Full = 0. Wren = 1. T= 6050
+# Loading. Full = 0. Wren = 1. T= 6150
+# Loading. Full = 0. Wren = 1. T= 6250
+# Loading. Full = 0. Wren = 1. T= 6350
+# Loading. Full = 0. Wren = 1. T= 6450
+# Loading. Full = 0. Wren = 1. T= 6550
+# Loading. Full = 0. Wren = 1. T= 6650
+# Loading. Full = 0. Wren = 1. T= 6750
+# Loading. Full = 0. Wren = 1. T= 6850
+# Loading. Full = 0. Wren = 1. T= 6950
+# Loading. Full = 0. Wren = 1. T= 7050
+# Loading. Full = 0. Wren = 1. T= 7150
+# Loading. Full = 0. Wren = 1. T= 7250
+# Loading. Full = 0. Wren = 1. T= 7350
+# Loading. Full = 0. Wren = 1. T= 7450
+# Loading. Full = 0. Wren = 1. T= 7550
+# Loading. Full = 0. Wren = 1. T= 7650
+# Loading. Full = 0. Wren = 1. T= 7750
+# Loading. Full = 0. Wren = 1. T= 7850
+# Loading. Full = 0. Wren = 1. T= 7950
+# Loading. Full = 0. Wren = 1. T= 8050
+# Loading. Full = 0. Wren = 1. T= 8150
+# Loading. Full = 0. Wren = 1. T= 8250
+# Loading. Full = 0. Wren = 1. T= 8350
+# Loading. Full = 0. Wren = 1. T= 8450
+# Loading. Full = 0. Wren = 1. T= 8550
+# Loading. Full = 0. Wren = 1. T= 8650
+# Loading. Full = 0. Wren = 1. T= 8750
+# Loading. Full = 0. Wren = 1. T= 8850
+# Loading. Full = 0. Wren = 1. T= 8950
+# Loading. Full = 0. Wren = 1. T= 9050
+# Loading. Full = 0. Wren = 1. T= 9150
+# Loading. Full = 0. Wren = 1. T= 9250
+# Loading. Full = 0. Wren = 1. T= 9350
+# Loading. Full = 0. Wren = 1. T= 9450
+# Loading. Full = 0. Wren = 1. T= 9550
+# Loading. Full = 0. Wren = 1. T= 9650
+# Loading. Full = 0. Wren = 1. T= 9750
+# Loading. Full = 0. Wren = 1. T= 9850
+# Loading. Full = 0. Wren = 1. T= 9950
+# Loading. Full = 0. Wren = 1. T= 10050
+# Loading. Full = 0. Wren = 1. T= 10150
+# Loading. Full = 0. Wren = 1. T= 10250
+# Loading. Full = 0. Wren = 1. T= 10350
+# Loading. Full = 0. Wren = 1. T= 10450
+# Loading. Full = 0. Wren = 1. T= 10550
+# Loading. Full = 0. Wren = 1. T= 10650
+# Loading. Full = 0. Wren = 1. T= 10750
+# Loading. Full = 0. Wren = 1. T= 10850
+# Loading. Full = 0. Wren = 1. T= 10950
+# Loading. Full = 0. Wren = 1. T= 11050
+# Loading. Full = 0. Wren = 1. T= 11150
+# Loading. Full = 0. Wren = 1. T= 11250
+# Loading. Full = 0. Wren = 1. T= 11350
+# Loading. Full = 0. Wren = 1. T= 11450
+# Loading. Full = 0. Wren = 1. T= 11550
+# Loading. Full = 0. Wren = 1. T= 11650
+# Loading. Full = 0. Wren = 1. T= 11750
+# Loading. Full = 0. Wren = 1. T= 11850
+# Loading. Full = 0. Wren = 1. T= 11950
+# Loading. Full = 0. Wren = 1. T= 12050
+# Loading. Full = 0. Wren = 1. T= 12150
+# Loading. Full = 0. Wren = 1. T= 12250
+# Loading. Full = 0. Wren = 1. T= 12350
+# Loading. Full = 0. Wren = 1. T= 12450
+# Loading. Full = 0. Wren = 1. T= 12550
+# Loading. Full = 0. Wren = 1. T= 12650
+# Loading. Full = 0. Wren = 1. T= 12750
+# Loading. Full = 0. Wren = 1. T= 12850
+# Loading. Full = 0. Wren = 1. T= 12950
+# Loading. Full = 0. Wren = 1. T= 13050
+# DONE LOADING! Full = 1. Wren = 0. T = 13150
+# Loading. Full = 1. Wren = 0. Stop = 0. T= 13550
+# Loading. Full = 0. Wren = 0. Stop = 0. T= 13650
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 13750
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 13850
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 13950
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14050
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14150
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14250
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14350
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14450
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14550
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14650
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14750
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14850
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14950
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15050
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15150
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15250
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15350
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15450
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15550
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15650
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15750
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15850
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15950
+# DONE LOADING! Stop = 1. Full = 0. Wren = 1. T = 16150
+# ** Note: $stop    : ./note_input_tb.sv(68)
+#    Time: 16350 ps  Iteration: 1  Instance: /note_input_tb
+# Break in Module note_input_tb at ./note_input_tb.sv line 68
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:07:06 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_tb.sv 
+# -- Compiling module note_input_tb
+# 
+# Top level modules:
+# 	note_input_tb
+# End time: 12:07:06 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:07:06 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_datapath.sv 
+# -- Compiling module note_input_datapath
+# 
+# Top level modules:
+# 	note_input_datapath
+# End time: 12:07:06 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:07:06 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_controller.sv 
+# -- Compiling module note_input_controller
+# 
+# Top level modules:
+# 	note_input_controller
+# End time: 12:07:06 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:07:06 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input.sv 
+# -- Compiling module note_input
+# 
+# Top level modules:
+# 	note_input
+# End time: 12:07:07 on Jun 04,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:07:07 on Jun 04,2026
+# vlog -reportprogress 300 ./noise_gen.sv 
+# -- Compiling module noise_gen
+# -- Compiling module noise_gen_testbench
+# 
+# Top level modules:
+# 	noise_gen_testbench
+# End time: 12:07:07 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:07:07 on Jun 04,2026
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 12:07:07 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:07:07 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_generator.v 
+# -- Compiling module clock_generator
+# 
+# Top level modules:
+# 	clock_generator
+# End time: 12:07:08 on Jun 04,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:07:08 on Jun 04,2026
+# vlog -reportprogress 300 ./audio_codec.v 
+# -- Compiling module audio_codec
+# 
+# Top level modules:
+# 	audio_codec
+# End time: 12:07:08 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:07:08 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_divider_8.sv 
+# -- Compiling module clock_divider_8
+# 
+# Top level modules:
+# 	clock_divider_8
+# End time: 12:07:09 on Jun 04,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:07:09 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_divider_8_tb.sv 
+# -- Compiling module clock_divider_8_tb
+# 
+# Top level modules:
+# 	clock_divider_8_tb
+# End time: 12:07:09 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:07:10 on Jun 04,2026, Elapsed time: 0:05:28
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work note_input_tb -Lf altera_mf_ver 
+# Start time: 12:07:10 on Jun 04,2026
+# Loading sv_std.std
+# Loading work.note_input_tb
+# Loading work.note_input
+# Loading work.note_input_controller
+# Loading work.note_input_datapath
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: mflessa  Hostname: EE-347PC07  ProcessID: 18752
+#           Attempting to use alternate WLF file "./wlftj3fxwi".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftj3fxwi
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Loading. Full = 0. Wren = 0. T= 1650
+# Loading. Full = 0. Wren = 1. T= 1750
+# Loading. Full = 0. Wren = 1. T= 1850
+# Loading. Full = 0. Wren = 1. T= 1950
+# Loading. Full = 0. Wren = 1. T= 2050
+# Loading. Full = 0. Wren = 1. T= 2150
+# Loading. Full = 0. Wren = 1. T= 2250
+# Loading. Full = 0. Wren = 1. T= 2350
+# Loading. Full = 0. Wren = 1. T= 2450
+# Loading. Full = 0. Wren = 1. T= 2550
+# Loading. Full = 0. Wren = 1. T= 2650
+# Loading. Full = 0. Wren = 1. T= 2750
+# Loading. Full = 0. Wren = 1. T= 2850
+# Loading. Full = 0. Wren = 1. T= 2950
+# Loading. Full = 0. Wren = 1. T= 3050
+# Loading. Full = 0. Wren = 1. T= 3150
+# Loading. Full = 0. Wren = 1. T= 3250
+# Loading. Full = 0. Wren = 1. T= 3350
+# Loading. Full = 0. Wren = 1. T= 3450
+# Loading. Full = 0. Wren = 1. T= 3550
+# Loading. Full = 0. Wren = 1. T= 3650
+# Loading. Full = 0. Wren = 1. T= 3750
+# Loading. Full = 0. Wren = 1. T= 3850
+# Loading. Full = 0. Wren = 1. T= 3950
+# Loading. Full = 0. Wren = 1. T= 4050
+# Loading. Full = 0. Wren = 1. T= 4150
+# Loading. Full = 0. Wren = 1. T= 4250
+# Loading. Full = 0. Wren = 1. T= 4350
+# Loading. Full = 0. Wren = 1. T= 4450
+# Loading. Full = 0. Wren = 1. T= 4550
+# Loading. Full = 0. Wren = 1. T= 4650
+# Loading. Full = 0. Wren = 1. T= 4750
+# Loading. Full = 0. Wren = 1. T= 4850
+# Loading. Full = 0. Wren = 1. T= 4950
+# Loading. Full = 0. Wren = 1. T= 5050
+# Loading. Full = 0. Wren = 1. T= 5150
+# Loading. Full = 0. Wren = 1. T= 5250
+# Loading. Full = 0. Wren = 1. T= 5350
+# Loading. Full = 0. Wren = 1. T= 5450
+# Loading. Full = 0. Wren = 1. T= 5550
+# Loading. Full = 0. Wren = 1. T= 5650
+# Loading. Full = 0. Wren = 1. T= 5750
+# Loading. Full = 0. Wren = 1. T= 5850
+# Loading. Full = 0. Wren = 1. T= 5950
+# Loading. Full = 0. Wren = 1. T= 6050
+# Loading. Full = 0. Wren = 1. T= 6150
+# Loading. Full = 0. Wren = 1. T= 6250
+# Loading. Full = 0. Wren = 1. T= 6350
+# Loading. Full = 0. Wren = 1. T= 6450
+# Loading. Full = 0. Wren = 1. T= 6550
+# Loading. Full = 0. Wren = 1. T= 6650
+# Loading. Full = 0. Wren = 1. T= 6750
+# Loading. Full = 0. Wren = 1. T= 6850
+# Loading. Full = 0. Wren = 1. T= 6950
+# Loading. Full = 0. Wren = 1. T= 7050
+# Loading. Full = 0. Wren = 1. T= 7150
+# Loading. Full = 0. Wren = 1. T= 7250
+# Loading. Full = 0. Wren = 1. T= 7350
+# Loading. Full = 0. Wren = 1. T= 7450
+# Loading. Full = 0. Wren = 1. T= 7550
+# Loading. Full = 0. Wren = 1. T= 7650
+# Loading. Full = 0. Wren = 1. T= 7750
+# Loading. Full = 0. Wren = 1. T= 7850
+# Loading. Full = 0. Wren = 1. T= 7950
+# Loading. Full = 0. Wren = 1. T= 8050
+# Loading. Full = 0. Wren = 1. T= 8150
+# Loading. Full = 0. Wren = 1. T= 8250
+# Loading. Full = 0. Wren = 1. T= 8350
+# Loading. Full = 0. Wren = 1. T= 8450
+# Loading. Full = 0. Wren = 1. T= 8550
+# Loading. Full = 0. Wren = 1. T= 8650
+# Loading. Full = 0. Wren = 1. T= 8750
+# Loading. Full = 0. Wren = 1. T= 8850
+# Loading. Full = 0. Wren = 1. T= 8950
+# Loading. Full = 0. Wren = 1. T= 9050
+# Loading. Full = 0. Wren = 1. T= 9150
+# Loading. Full = 0. Wren = 1. T= 9250
+# Loading. Full = 0. Wren = 1. T= 9350
+# Loading. Full = 0. Wren = 1. T= 9450
+# Loading. Full = 0. Wren = 1. T= 9550
+# Loading. Full = 0. Wren = 1. T= 9650
+# Loading. Full = 0. Wren = 1. T= 9750
+# Loading. Full = 0. Wren = 1. T= 9850
+# Loading. Full = 0. Wren = 1. T= 9950
+# Loading. Full = 0. Wren = 1. T= 10050
+# Loading. Full = 0. Wren = 1. T= 10150
+# Loading. Full = 0. Wren = 1. T= 10250
+# Loading. Full = 0. Wren = 1. T= 10350
+# Loading. Full = 0. Wren = 1. T= 10450
+# Loading. Full = 0. Wren = 1. T= 10550
+# Loading. Full = 0. Wren = 1. T= 10650
+# Loading. Full = 0. Wren = 1. T= 10750
+# Loading. Full = 0. Wren = 1. T= 10850
+# Loading. Full = 0. Wren = 1. T= 10950
+# Loading. Full = 0. Wren = 1. T= 11050
+# Loading. Full = 0. Wren = 1. T= 11150
+# Loading. Full = 0. Wren = 1. T= 11250
+# Loading. Full = 0. Wren = 1. T= 11350
+# Loading. Full = 0. Wren = 1. T= 11450
+# Loading. Full = 0. Wren = 1. T= 11550
+# Loading. Full = 0. Wren = 1. T= 11650
+# Loading. Full = 0. Wren = 1. T= 11750
+# Loading. Full = 0. Wren = 1. T= 11850
+# Loading. Full = 0. Wren = 1. T= 11950
+# Loading. Full = 0. Wren = 1. T= 12050
+# Loading. Full = 0. Wren = 1. T= 12150
+# Loading. Full = 0. Wren = 1. T= 12250
+# Loading. Full = 0. Wren = 1. T= 12350
+# Loading. Full = 0. Wren = 1. T= 12450
+# Loading. Full = 0. Wren = 1. T= 12550
+# Loading. Full = 0. Wren = 1. T= 12650
+# Loading. Full = 0. Wren = 1. T= 12750
+# Loading. Full = 0. Wren = 1. T= 12850
+# Loading. Full = 0. Wren = 1. T= 12950
+# Loading. Full = 0. Wren = 1. T= 13050
+# DONE LOADING! Full = 1. Wren = 0. T = 13150
+# Loading. Full = 1. Wren = 0. Stop = 0. T= 13550
+# Loading. Full = 0. Wren = 0. Stop = 0. T= 13650
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 13750
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 13850
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 13950
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14050
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14150
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14250
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14350
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14450
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14550
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14650
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14750
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14850
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14950
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15050
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15150
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15250
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15350
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15450
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15550
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15650
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15750
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15850
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15950
+# DONE LOADING! Stop = 1. Full = 0. Wren = 1. T = 16150
+# ** Note: $stop    : ./note_input_tb.sv(68)
+#    Time: 16350 ps  Iteration: 1  Instance: /note_input_tb
+# Break in Module note_input_tb at ./note_input_tb.sv line 68
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:09:47 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_tb.sv 
+# -- Compiling module note_input_tb
+# 
+# Top level modules:
+# 	note_input_tb
+# End time: 12:09:47 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:09:47 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_datapath.sv 
+# -- Compiling module note_input_datapath
+# 
+# Top level modules:
+# 	note_input_datapath
+# End time: 12:09:47 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:09:47 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_controller.sv 
+# -- Compiling module note_input_controller
+# 
+# Top level modules:
+# 	note_input_controller
+# End time: 12:09:48 on Jun 04,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:09:48 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input.sv 
+# -- Compiling module note_input
+# 
+# Top level modules:
+# 	note_input
+# End time: 12:09:48 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:09:48 on Jun 04,2026
+# vlog -reportprogress 300 ./noise_gen.sv 
+# -- Compiling module noise_gen
+# -- Compiling module noise_gen_testbench
+# 
+# Top level modules:
+# 	noise_gen_testbench
+# End time: 12:09:48 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:09:48 on Jun 04,2026
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 12:09:48 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:09:48 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_generator.v 
+# -- Compiling module clock_generator
+# 
+# Top level modules:
+# 	clock_generator
+# End time: 12:09:49 on Jun 04,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:09:49 on Jun 04,2026
+# vlog -reportprogress 300 ./audio_codec.v 
+# -- Compiling module audio_codec
+# 
+# Top level modules:
+# 	audio_codec
+# End time: 12:09:49 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:09:49 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_divider_8.sv 
+# -- Compiling module clock_divider_8
+# 
+# Top level modules:
+# 	clock_divider_8
+# End time: 12:09:49 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:09:49 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_divider_8_tb.sv 
+# -- Compiling module clock_divider_8_tb
+# 
+# Top level modules:
+# 	clock_divider_8_tb
+# End time: 12:09:50 on Jun 04,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 12:09:52 on Jun 04,2026, Elapsed time: 0:02:42
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work note_input_tb -Lf altera_mf_ver 
+# Start time: 12:09:52 on Jun 04,2026
+# Loading sv_std.std
+# Loading work.note_input_tb
+# Loading work.note_input
+# Loading work.note_input_controller
+# Loading work.note_input_datapath
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: mflessa  Hostname: EE-347PC07  ProcessID: 18752
+#           Attempting to use alternate WLF file "./wlftz38c1j".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftz38c1j
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Loading. Full = 0. Wren = 0. T= 1650
+# Loading. Full = 0. Wren = 1. T= 1750
+# Loading. Full = 0. Wren = 1. T= 1850
+# Loading. Full = 0. Wren = 1. T= 1950
+# Loading. Full = 0. Wren = 1. T= 2050
+# Loading. Full = 0. Wren = 1. T= 2150
+# Loading. Full = 0. Wren = 1. T= 2250
+# Loading. Full = 0. Wren = 1. T= 2350
+# Loading. Full = 0. Wren = 1. T= 2450
+# Loading. Full = 0. Wren = 1. T= 2550
+# Loading. Full = 0. Wren = 1. T= 2650
+# Loading. Full = 0. Wren = 1. T= 2750
+# Loading. Full = 0. Wren = 1. T= 2850
+# Loading. Full = 0. Wren = 1. T= 2950
+# Loading. Full = 0. Wren = 1. T= 3050
+# Loading. Full = 0. Wren = 1. T= 3150
+# Loading. Full = 0. Wren = 1. T= 3250
+# Loading. Full = 0. Wren = 1. T= 3350
+# Loading. Full = 0. Wren = 1. T= 3450
+# Loading. Full = 0. Wren = 1. T= 3550
+# Loading. Full = 0. Wren = 1. T= 3650
+# Loading. Full = 0. Wren = 1. T= 3750
+# Loading. Full = 0. Wren = 1. T= 3850
+# Loading. Full = 0. Wren = 1. T= 3950
+# Loading. Full = 0. Wren = 1. T= 4050
+# Loading. Full = 0. Wren = 1. T= 4150
+# Loading. Full = 0. Wren = 1. T= 4250
+# Loading. Full = 0. Wren = 1. T= 4350
+# Loading. Full = 0. Wren = 1. T= 4450
+# Loading. Full = 0. Wren = 1. T= 4550
+# Loading. Full = 0. Wren = 1. T= 4650
+# Loading. Full = 0. Wren = 1. T= 4750
+# Loading. Full = 0. Wren = 1. T= 4850
+# Loading. Full = 0. Wren = 1. T= 4950
+# Loading. Full = 0. Wren = 1. T= 5050
+# Loading. Full = 0. Wren = 1. T= 5150
+# Loading. Full = 0. Wren = 1. T= 5250
+# Loading. Full = 0. Wren = 1. T= 5350
+# Loading. Full = 0. Wren = 1. T= 5450
+# Loading. Full = 0. Wren = 1. T= 5550
+# Loading. Full = 0. Wren = 1. T= 5650
+# Loading. Full = 0. Wren = 1. T= 5750
+# Loading. Full = 0. Wren = 1. T= 5850
+# Loading. Full = 0. Wren = 1. T= 5950
+# Loading. Full = 0. Wren = 1. T= 6050
+# Loading. Full = 0. Wren = 1. T= 6150
+# Loading. Full = 0. Wren = 1. T= 6250
+# Loading. Full = 0. Wren = 1. T= 6350
+# Loading. Full = 0. Wren = 1. T= 6450
+# Loading. Full = 0. Wren = 1. T= 6550
+# Loading. Full = 0. Wren = 1. T= 6650
+# Loading. Full = 0. Wren = 1. T= 6750
+# Loading. Full = 0. Wren = 1. T= 6850
+# Loading. Full = 0. Wren = 1. T= 6950
+# Loading. Full = 0. Wren = 1. T= 7050
+# Loading. Full = 0. Wren = 1. T= 7150
+# Loading. Full = 0. Wren = 1. T= 7250
+# Loading. Full = 0. Wren = 1. T= 7350
+# Loading. Full = 0. Wren = 1. T= 7450
+# Loading. Full = 0. Wren = 1. T= 7550
+# Loading. Full = 0. Wren = 1. T= 7650
+# Loading. Full = 0. Wren = 1. T= 7750
+# Loading. Full = 0. Wren = 1. T= 7850
+# Loading. Full = 0. Wren = 1. T= 7950
+# Loading. Full = 0. Wren = 1. T= 8050
+# Loading. Full = 0. Wren = 1. T= 8150
+# Loading. Full = 0. Wren = 1. T= 8250
+# Loading. Full = 0. Wren = 1. T= 8350
+# Loading. Full = 0. Wren = 1. T= 8450
+# Loading. Full = 0. Wren = 1. T= 8550
+# Loading. Full = 0. Wren = 1. T= 8650
+# Loading. Full = 0. Wren = 1. T= 8750
+# Loading. Full = 0. Wren = 1. T= 8850
+# Loading. Full = 0. Wren = 1. T= 8950
+# Loading. Full = 0. Wren = 1. T= 9050
+# Loading. Full = 0. Wren = 1. T= 9150
+# Loading. Full = 0. Wren = 1. T= 9250
+# Loading. Full = 0. Wren = 1. T= 9350
+# Loading. Full = 0. Wren = 1. T= 9450
+# Loading. Full = 0. Wren = 1. T= 9550
+# Loading. Full = 0. Wren = 1. T= 9650
+# Loading. Full = 0. Wren = 1. T= 9750
+# Loading. Full = 0. Wren = 1. T= 9850
+# Loading. Full = 0. Wren = 1. T= 9950
+# Loading. Full = 0. Wren = 1. T= 10050
+# Loading. Full = 0. Wren = 1. T= 10150
+# Loading. Full = 0. Wren = 1. T= 10250
+# Loading. Full = 0. Wren = 1. T= 10350
+# Loading. Full = 0. Wren = 1. T= 10450
+# Loading. Full = 0. Wren = 1. T= 10550
+# Loading. Full = 0. Wren = 1. T= 10650
+# Loading. Full = 0. Wren = 1. T= 10750
+# Loading. Full = 0. Wren = 1. T= 10850
+# Loading. Full = 0. Wren = 1. T= 10950
+# Loading. Full = 0. Wren = 1. T= 11050
+# Loading. Full = 0. Wren = 1. T= 11150
+# Loading. Full = 0. Wren = 1. T= 11250
+# Loading. Full = 0. Wren = 1. T= 11350
+# Loading. Full = 0. Wren = 1. T= 11450
+# Loading. Full = 0. Wren = 1. T= 11550
+# Loading. Full = 0. Wren = 1. T= 11650
+# Loading. Full = 0. Wren = 1. T= 11750
+# Loading. Full = 0. Wren = 1. T= 11850
+# Loading. Full = 0. Wren = 1. T= 11950
+# Loading. Full = 0. Wren = 1. T= 12050
+# Loading. Full = 0. Wren = 1. T= 12150
+# Loading. Full = 0. Wren = 1. T= 12250
+# Loading. Full = 0. Wren = 1. T= 12350
+# Loading. Full = 0. Wren = 1. T= 12450
+# Loading. Full = 0. Wren = 1. T= 12550
+# Loading. Full = 0. Wren = 1. T= 12650
+# Loading. Full = 0. Wren = 1. T= 12750
+# Loading. Full = 0. Wren = 1. T= 12850
+# Loading. Full = 0. Wren = 1. T= 12950
+# Loading. Full = 0. Wren = 1. T= 13050
+# DONE LOADING! Full = 1. Wren = 0. T = 13150
+# Loading. Full = 1. Wren = 0. Stop = 0. T= 13550
+# Loading. Full = 0. Wren = 0. Stop = 0. T= 13650
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 13750
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 13850
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 13950
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14050
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14150
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14250
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14350
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14450
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14550
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14650
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14750
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14850
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14950
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15050
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15150
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15250
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15350
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15450
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15550
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15650
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15750
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15850
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15950
+# DONE LOADING! Stop = 1. Full = 0. Wren = 1. T = 16150
+# ** Note: $stop    : ./note_input_tb.sv(69)
+#    Time: 16450 ps  Iteration: 1  Instance: /note_input_tb
+# Break in Module note_input_tb at ./note_input_tb.sv line 69
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:20:05 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_tb.sv 
+# -- Compiling module note_input_tb
+# 
+# Top level modules:
+# 	note_input_tb
+# End time: 12:20:05 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:20:05 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_datapath.sv 
+# -- Compiling module note_input_datapath
+# 
+# Top level modules:
+# 	note_input_datapath
+# End time: 12:20:05 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:20:05 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_controller.sv 
+# -- Compiling module note_input_controller
+# 
+# Top level modules:
+# 	note_input_controller
+# End time: 12:20:05 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:20:05 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input.sv 
+# -- Compiling module note_input
+# 
+# Top level modules:
+# 	note_input
+# End time: 12:20:06 on Jun 04,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:20:06 on Jun 04,2026
+# vlog -reportprogress 300 ./noise_gen.sv 
+# -- Compiling module noise_gen
+# -- Compiling module noise_gen_testbench
+# 
+# Top level modules:
+# 	noise_gen_testbench
+# End time: 12:20:06 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:20:06 on Jun 04,2026
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 12:20:06 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:20:06 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_generator.v 
+# -- Compiling module clock_generator
+# 
+# Top level modules:
+# 	clock_generator
+# End time: 12:20:06 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:20:06 on Jun 04,2026
+# vlog -reportprogress 300 ./audio_codec.v 
+# -- Compiling module audio_codec
+# 
+# Top level modules:
+# 	audio_codec
+# End time: 12:20:07 on Jun 04,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:20:07 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_divider_8.sv 
+# -- Compiling module clock_divider_8
+# 
+# Top level modules:
+# 	clock_divider_8
+# End time: 12:20:07 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:20:07 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_divider_8_tb.sv 
+# -- Compiling module clock_divider_8_tb
+# 
+# Top level modules:
+# 	clock_divider_8_tb
+# End time: 12:20:07 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:20:10 on Jun 04,2026, Elapsed time: 0:10:18
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work note_input_tb -Lf altera_mf_ver 
+# Start time: 12:20:10 on Jun 04,2026
+# Loading sv_std.std
+# Loading work.note_input_tb
+# Loading work.note_input
+# Loading work.note_input_controller
+# Loading work.note_input_datapath
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: mflessa  Hostname: EE-347PC07  ProcessID: 18752
+#           Attempting to use alternate WLF file "./wlft6hs0tx".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft6hs0tx
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Loading. Full = 0. Wren = 0. T= 1650
+# Loading. Full = 0. Wren = 1. T= 1750
+# Loading. Full = 0. Wren = 1. T= 1850
+# Loading. Full = 0. Wren = 1. T= 1950
+# Loading. Full = 0. Wren = 1. T= 2050
+# Loading. Full = 0. Wren = 1. T= 2150
+# Loading. Full = 0. Wren = 1. T= 2250
+# Loading. Full = 0. Wren = 1. T= 2350
+# Loading. Full = 0. Wren = 1. T= 2450
+# Loading. Full = 0. Wren = 1. T= 2550
+# Loading. Full = 0. Wren = 1. T= 2650
+# Loading. Full = 0. Wren = 1. T= 2750
+# Loading. Full = 0. Wren = 1. T= 2850
+# Loading. Full = 0. Wren = 1. T= 2950
+# Loading. Full = 0. Wren = 1. T= 3050
+# Loading. Full = 0. Wren = 1. T= 3150
+# Loading. Full = 0. Wren = 1. T= 3250
+# Loading. Full = 0. Wren = 1. T= 3350
+# Loading. Full = 0. Wren = 1. T= 3450
+# Loading. Full = 0. Wren = 1. T= 3550
+# Loading. Full = 0. Wren = 1. T= 3650
+# Loading. Full = 0. Wren = 1. T= 3750
+# Loading. Full = 0. Wren = 1. T= 3850
+# Loading. Full = 0. Wren = 1. T= 3950
+# Loading. Full = 0. Wren = 1. T= 4050
+# Loading. Full = 0. Wren = 1. T= 4150
+# Loading. Full = 0. Wren = 1. T= 4250
+# Loading. Full = 0. Wren = 1. T= 4350
+# Loading. Full = 0. Wren = 1. T= 4450
+# Loading. Full = 0. Wren = 1. T= 4550
+# Loading. Full = 0. Wren = 1. T= 4650
+# Loading. Full = 0. Wren = 1. T= 4750
+# Loading. Full = 0. Wren = 1. T= 4850
+# Loading. Full = 0. Wren = 1. T= 4950
+# Loading. Full = 0. Wren = 1. T= 5050
+# Loading. Full = 0. Wren = 1. T= 5150
+# Loading. Full = 0. Wren = 1. T= 5250
+# Loading. Full = 0. Wren = 1. T= 5350
+# Loading. Full = 0. Wren = 1. T= 5450
+# Loading. Full = 0. Wren = 1. T= 5550
+# Loading. Full = 0. Wren = 1. T= 5650
+# Loading. Full = 0. Wren = 1. T= 5750
+# Loading. Full = 0. Wren = 1. T= 5850
+# Loading. Full = 0. Wren = 1. T= 5950
+# Loading. Full = 0. Wren = 1. T= 6050
+# Loading. Full = 0. Wren = 1. T= 6150
+# Loading. Full = 0. Wren = 1. T= 6250
+# Loading. Full = 0. Wren = 1. T= 6350
+# Loading. Full = 0. Wren = 1. T= 6450
+# Loading. Full = 0. Wren = 1. T= 6550
+# Loading. Full = 0. Wren = 1. T= 6650
+# Loading. Full = 0. Wren = 1. T= 6750
+# Loading. Full = 0. Wren = 1. T= 6850
+# Loading. Full = 0. Wren = 1. T= 6950
+# Loading. Full = 0. Wren = 1. T= 7050
+# Loading. Full = 0. Wren = 1. T= 7150
+# Loading. Full = 0. Wren = 1. T= 7250
+# Loading. Full = 0. Wren = 1. T= 7350
+# Loading. Full = 0. Wren = 1. T= 7450
+# Loading. Full = 0. Wren = 1. T= 7550
+# Loading. Full = 0. Wren = 1. T= 7650
+# Loading. Full = 0. Wren = 1. T= 7750
+# Loading. Full = 0. Wren = 1. T= 7850
+# Loading. Full = 0. Wren = 1. T= 7950
+# Loading. Full = 0. Wren = 1. T= 8050
+# Loading. Full = 0. Wren = 1. T= 8150
+# Loading. Full = 0. Wren = 1. T= 8250
+# Loading. Full = 0. Wren = 1. T= 8350
+# Loading. Full = 0. Wren = 1. T= 8450
+# Loading. Full = 0. Wren = 1. T= 8550
+# Loading. Full = 0. Wren = 1. T= 8650
+# Loading. Full = 0. Wren = 1. T= 8750
+# Loading. Full = 0. Wren = 1. T= 8850
+# Loading. Full = 0. Wren = 1. T= 8950
+# Loading. Full = 0. Wren = 1. T= 9050
+# Loading. Full = 0. Wren = 1. T= 9150
+# Loading. Full = 0. Wren = 1. T= 9250
+# Loading. Full = 0. Wren = 1. T= 9350
+# Loading. Full = 0. Wren = 1. T= 9450
+# Loading. Full = 0. Wren = 1. T= 9550
+# Loading. Full = 0. Wren = 1. T= 9650
+# Loading. Full = 0. Wren = 1. T= 9750
+# Loading. Full = 0. Wren = 1. T= 9850
+# Loading. Full = 0. Wren = 1. T= 9950
+# Loading. Full = 0. Wren = 1. T= 10050
+# Loading. Full = 0. Wren = 1. T= 10150
+# Loading. Full = 0. Wren = 1. T= 10250
+# Loading. Full = 0. Wren = 1. T= 10350
+# Loading. Full = 0. Wren = 1. T= 10450
+# Loading. Full = 0. Wren = 1. T= 10550
+# Loading. Full = 0. Wren = 1. T= 10650
+# Loading. Full = 0. Wren = 1. T= 10750
+# Loading. Full = 0. Wren = 1. T= 10850
+# Loading. Full = 0. Wren = 1. T= 10950
+# Loading. Full = 0. Wren = 1. T= 11050
+# Loading. Full = 0. Wren = 1. T= 11150
+# Loading. Full = 0. Wren = 1. T= 11250
+# Loading. Full = 0. Wren = 1. T= 11350
+# Loading. Full = 0. Wren = 1. T= 11450
+# Loading. Full = 0. Wren = 1. T= 11550
+# Loading. Full = 0. Wren = 1. T= 11650
+# Loading. Full = 0. Wren = 1. T= 11750
+# Loading. Full = 0. Wren = 1. T= 11850
+# Loading. Full = 0. Wren = 1. T= 11950
+# Loading. Full = 0. Wren = 1. T= 12050
+# Loading. Full = 0. Wren = 1. T= 12150
+# Loading. Full = 0. Wren = 1. T= 12250
+# Loading. Full = 0. Wren = 1. T= 12350
+# Loading. Full = 0. Wren = 1. T= 12450
+# Loading. Full = 0. Wren = 1. T= 12550
+# Loading. Full = 0. Wren = 1. T= 12650
+# Loading. Full = 0. Wren = 1. T= 12750
+# Loading. Full = 0. Wren = 1. T= 12850
+# Loading. Full = 0. Wren = 1. T= 12950
+# Loading. Full = 0. Wren = 1. T= 13050
+# DONE LOADING! Full = 1. Wren = 0. T = 13150
+# Loading. Full = 1. Wren = 0. Stop = 0. T= 13550
+# Loading. Full = 0. Wren = 0. Stop = 0. T= 13650
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 13750
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 13850
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 13950
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14050
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14150
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14250
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14350
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14450
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14550
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14650
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14750
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14850
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14950
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15050
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15150
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15250
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15350
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15450
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15550
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15650
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15750
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15850
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15950
+# DONE LOADING! Stop = 1. Full = 0. Wren = 1. T = 16150
+# DONE LOADING. Full = 1. Wren = 0. Stop = 1. T= 17150
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:20:55 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_tb.sv 
+# -- Compiling module note_input_tb
+# 
+# Top level modules:
+# 	note_input_tb
+# End time: 12:20:55 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:20:55 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_datapath.sv 
+# -- Compiling module note_input_datapath
+# 
+# Top level modules:
+# 	note_input_datapath
+# End time: 12:20:55 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:20:55 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_controller.sv 
+# -- Compiling module note_input_controller
+# 
+# Top level modules:
+# 	note_input_controller
+# End time: 12:20:56 on Jun 04,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:20:56 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input.sv 
+# -- Compiling module note_input
+# 
+# Top level modules:
+# 	note_input
+# End time: 12:20:56 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:20:56 on Jun 04,2026
+# vlog -reportprogress 300 ./noise_gen.sv 
+# -- Compiling module noise_gen
+# -- Compiling module noise_gen_testbench
+# 
+# Top level modules:
+# 	noise_gen_testbench
+# End time: 12:20:56 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:20:56 on Jun 04,2026
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 12:20:57 on Jun 04,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:20:57 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_generator.v 
+# -- Compiling module clock_generator
+# 
+# Top level modules:
+# 	clock_generator
+# End time: 12:20:57 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:20:57 on Jun 04,2026
+# vlog -reportprogress 300 ./audio_codec.v 
+# -- Compiling module audio_codec
+# 
+# Top level modules:
+# 	audio_codec
+# End time: 12:20:57 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:20:57 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_divider_8.sv 
+# -- Compiling module clock_divider_8
+# 
+# Top level modules:
+# 	clock_divider_8
+# End time: 12:20:57 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:20:57 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_divider_8_tb.sv 
+# -- Compiling module clock_divider_8_tb
+# 
+# Top level modules:
+# 	clock_divider_8_tb
+# End time: 12:20:58 on Jun 04,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 12:20:58 on Jun 04,2026, Elapsed time: 0:00:48
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work note_input_tb -Lf altera_mf_ver 
+# Start time: 12:20:59 on Jun 04,2026
+# Loading sv_std.std
+# Loading work.note_input_tb
+# Loading work.note_input
+# Loading work.note_input_controller
+# Loading work.note_input_datapath
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: mflessa  Hostname: EE-347PC07  ProcessID: 18752
+#           Attempting to use alternate WLF file "./wlft1nht3v".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft1nht3v
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Loading. Full = 0. Wren = 0. T= 1650
+# Loading. Full = 0. Wren = 1. T= 1750
+# Loading. Full = 0. Wren = 1. T= 1850
+# Loading. Full = 0. Wren = 1. T= 1950
+# Loading. Full = 0. Wren = 1. T= 2050
+# Loading. Full = 0. Wren = 1. T= 2150
+# Loading. Full = 0. Wren = 1. T= 2250
+# Loading. Full = 0. Wren = 1. T= 2350
+# Loading. Full = 0. Wren = 1. T= 2450
+# Loading. Full = 0. Wren = 1. T= 2550
+# Loading. Full = 0. Wren = 1. T= 2650
+# Loading. Full = 0. Wren = 1. T= 2750
+# Loading. Full = 0. Wren = 1. T= 2850
+# Loading. Full = 0. Wren = 1. T= 2950
+# Loading. Full = 0. Wren = 1. T= 3050
+# Loading. Full = 0. Wren = 1. T= 3150
+# Loading. Full = 0. Wren = 1. T= 3250
+# Loading. Full = 0. Wren = 1. T= 3350
+# Loading. Full = 0. Wren = 1. T= 3450
+# Loading. Full = 0. Wren = 1. T= 3550
+# Loading. Full = 0. Wren = 1. T= 3650
+# Loading. Full = 0. Wren = 1. T= 3750
+# Loading. Full = 0. Wren = 1. T= 3850
+# Loading. Full = 0. Wren = 1. T= 3950
+# Loading. Full = 0. Wren = 1. T= 4050
+# Loading. Full = 0. Wren = 1. T= 4150
+# Loading. Full = 0. Wren = 1. T= 4250
+# Loading. Full = 0. Wren = 1. T= 4350
+# Loading. Full = 0. Wren = 1. T= 4450
+# Loading. Full = 0. Wren = 1. T= 4550
+# Loading. Full = 0. Wren = 1. T= 4650
+# Loading. Full = 0. Wren = 1. T= 4750
+# Loading. Full = 0. Wren = 1. T= 4850
+# Loading. Full = 0. Wren = 1. T= 4950
+# Loading. Full = 0. Wren = 1. T= 5050
+# Loading. Full = 0. Wren = 1. T= 5150
+# Loading. Full = 0. Wren = 1. T= 5250
+# Loading. Full = 0. Wren = 1. T= 5350
+# Loading. Full = 0. Wren = 1. T= 5450
+# Loading. Full = 0. Wren = 1. T= 5550
+# Loading. Full = 0. Wren = 1. T= 5650
+# Loading. Full = 0. Wren = 1. T= 5750
+# Loading. Full = 0. Wren = 1. T= 5850
+# Loading. Full = 0. Wren = 1. T= 5950
+# Loading. Full = 0. Wren = 1. T= 6050
+# Loading. Full = 0. Wren = 1. T= 6150
+# Loading. Full = 0. Wren = 1. T= 6250
+# Loading. Full = 0. Wren = 1. T= 6350
+# Loading. Full = 0. Wren = 1. T= 6450
+# Loading. Full = 0. Wren = 1. T= 6550
+# Loading. Full = 0. Wren = 1. T= 6650
+# Loading. Full = 0. Wren = 1. T= 6750
+# Loading. Full = 0. Wren = 1. T= 6850
+# Loading. Full = 0. Wren = 1. T= 6950
+# Loading. Full = 0. Wren = 1. T= 7050
+# Loading. Full = 0. Wren = 1. T= 7150
+# Loading. Full = 0. Wren = 1. T= 7250
+# Loading. Full = 0. Wren = 1. T= 7350
+# Loading. Full = 0. Wren = 1. T= 7450
+# Loading. Full = 0. Wren = 1. T= 7550
+# Loading. Full = 0. Wren = 1. T= 7650
+# Loading. Full = 0. Wren = 1. T= 7750
+# Loading. Full = 0. Wren = 1. T= 7850
+# Loading. Full = 0. Wren = 1. T= 7950
+# Loading. Full = 0. Wren = 1. T= 8050
+# Loading. Full = 0. Wren = 1. T= 8150
+# Loading. Full = 0. Wren = 1. T= 8250
+# Loading. Full = 0. Wren = 1. T= 8350
+# Loading. Full = 0. Wren = 1. T= 8450
+# Loading. Full = 0. Wren = 1. T= 8550
+# Loading. Full = 0. Wren = 1. T= 8650
+# Loading. Full = 0. Wren = 1. T= 8750
+# Loading. Full = 0. Wren = 1. T= 8850
+# Loading. Full = 0. Wren = 1. T= 8950
+# Loading. Full = 0. Wren = 1. T= 9050
+# Loading. Full = 0. Wren = 1. T= 9150
+# Loading. Full = 0. Wren = 1. T= 9250
+# Loading. Full = 0. Wren = 1. T= 9350
+# Loading. Full = 0. Wren = 1. T= 9450
+# Loading. Full = 0. Wren = 1. T= 9550
+# Loading. Full = 0. Wren = 1. T= 9650
+# Loading. Full = 0. Wren = 1. T= 9750
+# Loading. Full = 0. Wren = 1. T= 9850
+# Loading. Full = 0. Wren = 1. T= 9950
+# Loading. Full = 0. Wren = 1. T= 10050
+# Loading. Full = 0. Wren = 1. T= 10150
+# Loading. Full = 0. Wren = 1. T= 10250
+# Loading. Full = 0. Wren = 1. T= 10350
+# Loading. Full = 0. Wren = 1. T= 10450
+# Loading. Full = 0. Wren = 1. T= 10550
+# Loading. Full = 0. Wren = 1. T= 10650
+# Loading. Full = 0. Wren = 1. T= 10750
+# Loading. Full = 0. Wren = 1. T= 10850
+# Loading. Full = 0. Wren = 1. T= 10950
+# Loading. Full = 0. Wren = 1. T= 11050
+# Loading. Full = 0. Wren = 1. T= 11150
+# Loading. Full = 0. Wren = 1. T= 11250
+# Loading. Full = 0. Wren = 1. T= 11350
+# Loading. Full = 0. Wren = 1. T= 11450
+# Loading. Full = 0. Wren = 1. T= 11550
+# Loading. Full = 0. Wren = 1. T= 11650
+# Loading. Full = 0. Wren = 1. T= 11750
+# Loading. Full = 0. Wren = 1. T= 11850
+# Loading. Full = 0. Wren = 1. T= 11950
+# Loading. Full = 0. Wren = 1. T= 12050
+# Loading. Full = 0. Wren = 1. T= 12150
+# Loading. Full = 0. Wren = 1. T= 12250
+# Loading. Full = 0. Wren = 1. T= 12350
+# Loading. Full = 0. Wren = 1. T= 12450
+# Loading. Full = 0. Wren = 1. T= 12550
+# Loading. Full = 0. Wren = 1. T= 12650
+# Loading. Full = 0. Wren = 1. T= 12750
+# Loading. Full = 0. Wren = 1. T= 12850
+# Loading. Full = 0. Wren = 1. T= 12950
+# Loading. Full = 0. Wren = 1. T= 13050
+# DONE LOADING! Full = 1. Wren = 0. T = 13150
+# Loading. Full = 1. Wren = 0. Stop = 0. T= 13550
+# Loading. Full = 0. Wren = 0. Stop = 0. T= 13650
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 13750
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 13850
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 13950
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14050
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14150
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14250
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14350
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14450
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14550
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14650
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14750
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14850
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14950
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15050
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15150
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15250
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15350
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15450
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15550
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15650
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15750
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15850
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15950
+# DONE LOADING! Stop = 1. Full = 0. Wren = 1. T = 16150
+# DONE LOADING. Full = 1. Wren = 0. Stop = 1. T= 17050
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:22:14 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_tb.sv 
+# -- Compiling module note_input_tb
+# 
+# Top level modules:
+# 	note_input_tb
+# End time: 12:22:14 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:22:14 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_datapath.sv 
+# -- Compiling module note_input_datapath
+# 
+# Top level modules:
+# 	note_input_datapath
+# End time: 12:22:15 on Jun 04,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:22:15 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_controller.sv 
+# -- Compiling module note_input_controller
+# 
+# Top level modules:
+# 	note_input_controller
+# End time: 12:22:15 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:22:15 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input.sv 
+# -- Compiling module note_input
+# 
+# Top level modules:
+# 	note_input
+# End time: 12:22:15 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:22:15 on Jun 04,2026
+# vlog -reportprogress 300 ./noise_gen.sv 
+# -- Compiling module noise_gen
+# -- Compiling module noise_gen_testbench
+# 
+# Top level modules:
+# 	noise_gen_testbench
+# End time: 12:22:15 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:22:15 on Jun 04,2026
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 12:22:16 on Jun 04,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:22:16 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_generator.v 
+# -- Compiling module clock_generator
+# 
+# Top level modules:
+# 	clock_generator
+# End time: 12:22:16 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:22:16 on Jun 04,2026
+# vlog -reportprogress 300 ./audio_codec.v 
+# -- Compiling module audio_codec
+# 
+# Top level modules:
+# 	audio_codec
+# End time: 12:22:16 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:22:16 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_divider_8.sv 
+# -- Compiling module clock_divider_8
+# 
+# Top level modules:
+# 	clock_divider_8
+# End time: 12:22:17 on Jun 04,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:22:17 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_divider_8_tb.sv 
+# -- Compiling module clock_divider_8_tb
+# 
+# Top level modules:
+# 	clock_divider_8_tb
+# End time: 12:22:17 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:22:18 on Jun 04,2026, Elapsed time: 0:01:19
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work note_input_tb -Lf altera_mf_ver 
+# Start time: 12:22:18 on Jun 04,2026
+# Loading sv_std.std
+# Loading work.note_input_tb
+# Loading work.note_input
+# Loading work.note_input_controller
+# Loading work.note_input_datapath
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: mflessa  Hostname: EE-347PC07  ProcessID: 18752
+#           Attempting to use alternate WLF file "./wlftdjnrmr".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftdjnrmr
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Loading. Full = 0. Wren = 0. T= 1650
+# Loading. Full = 0. Wren = 1. T= 1750
+# Loading. Full = 0. Wren = 1. T= 1850
+# Loading. Full = 0. Wren = 1. T= 1950
+# Loading. Full = 0. Wren = 1. T= 2050
+# Loading. Full = 0. Wren = 1. T= 2150
+# Loading. Full = 0. Wren = 1. T= 2250
+# Loading. Full = 0. Wren = 1. T= 2350
+# Loading. Full = 0. Wren = 1. T= 2450
+# Loading. Full = 0. Wren = 1. T= 2550
+# Loading. Full = 0. Wren = 1. T= 2650
+# Loading. Full = 0. Wren = 1. T= 2750
+# Loading. Full = 0. Wren = 1. T= 2850
+# Loading. Full = 0. Wren = 1. T= 2950
+# Loading. Full = 0. Wren = 1. T= 3050
+# Loading. Full = 0. Wren = 1. T= 3150
+# Loading. Full = 0. Wren = 1. T= 3250
+# Loading. Full = 0. Wren = 1. T= 3350
+# Loading. Full = 0. Wren = 1. T= 3450
+# Loading. Full = 0. Wren = 1. T= 3550
+# Loading. Full = 0. Wren = 1. T= 3650
+# Loading. Full = 0. Wren = 1. T= 3750
+# Loading. Full = 0. Wren = 1. T= 3850
+# Loading. Full = 0. Wren = 1. T= 3950
+# Loading. Full = 0. Wren = 1. T= 4050
+# Loading. Full = 0. Wren = 1. T= 4150
+# Loading. Full = 0. Wren = 1. T= 4250
+# Loading. Full = 0. Wren = 1. T= 4350
+# Loading. Full = 0. Wren = 1. T= 4450
+# Loading. Full = 0. Wren = 1. T= 4550
+# Loading. Full = 0. Wren = 1. T= 4650
+# Loading. Full = 0. Wren = 1. T= 4750
+# Loading. Full = 0. Wren = 1. T= 4850
+# Loading. Full = 0. Wren = 1. T= 4950
+# Loading. Full = 0. Wren = 1. T= 5050
+# Loading. Full = 0. Wren = 1. T= 5150
+# Loading. Full = 0. Wren = 1. T= 5250
+# Loading. Full = 0. Wren = 1. T= 5350
+# Loading. Full = 0. Wren = 1. T= 5450
+# Loading. Full = 0. Wren = 1. T= 5550
+# Loading. Full = 0. Wren = 1. T= 5650
+# Loading. Full = 0. Wren = 1. T= 5750
+# Loading. Full = 0. Wren = 1. T= 5850
+# Loading. Full = 0. Wren = 1. T= 5950
+# Loading. Full = 0. Wren = 1. T= 6050
+# Loading. Full = 0. Wren = 1. T= 6150
+# Loading. Full = 0. Wren = 1. T= 6250
+# Loading. Full = 0. Wren = 1. T= 6350
+# Loading. Full = 0. Wren = 1. T= 6450
+# Loading. Full = 0. Wren = 1. T= 6550
+# Loading. Full = 0. Wren = 1. T= 6650
+# Loading. Full = 0. Wren = 1. T= 6750
+# Loading. Full = 0. Wren = 1. T= 6850
+# Loading. Full = 0. Wren = 1. T= 6950
+# Loading. Full = 0. Wren = 1. T= 7050
+# Loading. Full = 0. Wren = 1. T= 7150
+# Loading. Full = 0. Wren = 1. T= 7250
+# Loading. Full = 0. Wren = 1. T= 7350
+# Loading. Full = 0. Wren = 1. T= 7450
+# Loading. Full = 0. Wren = 1. T= 7550
+# Loading. Full = 0. Wren = 1. T= 7650
+# Loading. Full = 0. Wren = 1. T= 7750
+# Loading. Full = 0. Wren = 1. T= 7850
+# Loading. Full = 0. Wren = 1. T= 7950
+# Loading. Full = 0. Wren = 1. T= 8050
+# Loading. Full = 0. Wren = 1. T= 8150
+# Loading. Full = 0. Wren = 1. T= 8250
+# Loading. Full = 0. Wren = 1. T= 8350
+# Loading. Full = 0. Wren = 1. T= 8450
+# Loading. Full = 0. Wren = 1. T= 8550
+# Loading. Full = 0. Wren = 1. T= 8650
+# Loading. Full = 0. Wren = 1. T= 8750
+# Loading. Full = 0. Wren = 1. T= 8850
+# Loading. Full = 0. Wren = 1. T= 8950
+# Loading. Full = 0. Wren = 1. T= 9050
+# Loading. Full = 0. Wren = 1. T= 9150
+# Loading. Full = 0. Wren = 1. T= 9250
+# Loading. Full = 0. Wren = 1. T= 9350
+# Loading. Full = 0. Wren = 1. T= 9450
+# Loading. Full = 0. Wren = 1. T= 9550
+# Loading. Full = 0. Wren = 1. T= 9650
+# Loading. Full = 0. Wren = 1. T= 9750
+# Loading. Full = 0. Wren = 1. T= 9850
+# Loading. Full = 0. Wren = 1. T= 9950
+# Loading. Full = 0. Wren = 1. T= 10050
+# Loading. Full = 0. Wren = 1. T= 10150
+# Loading. Full = 0. Wren = 1. T= 10250
+# Loading. Full = 0. Wren = 1. T= 10350
+# Loading. Full = 0. Wren = 1. T= 10450
+# Loading. Full = 0. Wren = 1. T= 10550
+# Loading. Full = 0. Wren = 1. T= 10650
+# Loading. Full = 0. Wren = 1. T= 10750
+# Loading. Full = 0. Wren = 1. T= 10850
+# Loading. Full = 0. Wren = 1. T= 10950
+# Loading. Full = 0. Wren = 1. T= 11050
+# Loading. Full = 0. Wren = 1. T= 11150
+# Loading. Full = 0. Wren = 1. T= 11250
+# Loading. Full = 0. Wren = 1. T= 11350
+# Loading. Full = 0. Wren = 1. T= 11450
+# Loading. Full = 0. Wren = 1. T= 11550
+# Loading. Full = 0. Wren = 1. T= 11650
+# Loading. Full = 0. Wren = 1. T= 11750
+# Loading. Full = 0. Wren = 1. T= 11850
+# Loading. Full = 0. Wren = 1. T= 11950
+# Loading. Full = 0. Wren = 1. T= 12050
+# Loading. Full = 0. Wren = 1. T= 12150
+# Loading. Full = 0. Wren = 1. T= 12250
+# Loading. Full = 0. Wren = 1. T= 12350
+# Loading. Full = 0. Wren = 1. T= 12450
+# Loading. Full = 0. Wren = 1. T= 12550
+# Loading. Full = 0. Wren = 1. T= 12650
+# Loading. Full = 0. Wren = 1. T= 12750
+# Loading. Full = 0. Wren = 1. T= 12850
+# Loading. Full = 0. Wren = 1. T= 12950
+# Loading. Full = 0. Wren = 1. T= 13050
+# DONE LOADING! Full = 1. Wren = 0. T = 13150
+# Loading. Full = 1. Wren = 0. Stop = 0. T= 13550
+# Loading. Full = 0. Wren = 0. Stop = 0. T= 13650
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 13750
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 13850
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 13950
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14050
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14150
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14250
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14350
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14450
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14550
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14650
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14750
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14850
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14950
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15050
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15150
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15250
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15350
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15450
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15550
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15650
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15750
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15850
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15950
+# DONE LOADING! Stop = 1. Full = 0. Wren = 1. T = 16150
+# Loading. Full = 1. Wren = 0. Stop = 1. T= 17050
+# ** Note: $stop    : ./note_input_tb.sv(77)
+#    Time: 17650 ps  Iteration: 1  Instance: /note_input_tb
+# Break in Module note_input_tb at ./note_input_tb.sv line 77
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:23:01 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_tb.sv 
+# -- Compiling module note_input_tb
+# 
+# Top level modules:
+# 	note_input_tb
+# End time: 12:23:02 on Jun 04,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:23:02 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_datapath.sv 
+# -- Compiling module note_input_datapath
+# 
+# Top level modules:
+# 	note_input_datapath
+# End time: 12:23:02 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:23:02 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_controller.sv 
+# -- Compiling module note_input_controller
+# 
+# Top level modules:
+# 	note_input_controller
+# End time: 12:23:02 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:23:02 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input.sv 
+# -- Compiling module note_input
+# 
+# Top level modules:
+# 	note_input
+# End time: 12:23:02 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:23:02 on Jun 04,2026
+# vlog -reportprogress 300 ./noise_gen.sv 
+# -- Compiling module noise_gen
+# -- Compiling module noise_gen_testbench
+# 
+# Top level modules:
+# 	noise_gen_testbench
+# End time: 12:23:03 on Jun 04,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:23:03 on Jun 04,2026
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 12:23:03 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:23:03 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_generator.v 
+# -- Compiling module clock_generator
+# 
+# Top level modules:
+# 	clock_generator
+# End time: 12:23:03 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:23:03 on Jun 04,2026
+# vlog -reportprogress 300 ./audio_codec.v 
+# -- Compiling module audio_codec
+# 
+# Top level modules:
+# 	audio_codec
+# End time: 12:23:03 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:23:03 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_divider_8.sv 
+# -- Compiling module clock_divider_8
+# 
+# Top level modules:
+# 	clock_divider_8
+# End time: 12:23:04 on Jun 04,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:23:04 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_divider_8_tb.sv 
+# -- Compiling module clock_divider_8_tb
+# 
+# Top level modules:
+# 	clock_divider_8_tb
+# End time: 12:23:04 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:23:06 on Jun 04,2026, Elapsed time: 0:00:48
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work note_input_tb -Lf altera_mf_ver 
+# Start time: 12:23:06 on Jun 04,2026
+# Loading sv_std.std
+# Loading work.note_input_tb
+# Loading work.note_input
+# Loading work.note_input_controller
+# Loading work.note_input_datapath
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: mflessa  Hostname: EE-347PC07  ProcessID: 18752
+#           Attempting to use alternate WLF file "./wlftrvxcf8".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftrvxcf8
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Loading. Full = 0. Wren = 0. T= 1650
+# Loading. Full = 0. Wren = 1. T= 1750
+# Loading. Full = 0. Wren = 1. T= 1850
+# Loading. Full = 0. Wren = 1. T= 1950
+# Loading. Full = 0. Wren = 1. T= 2050
+# Loading. Full = 0. Wren = 1. T= 2150
+# Loading. Full = 0. Wren = 1. T= 2250
+# Loading. Full = 0. Wren = 1. T= 2350
+# Loading. Full = 0. Wren = 1. T= 2450
+# Loading. Full = 0. Wren = 1. T= 2550
+# Loading. Full = 0. Wren = 1. T= 2650
+# Loading. Full = 0. Wren = 1. T= 2750
+# Loading. Full = 0. Wren = 1. T= 2850
+# Loading. Full = 0. Wren = 1. T= 2950
+# Loading. Full = 0. Wren = 1. T= 3050
+# Loading. Full = 0. Wren = 1. T= 3150
+# Loading. Full = 0. Wren = 1. T= 3250
+# Loading. Full = 0. Wren = 1. T= 3350
+# Loading. Full = 0. Wren = 1. T= 3450
+# Loading. Full = 0. Wren = 1. T= 3550
+# Loading. Full = 0. Wren = 1. T= 3650
+# Loading. Full = 0. Wren = 1. T= 3750
+# Loading. Full = 0. Wren = 1. T= 3850
+# Loading. Full = 0. Wren = 1. T= 3950
+# Loading. Full = 0. Wren = 1. T= 4050
+# Loading. Full = 0. Wren = 1. T= 4150
+# Loading. Full = 0. Wren = 1. T= 4250
+# Loading. Full = 0. Wren = 1. T= 4350
+# Loading. Full = 0. Wren = 1. T= 4450
+# Loading. Full = 0. Wren = 1. T= 4550
+# Loading. Full = 0. Wren = 1. T= 4650
+# Loading. Full = 0. Wren = 1. T= 4750
+# Loading. Full = 0. Wren = 1. T= 4850
+# Loading. Full = 0. Wren = 1. T= 4950
+# Loading. Full = 0. Wren = 1. T= 5050
+# Loading. Full = 0. Wren = 1. T= 5150
+# Loading. Full = 0. Wren = 1. T= 5250
+# Loading. Full = 0. Wren = 1. T= 5350
+# Loading. Full = 0. Wren = 1. T= 5450
+# Loading. Full = 0. Wren = 1. T= 5550
+# Loading. Full = 0. Wren = 1. T= 5650
+# Loading. Full = 0. Wren = 1. T= 5750
+# Loading. Full = 0. Wren = 1. T= 5850
+# Loading. Full = 0. Wren = 1. T= 5950
+# Loading. Full = 0. Wren = 1. T= 6050
+# Loading. Full = 0. Wren = 1. T= 6150
+# Loading. Full = 0. Wren = 1. T= 6250
+# Loading. Full = 0. Wren = 1. T= 6350
+# Loading. Full = 0. Wren = 1. T= 6450
+# Loading. Full = 0. Wren = 1. T= 6550
+# Loading. Full = 0. Wren = 1. T= 6650
+# Loading. Full = 0. Wren = 1. T= 6750
+# Loading. Full = 0. Wren = 1. T= 6850
+# Loading. Full = 0. Wren = 1. T= 6950
+# Loading. Full = 0. Wren = 1. T= 7050
+# Loading. Full = 0. Wren = 1. T= 7150
+# Loading. Full = 0. Wren = 1. T= 7250
+# Loading. Full = 0. Wren = 1. T= 7350
+# Loading. Full = 0. Wren = 1. T= 7450
+# Loading. Full = 0. Wren = 1. T= 7550
+# Loading. Full = 0. Wren = 1. T= 7650
+# Loading. Full = 0. Wren = 1. T= 7750
+# Loading. Full = 0. Wren = 1. T= 7850
+# Loading. Full = 0. Wren = 1. T= 7950
+# Loading. Full = 0. Wren = 1. T= 8050
+# Loading. Full = 0. Wren = 1. T= 8150
+# Loading. Full = 0. Wren = 1. T= 8250
+# Loading. Full = 0. Wren = 1. T= 8350
+# Loading. Full = 0. Wren = 1. T= 8450
+# Loading. Full = 0. Wren = 1. T= 8550
+# Loading. Full = 0. Wren = 1. T= 8650
+# Loading. Full = 0. Wren = 1. T= 8750
+# Loading. Full = 0. Wren = 1. T= 8850
+# Loading. Full = 0. Wren = 1. T= 8950
+# Loading. Full = 0. Wren = 1. T= 9050
+# Loading. Full = 0. Wren = 1. T= 9150
+# Loading. Full = 0. Wren = 1. T= 9250
+# Loading. Full = 0. Wren = 1. T= 9350
+# Loading. Full = 0. Wren = 1. T= 9450
+# Loading. Full = 0. Wren = 1. T= 9550
+# Loading. Full = 0. Wren = 1. T= 9650
+# Loading. Full = 0. Wren = 1. T= 9750
+# Loading. Full = 0. Wren = 1. T= 9850
+# Loading. Full = 0. Wren = 1. T= 9950
+# Loading. Full = 0. Wren = 1. T= 10050
+# Loading. Full = 0. Wren = 1. T= 10150
+# Loading. Full = 0. Wren = 1. T= 10250
+# Loading. Full = 0. Wren = 1. T= 10350
+# Loading. Full = 0. Wren = 1. T= 10450
+# Loading. Full = 0. Wren = 1. T= 10550
+# Loading. Full = 0. Wren = 1. T= 10650
+# Loading. Full = 0. Wren = 1. T= 10750
+# Loading. Full = 0. Wren = 1. T= 10850
+# Loading. Full = 0. Wren = 1. T= 10950
+# Loading. Full = 0. Wren = 1. T= 11050
+# Loading. Full = 0. Wren = 1. T= 11150
+# Loading. Full = 0. Wren = 1. T= 11250
+# Loading. Full = 0. Wren = 1. T= 11350
+# Loading. Full = 0. Wren = 1. T= 11450
+# Loading. Full = 0. Wren = 1. T= 11550
+# Loading. Full = 0. Wren = 1. T= 11650
+# Loading. Full = 0. Wren = 1. T= 11750
+# Loading. Full = 0. Wren = 1. T= 11850
+# Loading. Full = 0. Wren = 1. T= 11950
+# Loading. Full = 0. Wren = 1. T= 12050
+# Loading. Full = 0. Wren = 1. T= 12150
+# Loading. Full = 0. Wren = 1. T= 12250
+# Loading. Full = 0. Wren = 1. T= 12350
+# Loading. Full = 0. Wren = 1. T= 12450
+# Loading. Full = 0. Wren = 1. T= 12550
+# Loading. Full = 0. Wren = 1. T= 12650
+# Loading. Full = 0. Wren = 1. T= 12750
+# Loading. Full = 0. Wren = 1. T= 12850
+# Loading. Full = 0. Wren = 1. T= 12950
+# Loading. Full = 0. Wren = 1. T= 13050
+# DONE LOADING! Full = 1. Wren = 0. T = 13150
+# Loading. Full = 1. Wren = 0. Stop = 0. T= 13550
+# Loading. Full = 0. Wren = 0. Stop = 0. T= 13650
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 13750
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 13850
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 13950
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14050
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14150
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14250
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14350
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14450
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14550
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14650
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14750
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14850
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14950
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15050
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15150
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15250
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15350
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15450
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15550
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15650
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15750
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15850
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15950
+# DONE LOADING! Stop = 1. Full = 0. Wren = 1. T = 16150
+# DONE LOADING! Full = 1. Wren = 0. Stop = 1. T= 17050
+# ** Note: $stop    : ./note_input_tb.sv(77)
+#    Time: 17650 ps  Iteration: 1  Instance: /note_input_tb
+# Break in Module note_input_tb at ./note_input_tb.sv line 77
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:24:32 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_tb.sv 
+# -- Compiling module note_input_tb
+# 
+# Top level modules:
+# 	note_input_tb
+# End time: 12:24:33 on Jun 04,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:24:33 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_datapath.sv 
+# -- Compiling module note_input_datapath
+# 
+# Top level modules:
+# 	note_input_datapath
+# End time: 12:24:33 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:24:33 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_controller.sv 
+# -- Compiling module note_input_controller
+# 
+# Top level modules:
+# 	note_input_controller
+# End time: 12:24:33 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:24:33 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input.sv 
+# -- Compiling module note_input
+# 
+# Top level modules:
+# 	note_input
+# End time: 12:24:34 on Jun 04,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:24:34 on Jun 04,2026
+# vlog -reportprogress 300 ./noise_gen.sv 
+# -- Compiling module noise_gen
+# -- Compiling module noise_gen_testbench
+# 
+# Top level modules:
+# 	noise_gen_testbench
+# End time: 12:24:34 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:24:34 on Jun 04,2026
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 12:24:34 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:24:34 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_generator.v 
+# -- Compiling module clock_generator
+# 
+# Top level modules:
+# 	clock_generator
+# End time: 12:24:34 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:24:34 on Jun 04,2026
+# vlog -reportprogress 300 ./audio_codec.v 
+# -- Compiling module audio_codec
+# 
+# Top level modules:
+# 	audio_codec
+# End time: 12:24:35 on Jun 04,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:24:35 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_divider_8.sv 
+# -- Compiling module clock_divider_8
+# 
+# Top level modules:
+# 	clock_divider_8
+# End time: 12:24:35 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:24:35 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_divider_8_tb.sv 
+# -- Compiling module clock_divider_8_tb
+# 
+# Top level modules:
+# 	clock_divider_8_tb
+# End time: 12:24:35 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:24:38 on Jun 04,2026, Elapsed time: 0:01:32
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work note_input_tb -Lf altera_mf_ver 
+# Start time: 12:24:38 on Jun 04,2026
+# Loading sv_std.std
+# Loading work.note_input_tb
+# Loading work.note_input
+# Loading work.note_input_controller
+# Loading work.note_input_datapath
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: mflessa  Hostname: EE-347PC07  ProcessID: 18752
+#           Attempting to use alternate WLF file "./wlftfzn886".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftfzn886
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Loading. Full = 0. Wren = 0. T= 1650
+# Loading. Full = 0. Wren = 1. T= 1750
+# Loading. Full = 0. Wren = 1. T= 1850
+# Loading. Full = 0. Wren = 1. T= 1950
+# Loading. Full = 0. Wren = 1. T= 2050
+# Loading. Full = 0. Wren = 1. T= 2150
+# Loading. Full = 0. Wren = 1. T= 2250
+# Loading. Full = 0. Wren = 1. T= 2350
+# Loading. Full = 0. Wren = 1. T= 2450
+# Loading. Full = 0. Wren = 1. T= 2550
+# Loading. Full = 0. Wren = 1. T= 2650
+# Loading. Full = 0. Wren = 1. T= 2750
+# Loading. Full = 0. Wren = 1. T= 2850
+# Loading. Full = 0. Wren = 1. T= 2950
+# Loading. Full = 0. Wren = 1. T= 3050
+# Loading. Full = 0. Wren = 1. T= 3150
+# Loading. Full = 0. Wren = 1. T= 3250
+# Loading. Full = 0. Wren = 1. T= 3350
+# Loading. Full = 0. Wren = 1. T= 3450
+# Loading. Full = 0. Wren = 1. T= 3550
+# Loading. Full = 0. Wren = 1. T= 3650
+# Loading. Full = 0. Wren = 1. T= 3750
+# Loading. Full = 0. Wren = 1. T= 3850
+# Loading. Full = 0. Wren = 1. T= 3950
+# Loading. Full = 0. Wren = 1. T= 4050
+# Loading. Full = 0. Wren = 1. T= 4150
+# Loading. Full = 0. Wren = 1. T= 4250
+# Loading. Full = 0. Wren = 1. T= 4350
+# Loading. Full = 0. Wren = 1. T= 4450
+# Loading. Full = 0. Wren = 1. T= 4550
+# Loading. Full = 0. Wren = 1. T= 4650
+# Loading. Full = 0. Wren = 1. T= 4750
+# Loading. Full = 0. Wren = 1. T= 4850
+# Loading. Full = 0. Wren = 1. T= 4950
+# Loading. Full = 0. Wren = 1. T= 5050
+# Loading. Full = 0. Wren = 1. T= 5150
+# Loading. Full = 0. Wren = 1. T= 5250
+# Loading. Full = 0. Wren = 1. T= 5350
+# Loading. Full = 0. Wren = 1. T= 5450
+# Loading. Full = 0. Wren = 1. T= 5550
+# Loading. Full = 0. Wren = 1. T= 5650
+# Loading. Full = 0. Wren = 1. T= 5750
+# Loading. Full = 0. Wren = 1. T= 5850
+# Loading. Full = 0. Wren = 1. T= 5950
+# Loading. Full = 0. Wren = 1. T= 6050
+# Loading. Full = 0. Wren = 1. T= 6150
+# Loading. Full = 0. Wren = 1. T= 6250
+# Loading. Full = 0. Wren = 1. T= 6350
+# Loading. Full = 0. Wren = 1. T= 6450
+# Loading. Full = 0. Wren = 1. T= 6550
+# Loading. Full = 0. Wren = 1. T= 6650
+# Loading. Full = 0. Wren = 1. T= 6750
+# Loading. Full = 0. Wren = 1. T= 6850
+# Loading. Full = 0. Wren = 1. T= 6950
+# Loading. Full = 0. Wren = 1. T= 7050
+# Loading. Full = 0. Wren = 1. T= 7150
+# Loading. Full = 0. Wren = 1. T= 7250
+# Loading. Full = 0. Wren = 1. T= 7350
+# Loading. Full = 0. Wren = 1. T= 7450
+# Loading. Full = 0. Wren = 1. T= 7550
+# Loading. Full = 0. Wren = 1. T= 7650
+# Loading. Full = 0. Wren = 1. T= 7750
+# Loading. Full = 0. Wren = 1. T= 7850
+# Loading. Full = 0. Wren = 1. T= 7950
+# Loading. Full = 0. Wren = 1. T= 8050
+# Loading. Full = 0. Wren = 1. T= 8150
+# Loading. Full = 0. Wren = 1. T= 8250
+# Loading. Full = 0. Wren = 1. T= 8350
+# Loading. Full = 0. Wren = 1. T= 8450
+# Loading. Full = 0. Wren = 1. T= 8550
+# Loading. Full = 0. Wren = 1. T= 8650
+# Loading. Full = 0. Wren = 1. T= 8750
+# Loading. Full = 0. Wren = 1. T= 8850
+# Loading. Full = 0. Wren = 1. T= 8950
+# Loading. Full = 0. Wren = 1. T= 9050
+# Loading. Full = 0. Wren = 1. T= 9150
+# Loading. Full = 0. Wren = 1. T= 9250
+# Loading. Full = 0. Wren = 1. T= 9350
+# Loading. Full = 0. Wren = 1. T= 9450
+# Loading. Full = 0. Wren = 1. T= 9550
+# Loading. Full = 0. Wren = 1. T= 9650
+# Loading. Full = 0. Wren = 1. T= 9750
+# Loading. Full = 0. Wren = 1. T= 9850
+# Loading. Full = 0. Wren = 1. T= 9950
+# Loading. Full = 0. Wren = 1. T= 10050
+# Loading. Full = 0. Wren = 1. T= 10150
+# Loading. Full = 0. Wren = 1. T= 10250
+# Loading. Full = 0. Wren = 1. T= 10350
+# Loading. Full = 0. Wren = 1. T= 10450
+# Loading. Full = 0. Wren = 1. T= 10550
+# Loading. Full = 0. Wren = 1. T= 10650
+# Loading. Full = 0. Wren = 1. T= 10750
+# Loading. Full = 0. Wren = 1. T= 10850
+# Loading. Full = 0. Wren = 1. T= 10950
+# Loading. Full = 0. Wren = 1. T= 11050
+# Loading. Full = 0. Wren = 1. T= 11150
+# Loading. Full = 0. Wren = 1. T= 11250
+# Loading. Full = 0. Wren = 1. T= 11350
+# Loading. Full = 0. Wren = 1. T= 11450
+# Loading. Full = 0. Wren = 1. T= 11550
+# Loading. Full = 0. Wren = 1. T= 11650
+# Loading. Full = 0. Wren = 1. T= 11750
+# Loading. Full = 0. Wren = 1. T= 11850
+# Loading. Full = 0. Wren = 1. T= 11950
+# Loading. Full = 0. Wren = 1. T= 12050
+# Loading. Full = 0. Wren = 1. T= 12150
+# Loading. Full = 0. Wren = 1. T= 12250
+# Loading. Full = 0. Wren = 1. T= 12350
+# Loading. Full = 0. Wren = 1. T= 12450
+# Loading. Full = 0. Wren = 1. T= 12550
+# Loading. Full = 0. Wren = 1. T= 12650
+# Loading. Full = 0. Wren = 1. T= 12750
+# Loading. Full = 0. Wren = 1. T= 12850
+# Loading. Full = 0. Wren = 1. T= 12950
+# Loading. Full = 0. Wren = 1. T= 13050
+# DONE LOADING! Full = 1. Wren = 0. T = 13150
+# Loading. Full = 1. Wren = 0. Stop = 0. T= 13550
+# Loading. Full = 0. Wren = 0. Stop = 0. T= 13650
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 13750
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 13850
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 13950
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14050
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14150
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14250
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14350
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14450
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14550
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14650
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14750
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14850
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14950
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15050
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15150
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15250
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15350
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15450
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15550
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15650
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15750
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15850
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15950
+# DONE LOADING! Stop = 1. Full = 0. Wren = 1. T = 16150
+# DONE LOADING! Full = 0. Wren = 1. Stop = 0. T= 17050
+# ** Note: $stop    : ./note_input_tb.sv(78)
+#    Time: 17650 ps  Iteration: 1  Instance: /note_input_tb
+# Break in Module note_input_tb at ./note_input_tb.sv line 78
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:28:13 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_tb.sv 
+# -- Compiling module note_input_tb
+# 
+# Top level modules:
+# 	note_input_tb
+# End time: 12:28:13 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:28:13 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_datapath.sv 
+# -- Compiling module note_input_datapath
+# 
+# Top level modules:
+# 	note_input_datapath
+# End time: 12:28:13 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:28:13 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_controller.sv 
+# -- Compiling module note_input_controller
+# 
+# Top level modules:
+# 	note_input_controller
+# End time: 12:28:13 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:28:13 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input.sv 
+# -- Compiling module note_input
+# 
+# Top level modules:
+# 	note_input
+# End time: 12:28:14 on Jun 04,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:28:14 on Jun 04,2026
+# vlog -reportprogress 300 ./noise_gen.sv 
+# -- Compiling module noise_gen
+# -- Compiling module noise_gen_testbench
+# 
+# Top level modules:
+# 	noise_gen_testbench
+# End time: 12:28:14 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:28:14 on Jun 04,2026
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 12:28:14 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:28:14 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_generator.v 
+# -- Compiling module clock_generator
+# 
+# Top level modules:
+# 	clock_generator
+# End time: 12:28:14 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:28:14 on Jun 04,2026
+# vlog -reportprogress 300 ./audio_codec.v 
+# -- Compiling module audio_codec
+# 
+# Top level modules:
+# 	audio_codec
+# End time: 12:28:15 on Jun 04,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:28:15 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_divider_8.sv 
+# -- Compiling module clock_divider_8
+# 
+# Top level modules:
+# 	clock_divider_8
+# End time: 12:28:15 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:28:15 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_divider_8_tb.sv 
+# -- Compiling module clock_divider_8_tb
+# 
+# Top level modules:
+# 	clock_divider_8_tb
+# End time: 12:28:15 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:28:18 on Jun 04,2026, Elapsed time: 0:03:40
+# Errors: 1, Warnings: 3
+# vsim -voptargs=""+acc"" -t 1ps -lib work note_input_tb -Lf altera_mf_ver 
+# Start time: 12:28:18 on Jun 04,2026
+# Loading sv_std.std
+# Loading work.note_input_tb
+# Loading work.note_input
+# Loading work.note_input_controller
+# Loading work.note_input_datapath
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: mflessa  Hostname: EE-347PC07  ProcessID: 18752
+#           Attempting to use alternate WLF file "./wlft3qymiq".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft3qymiq
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Loading. Full = 0. Wren = 0. T= 1650
+# Loading. Full = 0. Wren = 1. T= 1750
+# Loading. Full = 0. Wren = 1. T= 1850
+# Loading. Full = 0. Wren = 1. T= 1950
+# Loading. Full = 0. Wren = 1. T= 2050
+# Loading. Full = 0. Wren = 1. T= 2150
+# Loading. Full = 0. Wren = 1. T= 2250
+# Loading. Full = 0. Wren = 1. T= 2350
+# Loading. Full = 0. Wren = 1. T= 2450
+# Loading. Full = 0. Wren = 1. T= 2550
+# Loading. Full = 0. Wren = 1. T= 2650
+# Loading. Full = 0. Wren = 1. T= 2750
+# Loading. Full = 0. Wren = 1. T= 2850
+# Loading. Full = 0. Wren = 1. T= 2950
+# Loading. Full = 0. Wren = 1. T= 3050
+# Loading. Full = 0. Wren = 1. T= 3150
+# Loading. Full = 0. Wren = 1. T= 3250
+# Loading. Full = 0. Wren = 1. T= 3350
+# Loading. Full = 0. Wren = 1. T= 3450
+# Loading. Full = 0. Wren = 1. T= 3550
+# Loading. Full = 0. Wren = 1. T= 3650
+# Loading. Full = 0. Wren = 1. T= 3750
+# Loading. Full = 0. Wren = 1. T= 3850
+# Loading. Full = 0. Wren = 1. T= 3950
+# Loading. Full = 0. Wren = 1. T= 4050
+# Loading. Full = 0. Wren = 1. T= 4150
+# Loading. Full = 0. Wren = 1. T= 4250
+# Loading. Full = 0. Wren = 1. T= 4350
+# Loading. Full = 0. Wren = 1. T= 4450
+# Loading. Full = 0. Wren = 1. T= 4550
+# Loading. Full = 0. Wren = 1. T= 4650
+# Loading. Full = 0. Wren = 1. T= 4750
+# Loading. Full = 0. Wren = 1. T= 4850
+# Loading. Full = 0. Wren = 1. T= 4950
+# Loading. Full = 0. Wren = 1. T= 5050
+# Loading. Full = 0. Wren = 1. T= 5150
+# Loading. Full = 0. Wren = 1. T= 5250
+# Loading. Full = 0. Wren = 1. T= 5350
+# Loading. Full = 0. Wren = 1. T= 5450
+# Loading. Full = 0. Wren = 1. T= 5550
+# Loading. Full = 0. Wren = 1. T= 5650
+# Loading. Full = 0. Wren = 1. T= 5750
+# Loading. Full = 0. Wren = 1. T= 5850
+# Loading. Full = 0. Wren = 1. T= 5950
+# Loading. Full = 0. Wren = 1. T= 6050
+# Loading. Full = 0. Wren = 1. T= 6150
+# Loading. Full = 0. Wren = 1. T= 6250
+# Loading. Full = 0. Wren = 1. T= 6350
+# Loading. Full = 0. Wren = 1. T= 6450
+# Loading. Full = 0. Wren = 1. T= 6550
+# Loading. Full = 0. Wren = 1. T= 6650
+# Loading. Full = 0. Wren = 1. T= 6750
+# Loading. Full = 0. Wren = 1. T= 6850
+# Loading. Full = 0. Wren = 1. T= 6950
+# Loading. Full = 0. Wren = 1. T= 7050
+# Loading. Full = 0. Wren = 1. T= 7150
+# Loading. Full = 0. Wren = 1. T= 7250
+# Loading. Full = 0. Wren = 1. T= 7350
+# Loading. Full = 0. Wren = 1. T= 7450
+# Loading. Full = 0. Wren = 1. T= 7550
+# Loading. Full = 0. Wren = 1. T= 7650
+# Loading. Full = 0. Wren = 1. T= 7750
+# Loading. Full = 0. Wren = 1. T= 7850
+# Loading. Full = 0. Wren = 1. T= 7950
+# Loading. Full = 0. Wren = 1. T= 8050
+# Loading. Full = 0. Wren = 1. T= 8150
+# Loading. Full = 0. Wren = 1. T= 8250
+# Loading. Full = 0. Wren = 1. T= 8350
+# Loading. Full = 0. Wren = 1. T= 8450
+# Loading. Full = 0. Wren = 1. T= 8550
+# Loading. Full = 0. Wren = 1. T= 8650
+# Loading. Full = 0. Wren = 1. T= 8750
+# Loading. Full = 0. Wren = 1. T= 8850
+# Loading. Full = 0. Wren = 1. T= 8950
+# Loading. Full = 0. Wren = 1. T= 9050
+# Loading. Full = 0. Wren = 1. T= 9150
+# Loading. Full = 0. Wren = 1. T= 9250
+# Loading. Full = 0. Wren = 1. T= 9350
+# Loading. Full = 0. Wren = 1. T= 9450
+# Loading. Full = 0. Wren = 1. T= 9550
+# Loading. Full = 0. Wren = 1. T= 9650
+# Loading. Full = 0. Wren = 1. T= 9750
+# Loading. Full = 0. Wren = 1. T= 9850
+# Loading. Full = 0. Wren = 1. T= 9950
+# Loading. Full = 0. Wren = 1. T= 10050
+# Loading. Full = 0. Wren = 1. T= 10150
+# Loading. Full = 0. Wren = 1. T= 10250
+# Loading. Full = 0. Wren = 1. T= 10350
+# Loading. Full = 0. Wren = 1. T= 10450
+# Loading. Full = 0. Wren = 1. T= 10550
+# Loading. Full = 0. Wren = 1. T= 10650
+# Loading. Full = 0. Wren = 1. T= 10750
+# Loading. Full = 0. Wren = 1. T= 10850
+# Loading. Full = 0. Wren = 1. T= 10950
+# Loading. Full = 0. Wren = 1. T= 11050
+# Loading. Full = 0. Wren = 1. T= 11150
+# Loading. Full = 0. Wren = 1. T= 11250
+# Loading. Full = 0. Wren = 1. T= 11350
+# Loading. Full = 0. Wren = 1. T= 11450
+# Loading. Full = 0. Wren = 1. T= 11550
+# Loading. Full = 0. Wren = 1. T= 11650
+# Loading. Full = 0. Wren = 1. T= 11750
+# Loading. Full = 0. Wren = 1. T= 11850
+# Loading. Full = 0. Wren = 1. T= 11950
+# Loading. Full = 0. Wren = 1. T= 12050
+# Loading. Full = 0. Wren = 1. T= 12150
+# Loading. Full = 0. Wren = 1. T= 12250
+# Loading. Full = 0. Wren = 1. T= 12350
+# Loading. Full = 0. Wren = 1. T= 12450
+# Loading. Full = 0. Wren = 1. T= 12550
+# Loading. Full = 0. Wren = 1. T= 12650
+# Loading. Full = 0. Wren = 1. T= 12750
+# Loading. Full = 0. Wren = 1. T= 12850
+# Loading. Full = 0. Wren = 1. T= 12950
+# Loading. Full = 0. Wren = 1. T= 13050
+# DONE LOADING! Full = 1. Wren = 0. T = 13150
+# Loading. Full = 1. Wren = 0. Stop = 0. T= 13550
+# Loading. Full = 0. Wren = 0. Stop = 0. T= 13650
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 13750
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 13850
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 13950
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14050
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14150
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14250
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14350
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14450
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14550
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14650
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14750
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14850
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14950
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15050
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15150
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15250
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15350
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15450
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15550
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15650
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15750
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15850
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15950
+# DONE LOADING! Stop = 1. Full = 0. Wren = 1. T = 16150
+# DONE LOADING! Full = 0. Wren = 0. Stop = 0. T= 17050
+# ** Note: $stop    : ./note_input_tb.sv(78)
+#    Time: 17650 ps  Iteration: 1  Instance: /note_input_tb
+# Break in Module note_input_tb at ./note_input_tb.sv line 78
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:38:38 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_tb.sv 
+# -- Compiling module note_input_tb
+# 
+# Top level modules:
+# 	note_input_tb
+# End time: 12:38:38 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:38:38 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_datapath.sv 
+# -- Compiling module note_input_datapath
+# 
+# Top level modules:
+# 	note_input_datapath
+# End time: 12:38:38 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:38:38 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_controller.sv 
+# -- Compiling module note_input_controller
+# 
+# Top level modules:
+# 	note_input_controller
+# End time: 12:38:38 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:38:39 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input.sv 
+# -- Compiling module note_input
+# 
+# Top level modules:
+# 	note_input
+# End time: 12:38:39 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:38:39 on Jun 04,2026
+# vlog -reportprogress 300 ./noise_gen.sv 
+# -- Compiling module noise_gen
+# -- Compiling module noise_gen_testbench
+# 
+# Top level modules:
+# 	noise_gen_testbench
+# End time: 12:38:39 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:38:39 on Jun 04,2026
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 12:38:39 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:38:39 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_generator.v 
+# -- Compiling module clock_generator
+# 
+# Top level modules:
+# 	clock_generator
+# End time: 12:38:40 on Jun 04,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:38:40 on Jun 04,2026
+# vlog -reportprogress 300 ./audio_codec.v 
+# -- Compiling module audio_codec
+# 
+# Top level modules:
+# 	audio_codec
+# End time: 12:38:40 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:38:40 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_divider_8.sv 
+# -- Compiling module clock_divider_8
+# 
+# Top level modules:
+# 	clock_divider_8
+# End time: 12:38:40 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:38:40 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_divider_8_tb.sv 
+# -- Compiling module clock_divider_8_tb
+# 
+# Top level modules:
+# 	clock_divider_8_tb
+# End time: 12:38:40 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:38:43 on Jun 04,2026, Elapsed time: 0:10:25
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work note_input_tb -Lf altera_mf_ver 
+# Start time: 12:38:43 on Jun 04,2026
+# Loading sv_std.std
+# Loading work.note_input_tb
+# Loading work.note_input
+# Loading work.note_input_controller
+# Loading work.note_input_datapath
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: mflessa  Hostname: EE-347PC07  ProcessID: 18752
+#           Attempting to use alternate WLF file "./wlftix42fm".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftix42fm
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Loading. Full = 0. Wren = 0. T= 1650
+# Loading. Full = 0. Wren = 1. T= 1750
+# Loading. Full = 0. Wren = 1. T= 1850
+# Loading. Full = 0. Wren = 1. T= 1950
+# Loading. Full = 0. Wren = 1. T= 2050
+# Loading. Full = 0. Wren = 1. T= 2150
+# Loading. Full = 0. Wren = 1. T= 2250
+# Loading. Full = 0. Wren = 1. T= 2350
+# Loading. Full = 0. Wren = 1. T= 2450
+# Loading. Full = 0. Wren = 1. T= 2550
+# Loading. Full = 0. Wren = 1. T= 2650
+# Loading. Full = 0. Wren = 1. T= 2750
+# Loading. Full = 0. Wren = 1. T= 2850
+# Loading. Full = 0. Wren = 1. T= 2950
+# Loading. Full = 0. Wren = 1. T= 3050
+# Loading. Full = 0. Wren = 1. T= 3150
+# Loading. Full = 0. Wren = 1. T= 3250
+# Loading. Full = 0. Wren = 1. T= 3350
+# Loading. Full = 0. Wren = 1. T= 3450
+# Loading. Full = 0. Wren = 1. T= 3550
+# Loading. Full = 0. Wren = 1. T= 3650
+# Loading. Full = 0. Wren = 1. T= 3750
+# Loading. Full = 0. Wren = 1. T= 3850
+# Loading. Full = 0. Wren = 1. T= 3950
+# Loading. Full = 0. Wren = 1. T= 4050
+# Loading. Full = 0. Wren = 1. T= 4150
+# Loading. Full = 0. Wren = 1. T= 4250
+# Loading. Full = 0. Wren = 1. T= 4350
+# Loading. Full = 0. Wren = 1. T= 4450
+# Loading. Full = 0. Wren = 1. T= 4550
+# Loading. Full = 0. Wren = 1. T= 4650
+# Loading. Full = 0. Wren = 1. T= 4750
+# Loading. Full = 0. Wren = 1. T= 4850
+# Loading. Full = 0. Wren = 1. T= 4950
+# Loading. Full = 0. Wren = 1. T= 5050
+# Loading. Full = 0. Wren = 1. T= 5150
+# Loading. Full = 0. Wren = 1. T= 5250
+# Loading. Full = 0. Wren = 1. T= 5350
+# Loading. Full = 0. Wren = 1. T= 5450
+# Loading. Full = 0. Wren = 1. T= 5550
+# Loading. Full = 0. Wren = 1. T= 5650
+# Loading. Full = 0. Wren = 1. T= 5750
+# Loading. Full = 0. Wren = 1. T= 5850
+# Loading. Full = 0. Wren = 1. T= 5950
+# Loading. Full = 0. Wren = 1. T= 6050
+# Loading. Full = 0. Wren = 1. T= 6150
+# Loading. Full = 0. Wren = 1. T= 6250
+# Loading. Full = 0. Wren = 1. T= 6350
+# Loading. Full = 0. Wren = 1. T= 6450
+# Loading. Full = 0. Wren = 1. T= 6550
+# Loading. Full = 0. Wren = 1. T= 6650
+# Loading. Full = 0. Wren = 1. T= 6750
+# Loading. Full = 0. Wren = 1. T= 6850
+# Loading. Full = 0. Wren = 1. T= 6950
+# Loading. Full = 0. Wren = 1. T= 7050
+# Loading. Full = 0. Wren = 1. T= 7150
+# Loading. Full = 0. Wren = 1. T= 7250
+# Loading. Full = 0. Wren = 1. T= 7350
+# Loading. Full = 0. Wren = 1. T= 7450
+# Loading. Full = 0. Wren = 1. T= 7550
+# Loading. Full = 0. Wren = 1. T= 7650
+# Loading. Full = 0. Wren = 1. T= 7750
+# Loading. Full = 0. Wren = 1. T= 7850
+# Loading. Full = 0. Wren = 1. T= 7950
+# Loading. Full = 0. Wren = 1. T= 8050
+# Loading. Full = 0. Wren = 1. T= 8150
+# Loading. Full = 0. Wren = 1. T= 8250
+# Loading. Full = 0. Wren = 1. T= 8350
+# Loading. Full = 0. Wren = 1. T= 8450
+# Loading. Full = 0. Wren = 1. T= 8550
+# Loading. Full = 0. Wren = 1. T= 8650
+# Loading. Full = 0. Wren = 1. T= 8750
+# Loading. Full = 0. Wren = 1. T= 8850
+# Loading. Full = 0. Wren = 1. T= 8950
+# Loading. Full = 0. Wren = 1. T= 9050
+# Loading. Full = 0. Wren = 1. T= 9150
+# Loading. Full = 0. Wren = 1. T= 9250
+# Loading. Full = 0. Wren = 1. T= 9350
+# Loading. Full = 0. Wren = 1. T= 9450
+# Loading. Full = 0. Wren = 1. T= 9550
+# Loading. Full = 0. Wren = 1. T= 9650
+# Loading. Full = 0. Wren = 1. T= 9750
+# Loading. Full = 0. Wren = 1. T= 9850
+# Loading. Full = 0. Wren = 1. T= 9950
+# Loading. Full = 0. Wren = 1. T= 10050
+# Loading. Full = 0. Wren = 1. T= 10150
+# Loading. Full = 0. Wren = 1. T= 10250
+# Loading. Full = 0. Wren = 1. T= 10350
+# Loading. Full = 0. Wren = 1. T= 10450
+# Loading. Full = 0. Wren = 1. T= 10550
+# Loading. Full = 0. Wren = 1. T= 10650
+# Loading. Full = 0. Wren = 1. T= 10750
+# Loading. Full = 0. Wren = 1. T= 10850
+# Loading. Full = 0. Wren = 1. T= 10950
+# Loading. Full = 0. Wren = 1. T= 11050
+# Loading. Full = 0. Wren = 1. T= 11150
+# Loading. Full = 0. Wren = 1. T= 11250
+# Loading. Full = 0. Wren = 1. T= 11350
+# Loading. Full = 0. Wren = 1. T= 11450
+# Loading. Full = 0. Wren = 1. T= 11550
+# Loading. Full = 0. Wren = 1. T= 11650
+# Loading. Full = 0. Wren = 1. T= 11750
+# Loading. Full = 0. Wren = 1. T= 11850
+# Loading. Full = 0. Wren = 1. T= 11950
+# Loading. Full = 0. Wren = 1. T= 12050
+# Loading. Full = 0. Wren = 1. T= 12150
+# Loading. Full = 0. Wren = 1. T= 12250
+# Loading. Full = 0. Wren = 1. T= 12350
+# Loading. Full = 0. Wren = 1. T= 12450
+# Loading. Full = 0. Wren = 1. T= 12550
+# Loading. Full = 0. Wren = 1. T= 12650
+# Loading. Full = 0. Wren = 1. T= 12750
+# Loading. Full = 0. Wren = 1. T= 12850
+# Loading. Full = 0. Wren = 1. T= 12950
+# Loading. Full = 0. Wren = 1. T= 13050
+# DONE LOADING! Full = 1. Wren = 0. T = 13150
+# Loading. Full = 1. Wren = 0. Stop = 0. T= 13550
+# Loading. Full = 0. Wren = 0. Stop = 0. T= 13650
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 13750
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 13850
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 13950
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14050
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14150
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14250
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14350
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14450
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14550
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14650
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14750
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14850
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14950
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15050
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15150
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15250
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15350
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15450
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15550
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15650
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15750
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15850
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15950
+# DONE LOADING! Stop = 1. Full = 0. Wren = 1. T = 16150
+# DONE LOADING! Full = 0. Wren = 0. Stop = 0. T= 17050
+# ** Note: $stop    : ./note_input_tb.sv(78)
+#    Time: 17950 ps  Iteration: 1  Instance: /note_input_tb
+# Break in Module note_input_tb at ./note_input_tb.sv line 78
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:49:18 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_tb.sv 
+# -- Compiling module note_input_tb
+# 
+# Top level modules:
+# 	note_input_tb
+# End time: 12:49:19 on Jun 04,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:49:19 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_datapath.sv 
+# -- Compiling module note_input_datapath
+# 
+# Top level modules:
+# 	note_input_datapath
+# End time: 12:49:19 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:49:19 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_controller.sv 
+# -- Compiling module note_input_controller
+# 
+# Top level modules:
+# 	note_input_controller
+# End time: 12:49:19 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:49:19 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input.sv 
+# -- Compiling module note_input
+# 
+# Top level modules:
+# 	note_input
+# End time: 12:49:20 on Jun 04,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:49:20 on Jun 04,2026
+# vlog -reportprogress 300 ./noise_gen.sv 
+# -- Compiling module noise_gen
+# -- Compiling module noise_gen_testbench
+# 
+# Top level modules:
+# 	noise_gen_testbench
+# End time: 12:49:20 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:49:20 on Jun 04,2026
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 12:49:20 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:49:20 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_generator.v 
+# -- Compiling module clock_generator
+# 
+# Top level modules:
+# 	clock_generator
+# End time: 12:49:20 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:49:20 on Jun 04,2026
+# vlog -reportprogress 300 ./audio_codec.v 
+# -- Compiling module audio_codec
+# 
+# Top level modules:
+# 	audio_codec
+# End time: 12:49:21 on Jun 04,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:49:21 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_divider_8.sv 
+# -- Compiling module clock_divider_8
+# 
+# Top level modules:
+# 	clock_divider_8
+# End time: 12:49:21 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:49:21 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_divider_8_tb.sv 
+# -- Compiling module clock_divider_8_tb
+# 
+# Top level modules:
+# 	clock_divider_8_tb
+# End time: 12:49:21 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:49:24 on Jun 04,2026, Elapsed time: 0:10:41
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work note_input_tb -Lf altera_mf_ver 
+# Start time: 12:49:24 on Jun 04,2026
+# Loading sv_std.std
+# Loading work.note_input_tb
+# Loading work.note_input
+# Loading work.note_input_controller
+# Loading work.note_input_datapath
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: mflessa  Hostname: EE-347PC07  ProcessID: 18752
+#           Attempting to use alternate WLF file "./wlftmkhh46".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftmkhh46
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Loading. Full = 0. Wren = 0. T= 1650
+# Loading. Full = 0. Wren = 1. T= 1750
+# Loading. Full = 0. Wren = 1. T= 1850
+# Loading. Full = 0. Wren = 1. T= 1950
+# Loading. Full = 0. Wren = 1. T= 2050
+# Loading. Full = 0. Wren = 1. T= 2150
+# Loading. Full = 0. Wren = 1. T= 2250
+# Loading. Full = 0. Wren = 1. T= 2350
+# Loading. Full = 0. Wren = 1. T= 2450
+# Loading. Full = 0. Wren = 1. T= 2550
+# Loading. Full = 0. Wren = 1. T= 2650
+# Loading. Full = 0. Wren = 1. T= 2750
+# Loading. Full = 0. Wren = 1. T= 2850
+# Loading. Full = 0. Wren = 1. T= 2950
+# Loading. Full = 0. Wren = 1. T= 3050
+# Loading. Full = 0. Wren = 1. T= 3150
+# Loading. Full = 0. Wren = 1. T= 3250
+# Loading. Full = 0. Wren = 1. T= 3350
+# Loading. Full = 0. Wren = 1. T= 3450
+# Loading. Full = 0. Wren = 1. T= 3550
+# Loading. Full = 0. Wren = 1. T= 3650
+# Loading. Full = 0. Wren = 1. T= 3750
+# Loading. Full = 0. Wren = 1. T= 3850
+# Loading. Full = 0. Wren = 1. T= 3950
+# Loading. Full = 0. Wren = 1. T= 4050
+# Loading. Full = 0. Wren = 1. T= 4150
+# Loading. Full = 0. Wren = 1. T= 4250
+# Loading. Full = 0. Wren = 1. T= 4350
+# Loading. Full = 0. Wren = 1. T= 4450
+# Loading. Full = 0. Wren = 1. T= 4550
+# Loading. Full = 0. Wren = 1. T= 4650
+# Loading. Full = 0. Wren = 1. T= 4750
+# Loading. Full = 0. Wren = 1. T= 4850
+# Loading. Full = 0. Wren = 1. T= 4950
+# Loading. Full = 0. Wren = 1. T= 5050
+# Loading. Full = 0. Wren = 1. T= 5150
+# Loading. Full = 0. Wren = 1. T= 5250
+# Loading. Full = 0. Wren = 1. T= 5350
+# Loading. Full = 0. Wren = 1. T= 5450
+# Loading. Full = 0. Wren = 1. T= 5550
+# Loading. Full = 0. Wren = 1. T= 5650
+# Loading. Full = 0. Wren = 1. T= 5750
+# Loading. Full = 0. Wren = 1. T= 5850
+# Loading. Full = 0. Wren = 1. T= 5950
+# Loading. Full = 0. Wren = 1. T= 6050
+# Loading. Full = 0. Wren = 1. T= 6150
+# Loading. Full = 0. Wren = 1. T= 6250
+# Loading. Full = 0. Wren = 1. T= 6350
+# Loading. Full = 0. Wren = 1. T= 6450
+# Loading. Full = 0. Wren = 1. T= 6550
+# Loading. Full = 0. Wren = 1. T= 6650
+# Loading. Full = 0. Wren = 1. T= 6750
+# Loading. Full = 0. Wren = 1. T= 6850
+# Loading. Full = 0. Wren = 1. T= 6950
+# Loading. Full = 0. Wren = 1. T= 7050
+# Loading. Full = 0. Wren = 1. T= 7150
+# Loading. Full = 0. Wren = 1. T= 7250
+# Loading. Full = 0. Wren = 1. T= 7350
+# Loading. Full = 0. Wren = 1. T= 7450
+# Loading. Full = 0. Wren = 1. T= 7550
+# Loading. Full = 0. Wren = 1. T= 7650
+# Loading. Full = 0. Wren = 1. T= 7750
+# Loading. Full = 0. Wren = 1. T= 7850
+# Loading. Full = 0. Wren = 1. T= 7950
+# Loading. Full = 0. Wren = 1. T= 8050
+# Loading. Full = 0. Wren = 1. T= 8150
+# Loading. Full = 0. Wren = 1. T= 8250
+# Loading. Full = 0. Wren = 1. T= 8350
+# Loading. Full = 0. Wren = 1. T= 8450
+# Loading. Full = 0. Wren = 1. T= 8550
+# Loading. Full = 0. Wren = 1. T= 8650
+# Loading. Full = 0. Wren = 1. T= 8750
+# Loading. Full = 0. Wren = 1. T= 8850
+# Loading. Full = 0. Wren = 1. T= 8950
+# Loading. Full = 0. Wren = 1. T= 9050
+# Loading. Full = 0. Wren = 1. T= 9150
+# Loading. Full = 0. Wren = 1. T= 9250
+# Loading. Full = 0. Wren = 1. T= 9350
+# Loading. Full = 0. Wren = 1. T= 9450
+# Loading. Full = 0. Wren = 1. T= 9550
+# Loading. Full = 0. Wren = 1. T= 9650
+# Loading. Full = 0. Wren = 1. T= 9750
+# Loading. Full = 0. Wren = 1. T= 9850
+# Loading. Full = 0. Wren = 1. T= 9950
+# Loading. Full = 0. Wren = 1. T= 10050
+# Loading. Full = 0. Wren = 1. T= 10150
+# Loading. Full = 0. Wren = 1. T= 10250
+# Loading. Full = 0. Wren = 1. T= 10350
+# Loading. Full = 0. Wren = 1. T= 10450
+# Loading. Full = 0. Wren = 1. T= 10550
+# Loading. Full = 0. Wren = 1. T= 10650
+# Loading. Full = 0. Wren = 1. T= 10750
+# Loading. Full = 0. Wren = 1. T= 10850
+# Loading. Full = 0. Wren = 1. T= 10950
+# Loading. Full = 0. Wren = 1. T= 11050
+# Loading. Full = 0. Wren = 1. T= 11150
+# Loading. Full = 0. Wren = 1. T= 11250
+# Loading. Full = 0. Wren = 1. T= 11350
+# Loading. Full = 0. Wren = 1. T= 11450
+# Loading. Full = 0. Wren = 1. T= 11550
+# Loading. Full = 0. Wren = 1. T= 11650
+# Loading. Full = 0. Wren = 1. T= 11750
+# Loading. Full = 0. Wren = 1. T= 11850
+# Loading. Full = 0. Wren = 1. T= 11950
+# Loading. Full = 0. Wren = 1. T= 12050
+# Loading. Full = 0. Wren = 1. T= 12150
+# Loading. Full = 0. Wren = 1. T= 12250
+# Loading. Full = 0. Wren = 1. T= 12350
+# Loading. Full = 0. Wren = 1. T= 12450
+# Loading. Full = 0. Wren = 1. T= 12550
+# Loading. Full = 0. Wren = 1. T= 12650
+# Loading. Full = 0. Wren = 1. T= 12750
+# Loading. Full = 0. Wren = 1. T= 12850
+# Loading. Full = 0. Wren = 1. T= 12950
+# Loading. Full = 0. Wren = 1. T= 13050
+# DONE LOADING! Full = 1. Wren = 0. T = 13150
+# Loading. Full = 1. Wren = 0. Stop = 0. T= 13550
+# Loading. Full = 0. Wren = 0. Stop = 0. T= 13650
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 13750
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 13850
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 13950
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14050
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14150
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14250
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14350
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14450
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14550
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14650
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14750
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14850
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14950
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15050
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15150
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15250
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15350
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15450
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15550
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15650
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15750
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15850
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15950
+# DONE LOADING! Stop = 1. Full = 0. Wren = 1. T = 16150
+# DONE LOADING! Full = 0. Wren = 0. Stop = 0. T= 17050
+# TEST 5: Simultaneous key press. T= 17950
+# TEST 6: Adding 2nd press when one key pressed. T= 19150
+# ** Note: $stop    : ./note_input_tb.sv(94)
+#    Time: 20050 ps  Iteration: 1  Instance: /note_input_tb
+# Break in Module note_input_tb at ./note_input_tb.sv line 94
+do ru
+# Cannot open macro file: ru
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:50:59 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_tb.sv 
+# -- Compiling module note_input_tb
+# 
+# Top level modules:
+# 	note_input_tb
+# End time: 12:50:59 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:50:59 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_datapath.sv 
+# -- Compiling module note_input_datapath
+# 
+# Top level modules:
+# 	note_input_datapath
+# End time: 12:50:59 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:50:59 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_controller.sv 
+# -- Compiling module note_input_controller
+# 
+# Top level modules:
+# 	note_input_controller
+# End time: 12:50:59 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:50:59 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input.sv 
+# -- Compiling module note_input
+# 
+# Top level modules:
+# 	note_input
+# End time: 12:51:00 on Jun 04,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:51:00 on Jun 04,2026
+# vlog -reportprogress 300 ./noise_gen.sv 
+# -- Compiling module noise_gen
+# -- Compiling module noise_gen_testbench
+# 
+# Top level modules:
+# 	noise_gen_testbench
+# End time: 12:51:00 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:51:00 on Jun 04,2026
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 12:51:00 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:51:00 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_generator.v 
+# -- Compiling module clock_generator
+# 
+# Top level modules:
+# 	clock_generator
+# End time: 12:51:01 on Jun 04,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:51:01 on Jun 04,2026
+# vlog -reportprogress 300 ./audio_codec.v 
+# -- Compiling module audio_codec
+# 
+# Top level modules:
+# 	audio_codec
+# End time: 12:51:01 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:51:01 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_divider_8.sv 
+# -- Compiling module clock_divider_8
+# 
+# Top level modules:
+# 	clock_divider_8
+# End time: 12:51:01 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:51:01 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_divider_8_tb.sv 
+# -- Compiling module clock_divider_8_tb
+# 
+# Top level modules:
+# 	clock_divider_8_tb
+# End time: 12:51:02 on Jun 04,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 12:51:02 on Jun 04,2026, Elapsed time: 0:01:38
+# Errors: 1, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work note_input_tb -Lf altera_mf_ver 
+# Start time: 12:51:02 on Jun 04,2026
+# Loading sv_std.std
+# Loading work.note_input_tb
+# Loading work.note_input
+# Loading work.note_input_controller
+# Loading work.note_input_datapath
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: mflessa  Hostname: EE-347PC07  ProcessID: 18752
+#           Attempting to use alternate WLF file "./wlfty7ymz4".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfty7ymz4
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Loading. Full = 0. Wren = 0. T= 1650
+# Loading. Full = 0. Wren = 1. T= 1750
+# Loading. Full = 0. Wren = 1. T= 1850
+# Loading. Full = 0. Wren = 1. T= 1950
+# Loading. Full = 0. Wren = 1. T= 2050
+# Loading. Full = 0. Wren = 1. T= 2150
+# Loading. Full = 0. Wren = 1. T= 2250
+# Loading. Full = 0. Wren = 1. T= 2350
+# Loading. Full = 0. Wren = 1. T= 2450
+# Loading. Full = 0. Wren = 1. T= 2550
+# Loading. Full = 0. Wren = 1. T= 2650
+# Loading. Full = 0. Wren = 1. T= 2750
+# Loading. Full = 0. Wren = 1. T= 2850
+# Loading. Full = 0. Wren = 1. T= 2950
+# Loading. Full = 0. Wren = 1. T= 3050
+# Loading. Full = 0. Wren = 1. T= 3150
+# Loading. Full = 0. Wren = 1. T= 3250
+# Loading. Full = 0. Wren = 1. T= 3350
+# Loading. Full = 0. Wren = 1. T= 3450
+# Loading. Full = 0. Wren = 1. T= 3550
+# Loading. Full = 0. Wren = 1. T= 3650
+# Loading. Full = 0. Wren = 1. T= 3750
+# Loading. Full = 0. Wren = 1. T= 3850
+# Loading. Full = 0. Wren = 1. T= 3950
+# Loading. Full = 0. Wren = 1. T= 4050
+# Loading. Full = 0. Wren = 1. T= 4150
+# Loading. Full = 0. Wren = 1. T= 4250
+# Loading. Full = 0. Wren = 1. T= 4350
+# Loading. Full = 0. Wren = 1. T= 4450
+# Loading. Full = 0. Wren = 1. T= 4550
+# Loading. Full = 0. Wren = 1. T= 4650
+# Loading. Full = 0. Wren = 1. T= 4750
+# Loading. Full = 0. Wren = 1. T= 4850
+# Loading. Full = 0. Wren = 1. T= 4950
+# Loading. Full = 0. Wren = 1. T= 5050
+# Loading. Full = 0. Wren = 1. T= 5150
+# Loading. Full = 0. Wren = 1. T= 5250
+# Loading. Full = 0. Wren = 1. T= 5350
+# Loading. Full = 0. Wren = 1. T= 5450
+# Loading. Full = 0. Wren = 1. T= 5550
+# Loading. Full = 0. Wren = 1. T= 5650
+# Loading. Full = 0. Wren = 1. T= 5750
+# Loading. Full = 0. Wren = 1. T= 5850
+# Loading. Full = 0. Wren = 1. T= 5950
+# Loading. Full = 0. Wren = 1. T= 6050
+# Loading. Full = 0. Wren = 1. T= 6150
+# Loading. Full = 0. Wren = 1. T= 6250
+# Loading. Full = 0. Wren = 1. T= 6350
+# Loading. Full = 0. Wren = 1. T= 6450
+# Loading. Full = 0. Wren = 1. T= 6550
+# Loading. Full = 0. Wren = 1. T= 6650
+# Loading. Full = 0. Wren = 1. T= 6750
+# Loading. Full = 0. Wren = 1. T= 6850
+# Loading. Full = 0. Wren = 1. T= 6950
+# Loading. Full = 0. Wren = 1. T= 7050
+# Loading. Full = 0. Wren = 1. T= 7150
+# Loading. Full = 0. Wren = 1. T= 7250
+# Loading. Full = 0. Wren = 1. T= 7350
+# Loading. Full = 0. Wren = 1. T= 7450
+# Loading. Full = 0. Wren = 1. T= 7550
+# Loading. Full = 0. Wren = 1. T= 7650
+# Loading. Full = 0. Wren = 1. T= 7750
+# Loading. Full = 0. Wren = 1. T= 7850
+# Loading. Full = 0. Wren = 1. T= 7950
+# Loading. Full = 0. Wren = 1. T= 8050
+# Loading. Full = 0. Wren = 1. T= 8150
+# Loading. Full = 0. Wren = 1. T= 8250
+# Loading. Full = 0. Wren = 1. T= 8350
+# Loading. Full = 0. Wren = 1. T= 8450
+# Loading. Full = 0. Wren = 1. T= 8550
+# Loading. Full = 0. Wren = 1. T= 8650
+# Loading. Full = 0. Wren = 1. T= 8750
+# Loading. Full = 0. Wren = 1. T= 8850
+# Loading. Full = 0. Wren = 1. T= 8950
+# Loading. Full = 0. Wren = 1. T= 9050
+# Loading. Full = 0. Wren = 1. T= 9150
+# Loading. Full = 0. Wren = 1. T= 9250
+# Loading. Full = 0. Wren = 1. T= 9350
+# Loading. Full = 0. Wren = 1. T= 9450
+# Loading. Full = 0. Wren = 1. T= 9550
+# Loading. Full = 0. Wren = 1. T= 9650
+# Loading. Full = 0. Wren = 1. T= 9750
+# Loading. Full = 0. Wren = 1. T= 9850
+# Loading. Full = 0. Wren = 1. T= 9950
+# Loading. Full = 0. Wren = 1. T= 10050
+# Loading. Full = 0. Wren = 1. T= 10150
+# Loading. Full = 0. Wren = 1. T= 10250
+# Loading. Full = 0. Wren = 1. T= 10350
+# Loading. Full = 0. Wren = 1. T= 10450
+# Loading. Full = 0. Wren = 1. T= 10550
+# Loading. Full = 0. Wren = 1. T= 10650
+# Loading. Full = 0. Wren = 1. T= 10750
+# Loading. Full = 0. Wren = 1. T= 10850
+# Loading. Full = 0. Wren = 1. T= 10950
+# Loading. Full = 0. Wren = 1. T= 11050
+# Loading. Full = 0. Wren = 1. T= 11150
+# Loading. Full = 0. Wren = 1. T= 11250
+# Loading. Full = 0. Wren = 1. T= 11350
+# Loading. Full = 0. Wren = 1. T= 11450
+# Loading. Full = 0. Wren = 1. T= 11550
+# Loading. Full = 0. Wren = 1. T= 11650
+# Loading. Full = 0. Wren = 1. T= 11750
+# Loading. Full = 0. Wren = 1. T= 11850
+# Loading. Full = 0. Wren = 1. T= 11950
+# Loading. Full = 0. Wren = 1. T= 12050
+# Loading. Full = 0. Wren = 1. T= 12150
+# Loading. Full = 0. Wren = 1. T= 12250
+# Loading. Full = 0. Wren = 1. T= 12350
+# Loading. Full = 0. Wren = 1. T= 12450
+# Loading. Full = 0. Wren = 1. T= 12550
+# Loading. Full = 0. Wren = 1. T= 12650
+# Loading. Full = 0. Wren = 1. T= 12750
+# Loading. Full = 0. Wren = 1. T= 12850
+# Loading. Full = 0. Wren = 1. T= 12950
+# Loading. Full = 0. Wren = 1. T= 13050
+# DONE LOADING! Full = 1. Wren = 0. T = 13150
+# Loading. Full = 1. Wren = 0. Stop = 0. T= 13550
+# Loading. Full = 0. Wren = 0. Stop = 0. T= 13650
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 13750
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 13850
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 13950
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14050
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14150
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14250
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14350
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14450
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14550
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14650
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14750
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14850
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14950
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15050
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15150
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15250
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15350
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15450
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15550
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15650
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15750
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15850
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15950
+# DONE LOADING! Stop = 1. Full = 0. Wren = 1. T = 16150
+# DONE LOADING! Full = 0. Wren = 0. Stop = 0. T= 17050
+# TEST 5: Simultaneous key press. T= 18050
+# TEST 6: Adding 2nd press when one key pressed. T= 19250
+# ** Note: $stop    : ./note_input_tb.sv(95)
+#    Time: 20150 ps  Iteration: 1  Instance: /note_input_tb
+# Break in Module note_input_tb at ./note_input_tb.sv line 95
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:54:29 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_tb.sv 
+# -- Compiling module note_input_tb
+# 
+# Top level modules:
+# 	note_input_tb
+# End time: 12:54:29 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:54:29 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_datapath.sv 
+# -- Compiling module note_input_datapath
+# 
+# Top level modules:
+# 	note_input_datapath
+# End time: 12:54:30 on Jun 04,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:54:30 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_controller.sv 
+# -- Compiling module note_input_controller
+# 
+# Top level modules:
+# 	note_input_controller
+# End time: 12:54:30 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:54:30 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input.sv 
+# -- Compiling module note_input
+# 
+# Top level modules:
+# 	note_input
+# End time: 12:54:30 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:54:30 on Jun 04,2026
+# vlog -reportprogress 300 ./noise_gen.sv 
+# -- Compiling module noise_gen
+# -- Compiling module noise_gen_testbench
+# 
+# Top level modules:
+# 	noise_gen_testbench
+# End time: 12:54:30 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:54:30 on Jun 04,2026
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 12:54:31 on Jun 04,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:54:31 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_generator.v 
+# -- Compiling module clock_generator
+# 
+# Top level modules:
+# 	clock_generator
+# End time: 12:54:31 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:54:31 on Jun 04,2026
+# vlog -reportprogress 300 ./audio_codec.v 
+# -- Compiling module audio_codec
+# 
+# Top level modules:
+# 	audio_codec
+# End time: 12:54:31 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:54:31 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_divider_8.sv 
+# -- Compiling module clock_divider_8
+# 
+# Top level modules:
+# 	clock_divider_8
+# End time: 12:54:32 on Jun 04,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:54:32 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_divider_8_tb.sv 
+# -- Compiling module clock_divider_8_tb
+# 
+# Top level modules:
+# 	clock_divider_8_tb
+# End time: 12:54:32 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:54:33 on Jun 04,2026, Elapsed time: 0:03:31
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work note_input_tb -Lf altera_mf_ver 
+# Start time: 12:54:33 on Jun 04,2026
+# Loading sv_std.std
+# Loading work.note_input_tb
+# Loading work.note_input
+# Loading work.note_input_controller
+# Loading work.note_input_datapath
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: mflessa  Hostname: EE-347PC07  ProcessID: 18752
+#           Attempting to use alternate WLF file "./wlft42is89".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft42is89
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Loading. Full = 0. Wren = 0. T= 1650
+# Loading. Full = 0. Wren = 1. T= 1750
+# Loading. Full = 0. Wren = 1. T= 1850
+# Loading. Full = 0. Wren = 1. T= 1950
+# Loading. Full = 0. Wren = 1. T= 2050
+# Loading. Full = 0. Wren = 1. T= 2150
+# Loading. Full = 0. Wren = 1. T= 2250
+# Loading. Full = 0. Wren = 1. T= 2350
+# Loading. Full = 0. Wren = 1. T= 2450
+# Loading. Full = 0. Wren = 1. T= 2550
+# Loading. Full = 0. Wren = 1. T= 2650
+# Loading. Full = 0. Wren = 1. T= 2750
+# Loading. Full = 0. Wren = 1. T= 2850
+# Loading. Full = 0. Wren = 1. T= 2950
+# Loading. Full = 0. Wren = 1. T= 3050
+# Loading. Full = 0. Wren = 1. T= 3150
+# Loading. Full = 0. Wren = 1. T= 3250
+# Loading. Full = 0. Wren = 1. T= 3350
+# Loading. Full = 0. Wren = 1. T= 3450
+# Loading. Full = 0. Wren = 1. T= 3550
+# Loading. Full = 0. Wren = 1. T= 3650
+# Loading. Full = 0. Wren = 1. T= 3750
+# Loading. Full = 0. Wren = 1. T= 3850
+# Loading. Full = 0. Wren = 1. T= 3950
+# Loading. Full = 0. Wren = 1. T= 4050
+# Loading. Full = 0. Wren = 1. T= 4150
+# Loading. Full = 0. Wren = 1. T= 4250
+# Loading. Full = 0. Wren = 1. T= 4350
+# Loading. Full = 0. Wren = 1. T= 4450
+# Loading. Full = 0. Wren = 1. T= 4550
+# Loading. Full = 0. Wren = 1. T= 4650
+# Loading. Full = 0. Wren = 1. T= 4750
+# Loading. Full = 0. Wren = 1. T= 4850
+# Loading. Full = 0. Wren = 1. T= 4950
+# Loading. Full = 0. Wren = 1. T= 5050
+# Loading. Full = 0. Wren = 1. T= 5150
+# Loading. Full = 0. Wren = 1. T= 5250
+# Loading. Full = 0. Wren = 1. T= 5350
+# Loading. Full = 0. Wren = 1. T= 5450
+# Loading. Full = 0. Wren = 1. T= 5550
+# Loading. Full = 0. Wren = 1. T= 5650
+# Loading. Full = 0. Wren = 1. T= 5750
+# Loading. Full = 0. Wren = 1. T= 5850
+# Loading. Full = 0. Wren = 1. T= 5950
+# Loading. Full = 0. Wren = 1. T= 6050
+# Loading. Full = 0. Wren = 1. T= 6150
+# Loading. Full = 0. Wren = 1. T= 6250
+# Loading. Full = 0. Wren = 1. T= 6350
+# Loading. Full = 0. Wren = 1. T= 6450
+# Loading. Full = 0. Wren = 1. T= 6550
+# Loading. Full = 0. Wren = 1. T= 6650
+# Loading. Full = 0. Wren = 1. T= 6750
+# Loading. Full = 0. Wren = 1. T= 6850
+# Loading. Full = 0. Wren = 1. T= 6950
+# Loading. Full = 0. Wren = 1. T= 7050
+# Loading. Full = 0. Wren = 1. T= 7150
+# Loading. Full = 0. Wren = 1. T= 7250
+# Loading. Full = 0. Wren = 1. T= 7350
+# Loading. Full = 0. Wren = 1. T= 7450
+# Loading. Full = 0. Wren = 1. T= 7550
+# Loading. Full = 0. Wren = 1. T= 7650
+# Loading. Full = 0. Wren = 1. T= 7750
+# Loading. Full = 0. Wren = 1. T= 7850
+# Loading. Full = 0. Wren = 1. T= 7950
+# Loading. Full = 0. Wren = 1. T= 8050
+# Loading. Full = 0. Wren = 1. T= 8150
+# Loading. Full = 0. Wren = 1. T= 8250
+# Loading. Full = 0. Wren = 1. T= 8350
+# Loading. Full = 0. Wren = 1. T= 8450
+# Loading. Full = 0. Wren = 1. T= 8550
+# Loading. Full = 0. Wren = 1. T= 8650
+# Loading. Full = 0. Wren = 1. T= 8750
+# Loading. Full = 0. Wren = 1. T= 8850
+# Loading. Full = 0. Wren = 1. T= 8950
+# Loading. Full = 0. Wren = 1. T= 9050
+# Loading. Full = 0. Wren = 1. T= 9150
+# Loading. Full = 0. Wren = 1. T= 9250
+# Loading. Full = 0. Wren = 1. T= 9350
+# Loading. Full = 0. Wren = 1. T= 9450
+# Loading. Full = 0. Wren = 1. T= 9550
+# Loading. Full = 0. Wren = 1. T= 9650
+# Loading. Full = 0. Wren = 1. T= 9750
+# Loading. Full = 0. Wren = 1. T= 9850
+# Loading. Full = 0. Wren = 1. T= 9950
+# Loading. Full = 0. Wren = 1. T= 10050
+# Loading. Full = 0. Wren = 1. T= 10150
+# Loading. Full = 0. Wren = 1. T= 10250
+# Loading. Full = 0. Wren = 1. T= 10350
+# Loading. Full = 0. Wren = 1. T= 10450
+# Loading. Full = 0. Wren = 1. T= 10550
+# Loading. Full = 0. Wren = 1. T= 10650
+# Loading. Full = 0. Wren = 1. T= 10750
+# Loading. Full = 0. Wren = 1. T= 10850
+# Loading. Full = 0. Wren = 1. T= 10950
+# Loading. Full = 0. Wren = 1. T= 11050
+# Loading. Full = 0. Wren = 1. T= 11150
+# Loading. Full = 0. Wren = 1. T= 11250
+# Loading. Full = 0. Wren = 1. T= 11350
+# Loading. Full = 0. Wren = 1. T= 11450
+# Loading. Full = 0. Wren = 1. T= 11550
+# Loading. Full = 0. Wren = 1. T= 11650
+# Loading. Full = 0. Wren = 1. T= 11750
+# Loading. Full = 0. Wren = 1. T= 11850
+# Loading. Full = 0. Wren = 1. T= 11950
+# Loading. Full = 0. Wren = 1. T= 12050
+# Loading. Full = 0. Wren = 1. T= 12150
+# Loading. Full = 0. Wren = 1. T= 12250
+# Loading. Full = 0. Wren = 1. T= 12350
+# Loading. Full = 0. Wren = 1. T= 12450
+# Loading. Full = 0. Wren = 1. T= 12550
+# Loading. Full = 0. Wren = 1. T= 12650
+# Loading. Full = 0. Wren = 1. T= 12750
+# Loading. Full = 0. Wren = 1. T= 12850
+# Loading. Full = 0. Wren = 1. T= 12950
+# Loading. Full = 0. Wren = 1. T= 13050
+# DONE LOADING! Full = 1. Wren = 0. T = 13150
+# Loading. Full = 1. Wren = 0. Stop = 0. T= 13550
+# Loading. Full = 0. Wren = 0. Stop = 0. T= 13650
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 13750
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 13850
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 13950
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14050
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14150
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14250
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14350
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14450
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14550
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14650
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14750
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14850
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14950
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15050
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15150
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15250
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15350
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15450
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15550
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15650
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15750
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15850
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15950
+# DONE LOADING! Stop = 1. Full = 0. Wren = 1. T = 16150
+# DONE LOADING! Full = 0. Wren = 0. Stop = 0. T= 17050
+# TEST 5: Simultaneous key press. T= 18050
+# TEST 6: Adding 2nd press when one key pressed. T= 19250
+# ** Note: $stop    : ./note_input_tb.sv(95)
+#    Time: 20150 ps  Iteration: 1  Instance: /note_input_tb
+# Break in Module note_input_tb at ./note_input_tb.sv line 95
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:56:14 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_tb.sv 
+# -- Compiling module note_input_tb
+# 
+# Top level modules:
+# 	note_input_tb
+# End time: 12:56:15 on Jun 04,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:56:15 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_datapath.sv 
+# -- Compiling module note_input_datapath
+# 
+# Top level modules:
+# 	note_input_datapath
+# End time: 12:56:15 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:56:15 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input_controller.sv 
+# -- Compiling module note_input_controller
+# 
+# Top level modules:
+# 	note_input_controller
+# End time: 12:56:15 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:56:15 on Jun 04,2026
+# vlog -reportprogress 300 ./note_input.sv 
+# -- Compiling module note_input
+# 
+# Top level modules:
+# 	note_input
+# End time: 12:56:16 on Jun 04,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:56:16 on Jun 04,2026
+# vlog -reportprogress 300 ./noise_gen.sv 
+# -- Compiling module noise_gen
+# -- Compiling module noise_gen_testbench
+# 
+# Top level modules:
+# 	noise_gen_testbench
+# End time: 12:56:16 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:56:16 on Jun 04,2026
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 12:56:16 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:56:16 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_generator.v 
+# -- Compiling module clock_generator
+# 
+# Top level modules:
+# 	clock_generator
+# End time: 12:56:16 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:56:17 on Jun 04,2026
+# vlog -reportprogress 300 ./audio_codec.v 
+# -- Compiling module audio_codec
+# 
+# Top level modules:
+# 	audio_codec
+# End time: 12:56:17 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:56:17 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_divider_8.sv 
+# -- Compiling module clock_divider_8
+# 
+# Top level modules:
+# 	clock_divider_8
+# End time: 12:56:17 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:56:17 on Jun 04,2026
+# vlog -reportprogress 300 ./clock_divider_8_tb.sv 
+# -- Compiling module clock_divider_8_tb
+# 
+# Top level modules:
+# 	clock_divider_8_tb
+# End time: 12:56:17 on Jun 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:56:20 on Jun 04,2026, Elapsed time: 0:01:47
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work note_input_tb -Lf altera_mf_ver 
+# Start time: 12:56:20 on Jun 04,2026
+# Loading sv_std.std
+# Loading work.note_input_tb
+# Loading work.note_input
+# Loading work.note_input_controller
+# Loading work.note_input_datapath
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: mflessa  Hostname: EE-347PC07  ProcessID: 18752
+#           Attempting to use alternate WLF file "./wlftrt7vzf".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftrt7vzf
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Loading. Full = 0. Wren = 0. T= 1650
+# Loading. Full = 0. Wren = 1. T= 1750
+# Loading. Full = 0. Wren = 1. T= 1850
+# Loading. Full = 0. Wren = 1. T= 1950
+# Loading. Full = 0. Wren = 1. T= 2050
+# Loading. Full = 0. Wren = 1. T= 2150
+# Loading. Full = 0. Wren = 1. T= 2250
+# Loading. Full = 0. Wren = 1. T= 2350
+# Loading. Full = 0. Wren = 1. T= 2450
+# Loading. Full = 0. Wren = 1. T= 2550
+# Loading. Full = 0. Wren = 1. T= 2650
+# Loading. Full = 0. Wren = 1. T= 2750
+# Loading. Full = 0. Wren = 1. T= 2850
+# Loading. Full = 0. Wren = 1. T= 2950
+# Loading. Full = 0. Wren = 1. T= 3050
+# Loading. Full = 0. Wren = 1. T= 3150
+# Loading. Full = 0. Wren = 1. T= 3250
+# Loading. Full = 0. Wren = 1. T= 3350
+# Loading. Full = 0. Wren = 1. T= 3450
+# Loading. Full = 0. Wren = 1. T= 3550
+# Loading. Full = 0. Wren = 1. T= 3650
+# Loading. Full = 0. Wren = 1. T= 3750
+# Loading. Full = 0. Wren = 1. T= 3850
+# Loading. Full = 0. Wren = 1. T= 3950
+# Loading. Full = 0. Wren = 1. T= 4050
+# Loading. Full = 0. Wren = 1. T= 4150
+# Loading. Full = 0. Wren = 1. T= 4250
+# Loading. Full = 0. Wren = 1. T= 4350
+# Loading. Full = 0. Wren = 1. T= 4450
+# Loading. Full = 0. Wren = 1. T= 4550
+# Loading. Full = 0. Wren = 1. T= 4650
+# Loading. Full = 0. Wren = 1. T= 4750
+# Loading. Full = 0. Wren = 1. T= 4850
+# Loading. Full = 0. Wren = 1. T= 4950
+# Loading. Full = 0. Wren = 1. T= 5050
+# Loading. Full = 0. Wren = 1. T= 5150
+# Loading. Full = 0. Wren = 1. T= 5250
+# Loading. Full = 0. Wren = 1. T= 5350
+# Loading. Full = 0. Wren = 1. T= 5450
+# Loading. Full = 0. Wren = 1. T= 5550
+# Loading. Full = 0. Wren = 1. T= 5650
+# Loading. Full = 0. Wren = 1. T= 5750
+# Loading. Full = 0. Wren = 1. T= 5850
+# Loading. Full = 0. Wren = 1. T= 5950
+# Loading. Full = 0. Wren = 1. T= 6050
+# Loading. Full = 0. Wren = 1. T= 6150
+# Loading. Full = 0. Wren = 1. T= 6250
+# Loading. Full = 0. Wren = 1. T= 6350
+# Loading. Full = 0. Wren = 1. T= 6450
+# Loading. Full = 0. Wren = 1. T= 6550
+# Loading. Full = 0. Wren = 1. T= 6650
+# Loading. Full = 0. Wren = 1. T= 6750
+# Loading. Full = 0. Wren = 1. T= 6850
+# Loading. Full = 0. Wren = 1. T= 6950
+# Loading. Full = 0. Wren = 1. T= 7050
+# Loading. Full = 0. Wren = 1. T= 7150
+# Loading. Full = 0. Wren = 1. T= 7250
+# Loading. Full = 0. Wren = 1. T= 7350
+# Loading. Full = 0. Wren = 1. T= 7450
+# Loading. Full = 0. Wren = 1. T= 7550
+# Loading. Full = 0. Wren = 1. T= 7650
+# Loading. Full = 0. Wren = 1. T= 7750
+# Loading. Full = 0. Wren = 1. T= 7850
+# Loading. Full = 0. Wren = 1. T= 7950
+# Loading. Full = 0. Wren = 1. T= 8050
+# Loading. Full = 0. Wren = 1. T= 8150
+# Loading. Full = 0. Wren = 1. T= 8250
+# Loading. Full = 0. Wren = 1. T= 8350
+# Loading. Full = 0. Wren = 1. T= 8450
+# Loading. Full = 0. Wren = 1. T= 8550
+# Loading. Full = 0. Wren = 1. T= 8650
+# Loading. Full = 0. Wren = 1. T= 8750
+# Loading. Full = 0. Wren = 1. T= 8850
+# Loading. Full = 0. Wren = 1. T= 8950
+# Loading. Full = 0. Wren = 1. T= 9050
+# Loading. Full = 0. Wren = 1. T= 9150
+# Loading. Full = 0. Wren = 1. T= 9250
+# Loading. Full = 0. Wren = 1. T= 9350
+# Loading. Full = 0. Wren = 1. T= 9450
+# Loading. Full = 0. Wren = 1. T= 9550
+# Loading. Full = 0. Wren = 1. T= 9650
+# Loading. Full = 0. Wren = 1. T= 9750
+# Loading. Full = 0. Wren = 1. T= 9850
+# Loading. Full = 0. Wren = 1. T= 9950
+# Loading. Full = 0. Wren = 1. T= 10050
+# Loading. Full = 0. Wren = 1. T= 10150
+# Loading. Full = 0. Wren = 1. T= 10250
+# Loading. Full = 0. Wren = 1. T= 10350
+# Loading. Full = 0. Wren = 1. T= 10450
+# Loading. Full = 0. Wren = 1. T= 10550
+# Loading. Full = 0. Wren = 1. T= 10650
+# Loading. Full = 0. Wren = 1. T= 10750
+# Loading. Full = 0. Wren = 1. T= 10850
+# Loading. Full = 0. Wren = 1. T= 10950
+# Loading. Full = 0. Wren = 1. T= 11050
+# Loading. Full = 0. Wren = 1. T= 11150
+# Loading. Full = 0. Wren = 1. T= 11250
+# Loading. Full = 0. Wren = 1. T= 11350
+# Loading. Full = 0. Wren = 1. T= 11450
+# Loading. Full = 0. Wren = 1. T= 11550
+# Loading. Full = 0. Wren = 1. T= 11650
+# Loading. Full = 0. Wren = 1. T= 11750
+# Loading. Full = 0. Wren = 1. T= 11850
+# Loading. Full = 0. Wren = 1. T= 11950
+# Loading. Full = 0. Wren = 1. T= 12050
+# Loading. Full = 0. Wren = 1. T= 12150
+# Loading. Full = 0. Wren = 1. T= 12250
+# Loading. Full = 0. Wren = 1. T= 12350
+# Loading. Full = 0. Wren = 1. T= 12450
+# Loading. Full = 0. Wren = 1. T= 12550
+# Loading. Full = 0. Wren = 1. T= 12650
+# Loading. Full = 0. Wren = 1. T= 12750
+# Loading. Full = 0. Wren = 1. T= 12850
+# Loading. Full = 0. Wren = 1. T= 12950
+# Loading. Full = 0. Wren = 1. T= 13050
+# DONE LOADING! Full = 1. Wren = 0. T = 13150
+# Loading. Full = 1. Wren = 0. Stop = 0. T= 13550
+# Loading. Full = 0. Wren = 0. Stop = 0. T= 13650
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 13750
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 13850
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 13950
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14050
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14150
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14250
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14350
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14450
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14550
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14650
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14750
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14850
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 14950
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15050
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15150
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15250
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15350
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15450
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15550
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15650
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15750
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15850
+# Loading. Full = 0. Wren = 1. Stop = 0. T= 15950
+# DONE LOADING! Stop = 1. Full = 0. Wren = 1. T = 16150
+# DONE LOADING! Full = 0. Wren = 0. Stop = 0. T= 17050
+# TEST 5: Simultaneous key press. T= 18050
+# TEST 6: Adding 2nd press when one key pressed. T= 19250
+# ** Note: $stop    : ./note_input_tb.sv(95)
+#    Time: 20150 ps  Iteration: 1  Instance: /note_input_tb
+# Break in Module note_input_tb at ./note_input_tb.sv line 95
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf U:/EE_371/Lab6/note_input_wave.do
+# End time: 13:02:28 on Jun 04,2026, Elapsed time: 0:06:08
+# Errors: 0, Warnings: 2
