@@ -1,1 +1,1 @@
-Info (10281): Verilog HDL Declaration information at binarySearch_controller.sv(22): object "found" differs only in case from object "FOUND" in the same scope File: C:/Users/stlp/Documents/Lab_4_final/binarySearch_controller.sv Line: 22
+Info (10281): Verilog HDL Declaration information at DE1_SoC.sv(150): object "CODEC" differs only in case from object "codec" in the same scope File: U:/EE_371/Lab6/DE1_SoC.sv Line: 150

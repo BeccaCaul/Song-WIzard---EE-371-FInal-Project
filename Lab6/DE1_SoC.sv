@@ -1,14 +1,14 @@
 module DE1_SoC #(parameter MAX = 3125000) (CLOCK_50, CLOCK2_50, FPGA_I2C_SCLK, FPGA_I2C_SDAT,
 	AUD_XCK, AUD_DACLRCK, AUD_ADCLRCK, AUD_BCLK, AUD_ADCDAT, AUD_DACDAT,
-	HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, LEDR, V_GPIO,
-	test_A, test_B, test_C, test_D, test_E, test_F, test_G, test_reset);
+	HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, LEDR, V_GPIO,KEY);
 
 	input logic CLOCK_50, CLOCK2_50;
-//	input logic [3:0] KEY;
-//	input logic [9:0] SW;
+   input logic [3:0] KEY;
+   //logic [9:0] SW;
 	output logic [6:0] HEX0, HEX1, HEX2, HEX3, HEX4, HEX5;
 	output logic [9:0] LEDR;
-	inout [35:0] V_GPIO;
+	inout [35:4] V_GPIO;
+	
 	
 	// I2C Audio/Video config interface
 	output FPGA_I2C_SCLK;
@@ -19,13 +19,13 @@ module DE1_SoC #(parameter MAX = 3125000) (CLOCK_50, CLOCK2_50, FPGA_I2C_SCLK, F
 	input AUD_ADCDAT;
 	output AUD_DACDAT;
 	
-	//test notes (to avoid testing N8 in sim)
-	input logic test_A, test_B, test_C, test_D, test_E, test_F, test_G, test_reset;
+	//test notes (to avoid testing N8 in sim) - must add back to de1_soc port statement & tb to use
+	//input logic test_A, test_B, test_C, test_D, test_E, test_F, test_G, test_reset;
 	
 	// Local wires
-//	logic read_ready, write_ready, read, write;
-//	logic signed [23:0] readdata_left, readdata_right;
-//	logic signed [23:0] writedata_left, writedata_right;
+	logic read_ready, write_ready, read, write;
+	logic signed [23:0] readdata_left, readdata_right;
+	logic signed [23:0] writedata_left, writedata_right;
 //	logic signed [23:0] task2_left, task2_right, task3_left, task3_right;
 //	logic signed [23:0] noisy_left, noisy_right;
 	logic reset;
@@ -57,6 +57,8 @@ module DE1_SoC #(parameter MAX = 3125000) (CLOCK_50, CLOCK2_50, FPGA_I2C_SCLK, F
     assign LEDR[5] = V_GPIO[10]; // sw5; for debugging
     assign LEDR[6] = V_GPIO[11]; // sw6; for debugging
     assign LEDR[7] = V_GPIO[12]; // sw7; for debugging
+	 
+	 assign reset = ~KEY[3];
 
 	 //instantiate driver
     n8_driver driver(
@@ -86,10 +88,10 @@ module DE1_SoC #(parameter MAX = 3125000) (CLOCK_50, CLOCK2_50, FPGA_I2C_SCLK, F
 	assign stop = 0; //UPDATE SW to something other than switches
 	
 	//for sim
-	note_input note_loader_sim (.clk(CLOCK_50), .reset(test_reset), .A(test_A), .B(test_B), .C(test_C), .D(test_D), .E(test_E), .F(test_F), .G(test_G), 
-	                            .stop, .full, .RAM_addr, .RAM_din, .RAM_wren);
+	//note_input note_loader_sim (.clk(CLOCK_50), .reset(test_reset), .A(test_A), .B(test_B), .C(test_C), .D(test_D), .E(test_E), .F(test_F), .G(test_G), 
+	                            //.stop, .full, .RAM_addr, .RAM_din, .RAM_wren);
 	//HARDWARE ONLY
-	//note_input note_loader (.clk(CLOCK_8), .reset, .A, .B, .C, .D, .E, .F, .G, .stop, .full, .RAM_addr, .RAM_din, .RAM_wren);
+	note_input note_loader (.clk(CLOCK_8), .reset, .A, .B, .C, .D, .E, .F, .G, .stop, .full, .RAM_addr, .RAM_din, .RAM_wren);
 	
 	// RAM 120x3  -----------------------------------------------------------
 	// connected to CLOCK_50 because slow->fast read shouldn't cause issues
@@ -131,9 +133,22 @@ module DE1_SoC #(parameter MAX = 3125000) (CLOCK_50, CLOCK2_50, FPGA_I2C_SCLK, F
 //	// only read or write when both are possible
 //	assign read = read_ready & write_ready;
 //	assign write = read_ready & write_ready;
+
+
+
+//PLAYOUT TEST: make sure CODEC works
+
 	
-/////////////////////////////////////////////////////////////////////////////////
-// Audio CODEC interface. 
+	assign writedata_left = readdata_left;
+	
+	assign writedata_right = readdata_right;
+
+	assign read = read_ready && write_ready;
+	
+	assign write = read_ready && write_ready;
+	
+///////////////////////////////////////////////////////////////////////////////
+//Audio CODEC interface. 
 //
 // The interface consists of the following wires:
 // read_ready, write_ready - CODEC ready for read/write operation 
@@ -145,46 +160,46 @@ module DE1_SoC #(parameter MAX = 3125000) (CLOCK_50, CLOCK2_50, FPGA_I2C_SCLK, F
 //         These signals go directly to the Audio CODEC
 // I2C_* - should connect to top-level entity I/O of the same name.
 //         These signals go directly to the Audio/Video Config module
-/////////////////////////////////////////////////////////////////////////////////
-//	clock_generator my_clock_gen(
-//		// inputs
-//		CLOCK2_50,
-//		1'b0,
-//
-//		// outputs
-//		AUD_XCK
-//	);
-//
-//	audio_and_video_config cfg(
-//		// Inputs
-//		CLOCK_50,
-//		1'b0,
-//
-//		// Bidirectionals
-//		FPGA_I2C_SDAT,
-//		FPGA_I2C_SCLK
-//	);
-//
-//	audio_codec codec(
-//		// Inputs
-//		CLOCK_50,
-//		1'b0,
-//
-//		read,	write,
-//		writedata_left, writedata_right,
-//
-//		AUD_ADCDAT,
-//
-//		// Bidirectionals
-//		AUD_BCLK,
-//		AUD_ADCLRCK,
-//		AUD_DACLRCK,
-//
-//		// Outputs
-//		read_ready, write_ready,
-//		readdata_left, readdata_right,
-//		AUD_DACDAT
-//	);
+///////////////////////////////////////////////////////////////////////////////
+	clock_generator my_clock_gen(
+		// inputs
+		CLOCK2_50,
+		1'b0,
+
+		// outputs
+		AUD_XCK
+	);
+
+	audio_and_video_config cfg(
+		// Inputs
+		CLOCK_50,
+		1'b0,
+
+		// Bidirectionals
+		FPGA_I2C_SDAT,
+		FPGA_I2C_SCLK
+	);
+
+	audio_codec codec(
+		// Inputs
+		CLOCK_50,
+		1'b0,
+
+		read,	write,
+		writedata_left, writedata_right,
+
+		AUD_ADCDAT,
+
+		// Bidirectionals
+		AUD_BCLK,
+		AUD_ADCLRCK,
+		AUD_DACLRCK,
+
+		// Outputs
+		read_ready, write_ready,
+		readdata_left, readdata_right,
+		AUD_DACDAT
+	);
 
 endmodule
 
