@@ -16,10 +16,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "LEDR[1]",
-					"strict" : false
-				},
-				{
 					"name" : "LEDR[2]",
 					"strict" : false
 				},
@@ -84,6 +80,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "KEY[3]",
+					"strict" : false
+				},
+				{
 					"name" : "AUD_DACLRCK",
 					"strict" : false
 				},
@@ -93,10 +93,6 @@
 				},
 				{
 					"name" : "AUD_ADCLRCK",
-					"strict" : false
-				},
-				{
-					"name" : "AUD_ADCDAT",
 					"strict" : false
 				}
 			]

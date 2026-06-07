@@ -30,6 +30,7 @@ module DE1_SoC #(parameter MAX = 3125000) (CLOCK_50, CLOCK2_50, FPGA_I2C_SCLK, F
 //	logic signed [23:0] noisy_left, noisy_right;
 	logic reset;
 	logic CLOCK_8;
+	logic done;
 	
 	// N8 Controller
 	//note presses
@@ -47,8 +48,9 @@ module DE1_SoC #(parameter MAX = 3125000) (CLOCK_50, CLOCK2_50, FPGA_I2C_SCLK, F
     assign V_GPIO[27] = pulse;
     assign V_GPIO[26] = latch;
     
-    assign LEDR[0] = pulse;
-    assign LEDR[1] = latch;
+    //assign LEDR[0] = pulse;
+    //assign LEDR[1] = latch;
+	 assign LEDR[0] = audio_start;
     
     assign LEDR[2] = V_GPIO[28];
     assign LEDR[3] = V_GPIO[29]; // gpio 19 of RPico
@@ -59,6 +61,7 @@ module DE1_SoC #(parameter MAX = 3125000) (CLOCK_50, CLOCK2_50, FPGA_I2C_SCLK, F
     assign LEDR[7] = V_GPIO[12]; // sw7; for debugging
 	 
 	 assign reset = ~KEY[3];
+	 assign {HEX0, HEX1, HEX2, HEX3, HEX4, HEX5} = '1;
 
 	 //instantiate driver
     n8_driver driver(
@@ -79,8 +82,19 @@ module DE1_SoC #(parameter MAX = 3125000) (CLOCK_50, CLOCK2_50, FPGA_I2C_SCLK, F
    // Use CLOCK_8 for note_input module
    clock_divider_8 #(.MAX(MAX)) c8 (.clk(CLOCK_50), .reset, .clk_8(CLOCK_8));
 	
+	// SELECT SIGNALS - dependent on loading vs. output phase ---------------
+	//select signal: audio_start -> passed into audio_output ASMD
+	logic audio_start;
+	// RAM addr: note_in_RAM_addr when !audio_start, RAM_read_addr when audio_start
+	logic [6:0] RAM_addr, RAM_read_addr;
+	assign RAM_addr = audio_start ? RAM_read_addr : note_in_RAM_addr;
+	
+	// note_ROM_ID: 000 (empty) when !audio_start, RAM_dout when audio_start
+	logic [2:0] note_ROM_ID;
+	assign note_ROM_ID = audio_start ? RAM_dout : 3'b000;
+	
 	// Note Input ASMD ------------------------------------------------------
-	logic [6:0] RAM_addr;
+	logic [6:0] note_in_RAM_addr;
 	logic [2:0] RAM_din, RAM_dout;
 	logic full;
 	logic RAM_wren, stop;
@@ -91,61 +105,45 @@ module DE1_SoC #(parameter MAX = 3125000) (CLOCK_50, CLOCK2_50, FPGA_I2C_SCLK, F
 	//note_input note_loader_sim (.clk(CLOCK_50), .reset(test_reset), .A(test_A), .B(test_B), .C(test_C), .D(test_D), .E(test_E), .F(test_F), .G(test_G), 
 	                            //.stop, .full, .RAM_addr, .RAM_din, .RAM_wren);
 	//HARDWARE ONLY
-	note_input note_loader (.clk(CLOCK_8), .reset, .A, .B, .C, .D, .E, .F, .G, .stop, .full, .RAM_addr, .RAM_din, .RAM_wren);
+	note_input note_loader (.clk(CLOCK_8), .reset, .A, .B, .C, .D, .E, .F, .G, .stop, .full, .RAM_addr(note_in_RAM_addr), .RAM_din, .RAM_wren);
 	
 	// RAM 120x3  -----------------------------------------------------------
 	// connected to CLOCK_50 because slow->fast read shouldn't cause issues
 	// can synchronize RAM_din, RAM_addr, and RAM_wren with 2xDFF as needed!
 	note_ram120x3 user_notes_RAM (.address(RAM_addr), .clock(CLOCK_50), .data(RAM_din), .wren(RAM_wren), .q(RAM_dout));
 	// ----------------------------------------------------------------------
-	
-	
-//	logic [23:0] noise;
-//	noise_gen noise_generator (.clk(CLOCK_50), .en(read), .rst(reset), .out(noise));
-//	assign noisy_left = readdata_left + noise;
-//	assign noisy_right = readdata_right + noise;
+
+	//PLAYOUT TEST: make sure CODEC works
+
+//	assign writedata_left = readdata_left;
 //	
-//	always_comb begin
-//		case(KEY[2:0])
-//			3'b110: begin // KEY0 outputs noise
-//				writedata_left = noisy_left;
-//				writedata_right = noisy_right;
-//			end
-//			3'b101: begin // KEY1 outputs task2 filtered noise
-//				writedata_left = task2_left;
-//				writedata_right = task2_right;
-//			end
-//			3'b011: begin // KEY2 outputs task3 filtered noise
-//				writedata_left = task3_left;
-//				writedata_right = task3_right;
-//			end
-//			default: begin // default output raw data
-//				writedata_left = readdata_left;
-//				writedata_right = readdata_right;
-//			end
-//		endcase
-//	end
+//	assign writedata_right = readdata_right;
 //
-//	assign reset = ~KEY[3];
-//	assign {HEX0, HEX1, HEX2, HEX3, HEX4, HEX5} = '1;
-//	assign LEDR = SW;
+//	assign read = read_ready && write_ready;
 //	
-//	// only read or write when both are possible
-//	assign read = read_ready & write_ready;
-//	assign write = read_ready & write_ready;
-
-
-
-//PLAYOUT TEST: make sure CODEC works
-
+//	assign write = read_ready && write_ready;
 	
-	assign writedata_left = readdata_left;
+	//ROM address counter module
+	//address is passed into ROM select - "sample address"
+	logic [15:0] ROM_addr;
+	ROM_addr_counter ROM_count (.clk(CLOCK_50), .reset, .audio_start, .read_ready, .write_ready, .addr(ROM_addr));
 	
-	assign writedata_right = readdata_right;
-
-	assign read = read_ready && write_ready;
+	//Note ROM select module
+	//instantiates NOTE ROMs and selects dout based on note_ROM_ID output from ASMD
+	// inputs: note_ROM_ID (dout of note_RAM), ROM_addr
+	// outputs: dout that connects to writedata
+	logic [23:0] sample_dout;
+	note_ROM_select rom_select (.clk(CLOCK_50), .reset, .ID(note_ROM_ID), .addr(ROM_addr), .dout(sample_dout));
 	
-	assign write = read_ready && write_ready;
+	//Audio Output ASMD module
+	audio_output aud_ASMD (.clk(CLOCK_50), .reset, .read_ready, .write_ready, .full, .RAM_read_addr, .write_note, .audio_start, .done);
+	
+	// CODEC Connections - based on audio_start select
+	assign writedata_left = sample_dout;
+	assign writedata_right = sample_dout;
+	logic write_note;
+	assign read = audio_start ? write_note : 1'b0;
+	assign write = audio_start ? write_note : 1'b0;
 	
 ///////////////////////////////////////////////////////////////////////////////
 //Audio CODEC interface. 

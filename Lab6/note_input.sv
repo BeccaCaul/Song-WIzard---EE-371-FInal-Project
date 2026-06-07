@@ -36,4 +36,4 @@ module note_input(clk, reset, A, B, C, D, E, F, G, stop,
 	note_input_controller ni_c (.*);
 	note_input_datapath ni_d (.*);
 	
-endmodule  // line_drawer
+endmodule  // note_input
