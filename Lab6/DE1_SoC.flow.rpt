@@ -1,5 +1,5 @@
 Flow report for DE1_SoC
-Sat Jun 06 18:40:20 2026
+Sun Jun 07 19:27:07 2026
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Sat Jun 06 18:40:20 2026       ;
+; Flow Status                     ; Successful - Sun Jun 07 19:26:59 2026       ;
 ; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; DE1_SoC                                     ;
 ; Top-level Entity Name           ; DE1_SoC                                     ;
@@ -49,10 +49,10 @@ agreement for further details.
 ; Device                          ; 5CGXFC7C7F23C8                              ;
 ; Timing Models                   ; Final                                       ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 339                                         ;
+; Total registers                 ; 328                                         ;
 ; Total pins                      ; 98                                          ;
 ; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 38,400                                      ;
+; Total block memory bits         ; 229,776                                     ;
 ; Total DSP Blocks                ; 0                                           ;
 ; Total HSSI RX PCSs              ; 0                                           ;
 ; Total HSSI PMA RX Deserializers ; 0                                           ;
@@ -68,28 +68,34 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/06/2026 18:40:11 ;
+; Start date & time ; 06/07/2026 19:23:36 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; DE1_SoC             ;
 +-------------------+---------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                        ;
-+-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
-+-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 198915919645113.178079641010164        ; --            ; --          ; --         ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
-; MISC_FILE                           ; note_ram120x3_bb.v                     ; --            ; --          ; --         ;
-; MISC_FILE                           ; C4_ROM_bb.v                            ; --            ; --          ; --         ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --         ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --         ;
-+-------------------------------------+----------------------------------------+---------------+-------------+------------+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                 ;
++-------------------------------------+-------------------------------------------------+---------------+-------------+------------+
+; Assignment Name                     ; Value                                           ; Default Value ; Entity Name ; Section Id ;
++-------------------------------------+-------------------------------------------------+---------------+-------------+------------+
+; COMPILER_SIGNATURE_ID               ; 277371178306821.178088541602544                 ; --            ; --          ; --         ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                              ; --            ; --          ; --         ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                               ; --            ; --          ; --         ;
+; MISC_FILE                           ; note_ram120x3_bb.v                              ; --            ; --          ; --         ;
+; MISC_FILE                           ; C4_ROM_bb.v                                     ; --            ; --          ; --         ;
+; MISC_FILE                           ; //udrive.uw.edu/mflessa/EE_371/Lab6/A4_ROM_bb.v ; --            ; --          ; --         ;
+; MISC_FILE                           ; //udrive.uw.edu/mflessa/EE_371/Lab6/B4_ROM_bb.v ; --            ; --          ; --         ;
+; MISC_FILE                           ; //udrive.uw.edu/mflessa/EE_371/Lab6/D4_ROM_bb.v ; --            ; --          ; --         ;
+; MISC_FILE                           ; //udrive.uw.edu/mflessa/EE_371/Lab6/E4_ROM_bb.v ; --            ; --          ; --         ;
+; MISC_FILE                           ; //udrive.uw.edu/mflessa/EE_371/Lab6/F4_ROM_bb.v ; --            ; --          ; --         ;
+; MISC_FILE                           ; //udrive.uw.edu/mflessa/EE_371/Lab6/G4_ROM_bb.v ; --            ; --          ; --         ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family)          ; --            ; --          ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family)          ; --            ; --          ; Top        ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family)          ; --            ; --          ; Top        ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                             ; --            ; --          ; --         ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW           ; --            ; --          ; --         ;
++-------------------------------------+-------------------------------------------------+---------------+-------------+------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -97,8 +103,8 @@ agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 4929 MB             ; 00:00:12                           ;
-; Total                ; 00:00:09     ; --                      ; --                  ; 00:00:12                           ;
+; Analysis & Synthesis ; 00:03:07     ; 1.0                     ; 4902 MB             ; 00:00:44                           ;
+; Total                ; 00:03:07     ; --                      ; --                  ; 00:00:44                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -107,7 +113,7 @@ agreement for further details.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; EE-347PC08       ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; STLP-536         ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 

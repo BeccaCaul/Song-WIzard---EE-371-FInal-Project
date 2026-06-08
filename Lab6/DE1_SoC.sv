@@ -30,7 +30,8 @@ module DE1_SoC #(parameter MAX = 3125000) (CLOCK_50, CLOCK2_50, FPGA_I2C_SCLK, F
 //	logic signed [23:0] noisy_left, noisy_right;
 	logic reset;
 	logic CLOCK_8;
-	logic done;
+	//logic done;
+	logic all_done;
 	
 	// N8 Controller
 	//note presses
@@ -50,7 +51,11 @@ module DE1_SoC #(parameter MAX = 3125000) (CLOCK_50, CLOCK2_50, FPGA_I2C_SCLK, F
     
     //assign LEDR[0] = pulse;
     //assign LEDR[1] = latch;
-	 assign LEDR[0] = audio_start;
+	 //assign LEDR[0] = audio_start;
+	 assign LEDR[0] = full;
+	 assign LEDR[1] = all_done;
+	 assign LEDR[9] = C;
+	 assign LEDR[8] = (RAM_dout == 3'b011);
     
     assign LEDR[2] = V_GPIO[28];
     assign LEDR[3] = V_GPIO[29]; // gpio 19 of RPico
@@ -84,14 +89,16 @@ module DE1_SoC #(parameter MAX = 3125000) (CLOCK_50, CLOCK2_50, FPGA_I2C_SCLK, F
 	
 	// SELECT SIGNALS - dependent on loading vs. output phase ---------------
 	//select signal: audio_start -> passed into audio_output ASMD
-	logic audio_start;
+	//logic audio_start;
+	
 	// RAM addr: note_in_RAM_addr when !audio_start, RAM_read_addr when audio_start
 	logic [6:0] RAM_addr, RAM_read_addr;
-	assign RAM_addr = audio_start ? RAM_read_addr : note_in_RAM_addr;
+	//assign RAM_addr = audio_start ? RAM_read_addr : note_in_RAM_addr;
+	assign RAM_addr = full ? RAM_read_addr : note_in_RAM_addr;
 	
 	// note_ROM_ID: 000 (empty) when !audio_start, RAM_dout when audio_start
 	logic [2:0] note_ROM_ID;
-	assign note_ROM_ID = audio_start ? RAM_dout : 3'b000;
+	assign note_ROM_ID = full ? RAM_dout : 3'b000;
 	
 	// Note Input ASMD ------------------------------------------------------
 	logic [6:0] note_in_RAM_addr;
@@ -125,8 +132,8 @@ module DE1_SoC #(parameter MAX = 3125000) (CLOCK_50, CLOCK2_50, FPGA_I2C_SCLK, F
 	
 	//ROM address counter module
 	//address is passed into ROM select - "sample address"
-	logic [15:0] ROM_addr;
-	ROM_addr_counter ROM_count (.clk(CLOCK_50), .reset, .audio_start, .read_ready, .write_ready, .addr(ROM_addr));
+	logic [10:0] ROM_addr;
+	ROM_addr_counter ROM_count (.clk(CLOCK_50), .reset, .write, .addr(ROM_addr));
 	
 	//Note ROM select module
 	//instantiates NOTE ROMs and selects dout based on note_ROM_ID output from ASMD
@@ -135,15 +142,26 @@ module DE1_SoC #(parameter MAX = 3125000) (CLOCK_50, CLOCK2_50, FPGA_I2C_SCLK, F
 	logic [23:0] sample_dout;
 	note_ROM_select rom_select (.clk(CLOCK_50), .reset, .ID(note_ROM_ID), .addr(ROM_addr), .dout(sample_dout));
 	
-	//Audio Output ASMD module
-	audio_output aud_ASMD (.clk(CLOCK_50), .reset, .read_ready, .write_ready, .full, .RAM_read_addr, .write_note, .audio_start, .done);
 	
-	// CODEC Connections - based on audio_start select
+	//NEW num_writes counter
+	num_writes_counter num_writes (.clk(CLOCK_50), .reset, .full, .write, .addr(RAM_read_addr), .all_done);
+	
+	//NEW AUDIO OUTPUT:
+	assign read = full ? (read_ready && write_ready) : 1'b0;
+	assign write = full ? (read_ready && write_ready) : 1'b0;
 	assign writedata_left = sample_dout;
 	assign writedata_right = sample_dout;
-	logic write_note;
-	assign read = audio_start ? write_note : 1'b0;
-	assign write = audio_start ? write_note : 1'b0;
+
+	
+	//Audio Output ASMD module
+	//audio_output aud_ASMD (.clk(CLOCK_50), .reset, .read_ready, .write_ready, .full, .RAM_read_addr, .write_note, .audio_start, .done);
+	
+	// CODEC Connections - based on audio_start select
+//	assign writedata_left = sample_dout;
+//	assign writedata_right = sample_dout;
+//	logic write_note;
+//	assign read = audio_start ? write_note : 1'b0;
+//	assign write = audio_start ? write_note : 1'b0;
 	
 ///////////////////////////////////////////////////////////////////////////////
 //Audio CODEC interface. 

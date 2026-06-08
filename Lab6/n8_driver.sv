@@ -32,13 +32,23 @@ module n8_driver
         .data_out(data_out)
     );
     
-    assign C  = ~data_out[0];
-    assign A  = ~data_out[1];
-    assign B  = ~data_out[2];
+//    assign C  = ~data_out[0];
+//    assign A  = ~data_out[1];
+//    assign B  = ~data_out[2];
+//    //assign up     = ~data_out[3];
+//    assign E  = ~data_out[4];
+//    assign D  = ~data_out[5];
+//    assign F  = ~data_out[6];
+//    assign G  = ~data_out[7];
+
+    assign A  = ~data_out[6];
+    assign B  = ~data_out[5];
+    assign C  = ~data_out[7];
     //assign up     = ~data_out[3];
-    assign E  = ~data_out[4];
-    assign D  = ~data_out[5];
-    assign F  = ~data_out[6];
-    assign G  = ~data_out[7];
+    assign D  = ~data_out[2];
+    assign E  = ~data_out[3];
+    assign F  = ~data_out[1];
+    assign G  = ~data_out[0];
+		
     
 endmodule

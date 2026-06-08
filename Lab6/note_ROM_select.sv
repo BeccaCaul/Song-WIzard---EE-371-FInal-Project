@@ -15,26 +15,26 @@ module note_ROM_select (clk, reset, ID, addr, dout); // note_ROM_select
   parameter [2:0] G_ID = 3'b111;  
   
   //instantiate note ROMS A,B,C,D,E,F,G
-//  A4_ROM A4 (.address(addr), .clock(clk), .q(dout_A));
-//  B4_ROM B4 (.address(addr), .clock(clk), .q(dout_B));
+    A4_ROM A4 (.address(addr), .clock(clk), .q(dout_A));
+    B4_ROM B4 (.address(addr), .clock(clk), .q(dout_B));
     C4_ROM C4 (.address(addr), .clock(clk), .q(dout_C));
-//  D4_ROM D4 (.address(addr), .clock(clk), .q(dout_D));
-//  E4_ROM E4 (.address(addr), .clock(clk), .q(dout_E));
-//  F4_ROM F4 (.address(addr), .clock(clk), .q(dout_F));
-//  G4_ROM G4 (.address(addr), .clock(clk), .q(dout_G));
+    D4_ROM D4 (.address(addr), .clock(clk), .q(dout_D));
+    E4_ROM E4 (.address(addr), .clock(clk), .q(dout_E));
+    F4_ROM F4 (.address(addr), .clock(clk), .q(dout_F));
+    G4_ROM G4 (.address(addr), .clock(clk), .q(dout_G));
   
   //case statement: select dout based on ID
   always_comb begin
   
 	case(ID)
 		
-//		A_ID: dout = dout_A;
-//		B_ID: dout = dout_B;
+		A_ID: dout = dout_A;
+		B_ID: dout = dout_B;
    	C_ID: dout = dout_C;
-//		D_ID: dout = dout_D;
-//		E_ID: dout = dout_E;
-//		F_ID: dout = dout_F;
-//		G_ID: dout = dout_G;
+		D_ID: dout = dout_D;
+		E_ID: dout = dout_E;
+		F_ID: dout = dout_F;
+		G_ID: dout = dout_G;
 		
 		default: dout = 0;
 		
