@@ -1,0 +1,73 @@
+module animation (
+    input  logic clk,
+    input  logic reset,
+    input  logic done,             
+
+    output logic [10:0] x0, y0,
+    output logic [10:0] x1, y1
+);
+
+    typedef enum logic [2:0] {
+        FRAME0,
+        FRAME1,
+        FRAME2,
+        FRAME3,
+        FRAME4
+    } statetype;
+
+    statetype ps, ns;
+
+    // next-state logic
+    always_comb begin
+        case (ps)
+            FRAME0: ns = reset ? FRAME0 : FRAME1;
+            FRAME1: ns = done ? FRAME2 : FRAME1;
+            FRAME2: ns = done ? FRAME3 : FRAME2;
+            FRAME3: ns = done ? FRAME4 : FRAME3;
+            FRAME4: ns = done? FRAME1 : FRAME4;
+            default: ns = FRAME0;
+        endcase
+    end
+
+    always_comb begin
+        x0 = 0; y0 = 0;
+        x1 = 0; y1 = 0;
+
+        case (ps)
+            FRAME0: begin
+                x0 = 100;   y0 = 100;
+                x1 = 100; y1 = 100;
+            end
+            
+            FRAME1: begin
+                x0 = 100;   y0 = 100;
+                x1 = 400; y1 = 100;
+            end
+
+            FRAME2: begin
+                x0 = 400; y0 = 100;
+                x1 = 400; y1 = 400;
+            end
+
+            FRAME3: begin
+                x0 = 400;  y0 = 400;
+                x1 = 100; y1 = 400;
+            end
+            
+            FRAME4: begin
+                x0 = 100;  y0 = 400;
+                x1 = 100; y1 = 100;
+            end
+
+        endcase
+    end
+	 
+	 
+	 always_ff @(posedge clk) begin
+        if (reset)
+            ps <= FRAME0;
+        else
+            ps <= ns;
+    end
+
+endmodule
