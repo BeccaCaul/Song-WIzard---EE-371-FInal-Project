@@ -157,7 +157,9 @@ module DE1_SoC #(parameter MAX = 3125000) (CLOCK_50, CLOCK2_50, FPGA_I2C_SCLK, F
 	*  writes are determined by read_ready && write_ready
 	* asserts all_done when all writes have completed for all notes
 	*/
-	num_writes_counter num_writes (.clk(CLOCK_50), .reset, .full, .write, .addr(RAM_read_addr), .all_done);
+	logic write_pulse;
+	write_pulse wp (.clk(CLOCK_50), .reset, .write, .pulse(write_pulse));
+	num_writes_counter num_writes (.clk(CLOCK_50), .reset, .full, .write(write_pulse), .addr(RAM_read_addr), .all_done);
 	
 	//CODEC output - begins when full is asserted
 	assign read = full ? (read_ready && write_ready) : 1'b0;

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE1_SoC
-Mon Jun 08 15:47:30 2026
+Mon Jun 08 15:57:32 2026
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -115,13 +115,13 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Jun 08 15:47:30 2026       ;
+; Analysis & Synthesis Status     ; Successful - Mon Jun 08 15:57:31 2026       ;
 ; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; DE1_SoC                                     ;
 ; Top-level Entity Name           ; DE1_SoC                                     ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 329                                         ;
+; Total registers                 ; 331                                         ;
 ; Total pins                      ; 98                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 229,776                                     ;
@@ -240,9 +240,7 @@ agreement for further details.
 ;     Processor 4            ;   0.0%      ;
 ;     Processor 5            ;   0.0%      ;
 ;     Processor 6            ;   0.0%      ;
-;     Processor 7            ;   0.0%      ;
-;     Processor 8            ;   0.0%      ;
-;     Processors 9-16        ;   0.0%      ;
+;     Processors 7-16        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -281,6 +279,7 @@ agreement for further details.
 ; ../Lab6/E4_ROM.v                   ; yes             ; User Wizard-Generated File             ; U:/EE_371/Lab6/E4_ROM.v                                                      ;         ;
 ; ../Lab6/F4_ROM.v                   ; yes             ; User Wizard-Generated File             ; U:/EE_371/Lab6/F4_ROM.v                                                      ;         ;
 ; ../Lab6/G4_ROM.v                   ; yes             ; User Wizard-Generated File             ; U:/EE_371/Lab6/G4_ROM.v                                                      ;         ;
+; write_pulse.sv                     ; yes             ; User SystemVerilog HDL File            ; U:/EE_371/Lab6b/write_pulse.sv                                               ;         ;
 ; altsyncram.tdf                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
 ; stratix_ram_block.inc              ; yes             ; Megafunction                           ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
 ; lpm_mux.inc                        ; yes             ; Megafunction                           ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
@@ -335,12 +334,12 @@ agreement for further details.
 ;                                             ;                ;
 ; Combinational ALUT usage for logic          ; 481            ;
 ;     -- 7 input functions                    ; 8              ;
-;     -- 6 input functions                    ; 91             ;
-;     -- 5 input functions                    ; 96             ;
-;     -- 4 input functions                    ; 75             ;
-;     -- <=3 input functions                  ; 211            ;
+;     -- 6 input functions                    ; 92             ;
+;     -- 5 input functions                    ; 95             ;
+;     -- 4 input functions                    ; 76             ;
+;     -- <=3 input functions                  ; 210            ;
 ;                                             ;                ;
-; Dedicated logic registers                   ; 329            ;
+; Dedicated logic registers                   ; 331            ;
 ;                                             ;                ;
 ; I/O pins                                    ; 98             ;
 ; Total MLAB memory bits                      ; 0              ;
@@ -352,8 +351,8 @@ agreement for further details.
 ;     -- PLLs                                 ; 1              ;
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
-; Maximum fan-out                             ; 508            ;
-; Total fan-out                               ; 5814           ;
+; Maximum fan-out                             ; 510            ;
+; Total fan-out                               ; 5820           ;
 ; Average fan-out                             ; 4.62           ;
 +---------------------------------------------+----------------+
 
@@ -363,7 +362,7 @@ agreement for further details.
 +---------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+--------------+
 ; Compilation Hierarchy Node                                    ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                      ; Entity Name                      ; Library Name ;
 +---------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+--------------+
-; |DE1_SoC                                                      ; 481 (12)            ; 329 (0)                   ; 229776            ; 0          ; 98   ; 0            ; |DE1_SoC                                                                                                                                                                                                                 ; DE1_SoC                          ; work         ;
+; |DE1_SoC                                                      ; 481 (12)            ; 331 (0)                   ; 229776            ; 0          ; 98   ; 0            ; |DE1_SoC                                                                                                                                                                                                                 ; DE1_SoC                          ; work         ;
 ;    |ROM_addr_counter:ROM_count|                               ; 14 (14)             ; 11 (11)                   ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|ROM_addr_counter:ROM_count                                                                                                                                                                                      ; ROM_addr_counter                 ; work         ;
 ;    |audio_and_video_config:cfg|                               ; 96 (0)              ; 64 (8)                    ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|audio_and_video_config:cfg                                                                                                                                                                                      ; audio_and_video_config           ; work         ;
 ;       |Altera_UP_I2C:I2C_Controller|                          ; 20 (20)             ; 18 (18)                   ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller                                                                                                                                                         ; Altera_UP_I2C                    ; work         ;
@@ -435,7 +434,8 @@ agreement for further details.
 ;    |note_ram120x3:user_notes_RAM|                             ; 0 (0)               ; 0 (0)                     ; 360               ; 0          ; 0    ; 0            ; |DE1_SoC|note_ram120x3:user_notes_RAM                                                                                                                                                                                    ; note_ram120x3                    ; work         ;
 ;       |altsyncram:altsyncram_component|                       ; 0 (0)               ; 0 (0)                     ; 360               ; 0          ; 0    ; 0            ; |DE1_SoC|note_ram120x3:user_notes_RAM|altsyncram:altsyncram_component                                                                                                                                                    ; altsyncram                       ; work         ;
 ;          |altsyncram_tqq1:auto_generated|                     ; 0 (0)               ; 0 (0)                     ; 360               ; 0          ; 0    ; 0            ; |DE1_SoC|note_ram120x3:user_notes_RAM|altsyncram:altsyncram_component|altsyncram_tqq1:auto_generated                                                                                                                     ; altsyncram_tqq1                  ; work         ;
-;    |num_writes_counter:num_writes|                            ; 30 (30)             ; 22 (22)                   ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|num_writes_counter:num_writes                                                                                                                                                                                   ; num_writes_counter               ; work         ;
+;    |num_writes_counter:num_writes|                            ; 29 (29)             ; 22 (22)                   ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|num_writes_counter:num_writes                                                                                                                                                                                   ; num_writes_counter               ; work         ;
+;    |write_pulse:wp|                                           ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|write_pulse:wp                                                                                                                                                                                                  ; write_pulse                      ; work         ;
 +---------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -568,7 +568,7 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 329   ;
+; Total registers                              ; 331   ;
 ; Number of registers using Synchronous Clear  ; 94    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 56    ;
@@ -584,13 +584,13 @@ Encoding Type:  One-Hot
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                            ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------+
 ; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |DE1_SoC|note_input:note_loader|note_input_datapath:ni_d|RAM_addr[1]                                  ;
-; 3:1                ; 14 bits   ; 28 LEs        ; 0 LEs                ; 28 LEs                 ; Yes        ; |DE1_SoC|num_writes_counter:num_writes|num_writes[10]                                                 ;
+; 3:1                ; 14 bits   ; 28 LEs        ; 0 LEs                ; 28 LEs                 ; Yes        ; |DE1_SoC|num_writes_counter:num_writes|num_writes[9]                                                  ;
 ; 3:1                ; 11 bits   ; 22 LEs        ; 0 LEs                ; 22 LEs                 ; Yes        ; |DE1_SoC|ROM_addr_counter:ROM_count|addr[8]                                                           ;
 ; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |DE1_SoC|audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller|current_bit[0]                       ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |DE1_SoC|audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|data_out[7]      ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |DE1_SoC|audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|data_out[3]      ;
 ; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |DE1_SoC|audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|data_out[2]      ;
 ; 5:1                ; 23 bits   ; 69 LEs        ; 46 LEs               ; 23 LEs                 ; Yes        ; |DE1_SoC|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|data_out_shift_reg[16] ;
-; 9:1                ; 3 bits    ; 18 LEs        ; 15 LEs               ; 3 LEs                  ; Yes        ; |DE1_SoC|note_input:note_loader|note_input_datapath:ni_d|RAM_din[2]                                   ;
+; 9:1                ; 3 bits    ; 18 LEs        ; 15 LEs               ; 3 LEs                  ; Yes        ; |DE1_SoC|note_input:note_loader|note_input_datapath:ni_d|RAM_din[1]                                   ;
 ; 8:1                ; 24 bits   ; 120 LEs       ; 120 LEs              ; 0 LEs                  ; No         ; |DE1_SoC|note_ROM_select:rom_select|Mux8                                                              ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------+
 
@@ -2224,7 +2224,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 329                         ;
+; arriav_ff             ; 331                         ;
 ;     CLR               ; 2                           ;
 ;     CLR SCLR          ; 22                          ;
 ;     ENA               ; 95                          ;
@@ -2232,7 +2232,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA CLR SCLR      ; 25                          ;
 ;     ENA SCLR          ; 33                          ;
 ;     SCLR              ; 14                          ;
-;     plain             ; 131                         ;
+;     plain             ; 133                         ;
 ; arriav_io_obuf        ; 33                          ;
 ; arriav_lcell_comb     ; 489                         ;
 ;     arith             ; 160                         ;
@@ -2244,16 +2244,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 14                          ;
 ;         2 data inputs ; 18                          ;
-;         3 data inputs ; 26                          ;
-;         4 data inputs ; 75                          ;
-;         5 data inputs ; 96                          ;
-;         6 data inputs ; 91                          ;
+;         3 data inputs ; 25                          ;
+;         4 data inputs ; 76                          ;
+;         5 data inputs ; 95                          ;
+;         6 data inputs ; 92                          ;
 ; boundary_port         ; 98                          ;
 ; generic_pll           ; 1                           ;
 ; stratixv_ram_block    ; 219                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 4.50                        ;
-; Average LUT depth     ; 2.01                        ;
+; Average LUT depth     ; 1.99                        ;
 +-----------------------+-----------------------------+
 
 
@@ -2272,7 +2272,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Mon Jun 08 15:47:19 2026
+    Info: Processing started: Mon Jun 08 15:57:21 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE1_SoC -c DE1_SoC
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 20 processors detected
@@ -2539,10 +2539,11 @@ Info (12133): Instantiated megafunction "note_ROM_select:rom_select|G4_ROM:G4|al
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_jgh1.tdf
     Info (12023): Found entity 1: altsyncram_jgh1 File: U:/EE_371/Lab6b/db/altsyncram_jgh1.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_jgh1" for hierarchy "note_ROM_select:rom_select|G4_ROM:G4|altsyncram:altsyncram_component|altsyncram_jgh1:auto_generated" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "num_writes_counter" for hierarchy "num_writes_counter:num_writes" File: U:/EE_371/Lab6b/DE1_SoC.sv Line: 160
+Info (12128): Elaborating entity "write_pulse" for hierarchy "write_pulse:wp" File: U:/EE_371/Lab6b/DE1_SoC.sv Line: 161
+Info (12128): Elaborating entity "num_writes_counter" for hierarchy "num_writes_counter:num_writes" File: U:/EE_371/Lab6b/DE1_SoC.sv Line: 162
 Warning (10230): Verilog HDL assignment warning at num_writes_counter.sv(29): truncated value with size 32 to match size of target (14) File: U:/EE_371/Lab6/num_writes_counter.sv Line: 29
 Warning (10230): Verilog HDL assignment warning at num_writes_counter.sv(32): truncated value with size 32 to match size of target (7) File: U:/EE_371/Lab6/num_writes_counter.sv Line: 32
-Info (12128): Elaborating entity "clock_generator" for hierarchy "clock_generator:my_clock_gen" File: U:/EE_371/Lab6b/DE1_SoC.sv Line: 189
+Info (12128): Elaborating entity "clock_generator" for hierarchy "clock_generator:my_clock_gen" File: U:/EE_371/Lab6b/DE1_SoC.sv Line: 191
 Info (12128): Elaborating entity "altpll" for hierarchy "clock_generator:my_clock_gen|altpll:DE_Clock_Generator_Audio" File: U:/EE_371/Lab6b/clock_generator.v Line: 134
 Info (12130): Elaborated megafunction instantiation "clock_generator:my_clock_gen|altpll:DE_Clock_Generator_Audio" File: U:/EE_371/Lab6b/clock_generator.v Line: 134
 Info (12133): Instantiated megafunction "clock_generator:my_clock_gen|altpll:DE_Clock_Generator_Audio" with the following parameter: File: U:/EE_371/Lab6b/clock_generator.v Line: 134
@@ -2605,11 +2606,11 @@ Info (12133): Instantiated megafunction "clock_generator:my_clock_gen|altpll:DE_
 Info (12021): Found 1 design units, including 1 entities, in source file db/altpll_1uu1.tdf
     Info (12023): Found entity 1: altpll_1uu1 File: U:/EE_371/Lab6b/db/altpll_1uu1.tdf Line: 26
 Info (12128): Elaborating entity "altpll_1uu1" for hierarchy "clock_generator:my_clock_gen|altpll:DE_Clock_Generator_Audio|altpll_1uu1:auto_generated" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altpll.tdf Line: 898
-Info (12128): Elaborating entity "audio_and_video_config" for hierarchy "audio_and_video_config:cfg" File: U:/EE_371/Lab6b/DE1_SoC.sv Line: 199
+Info (12128): Elaborating entity "audio_and_video_config" for hierarchy "audio_and_video_config:cfg" File: U:/EE_371/Lab6b/DE1_SoC.sv Line: 201
 Info (12128): Elaborating entity "Altera_UP_Slow_Clock_Generator" for hierarchy "audio_and_video_config:cfg|Altera_UP_Slow_Clock_Generator:Clock_Generator_400KHz" File: U:/EE_371/Lab6b/audio_and_video_config.v Line: 180
 Info (12128): Elaborating entity "Altera_UP_I2C_AV_Auto_Initialize" for hierarchy "audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize" File: U:/EE_371/Lab6b/audio_and_video_config.v Line: 205
 Info (12128): Elaborating entity "Altera_UP_I2C" for hierarchy "audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller" File: U:/EE_371/Lab6b/audio_and_video_config.v Line: 252
-Info (12128): Elaborating entity "audio_codec" for hierarchy "audio_codec:codec" File: U:/EE_371/Lab6b/DE1_SoC.sv Line: 220
+Info (12128): Elaborating entity "audio_codec" for hierarchy "audio_codec:codec" File: U:/EE_371/Lab6b/DE1_SoC.sv Line: 222
 Info (12128): Elaborating entity "Altera_UP_Clock_Edge" for hierarchy "audio_codec:codec|Altera_UP_Clock_Edge:Bit_Clock_Edges" File: U:/EE_371/Lab6b/audio_codec.v Line: 181
 Info (12128): Elaborating entity "Altera_UP_Audio_In_Deserializer" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer" File: U:/EE_371/Lab6b/audio_codec.v Line: 238
 Info (12128): Elaborating entity "Altera_UP_Audio_Bit_Counter" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter" File: U:/EE_371/Lab6b/Altera_UP_Audio_In_Deserializer.v Line: 197
@@ -2797,18 +2798,18 @@ Warning (21074): Design contains 4 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "KEY[0]" File: U:/EE_371/Lab6b/DE1_SoC.sv Line: 6
     Warning (15610): No output dependent on input pin "KEY[1]" File: U:/EE_371/Lab6b/DE1_SoC.sv Line: 6
     Warning (15610): No output dependent on input pin "KEY[2]" File: U:/EE_371/Lab6b/DE1_SoC.sv Line: 6
-Info (21057): Implemented 871 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 872 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 10 input pins
     Info (21059): Implemented 55 output pins
     Info (21060): Implemented 33 bidirectional pins
-    Info (21061): Implemented 553 logic cells
+    Info (21061): Implemented 554 logic cells
     Info (21064): Implemented 219 RAM segments
     Info (21065): Implemented 1 PLLs
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 146 warnings
-    Info: Peak virtual memory: 4956 megabytes
-    Info: Processing ended: Mon Jun 08 15:47:31 2026
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:12
+    Info: Peak virtual memory: 4964 megabytes
+    Info: Processing ended: Mon Jun 08 15:57:32 2026
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:13
 
 
 +------------------------------------------+
