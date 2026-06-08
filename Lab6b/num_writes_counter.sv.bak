@@ -1,0 +1,35 @@
+
+/* num_writes counter
+* inputs: write, full
+* outputs: RAM_read_addr, all_done
+*
+*/
+
+module num_writes_counter (clk, reset, write, addr, all_done); //addr_counter
+  input logic clk;
+  input logic reset; 
+  input logic write;
+  output logic [15:0] addr;
+  logic max;
+  
+  //logic [15:0] count;
+  
+  assign max = (addr == 16'h052F); //max address before 0 frequency is 1328; should move to 0 at next write
+  
+
+  always @(posedge clk or posedge reset) begin //always_ff
+    if (reset) begin
+      addr <= 16'h0000; //reset to 0
+    end else if (write && !max) begin
+		 addr <= addr + 1'b1;
+	 end else if (write && max) begin
+		 addr <= 16'h0000;
+	 end else begin
+			count <= count; //if not ready, stay at current address
+	 end
+  end //always_ff
+  
+  //comb logic
+  //assign addr = count;
+	 
+endmodule //ROM_addr_counter

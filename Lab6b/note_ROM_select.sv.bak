@@ -1,0 +1,13 @@
+module ROM_addr_counter (clk, reset, audio_start, read_ready, write_ready, addr); // note_ROM_select
+  input logic clk;
+  input logic reset; 
+  input logic read_ready, write_ready, audio_start;
+  output logic [15:0] addr;
+  logic max;
+  
+  logic [15:0] count;
+  
+  
+  
+
+endmodule // note_ROM_select
