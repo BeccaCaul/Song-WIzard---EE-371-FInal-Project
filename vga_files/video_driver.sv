@@ -1,6 +1,6 @@
 module video_driver
 	#(parameter WIDTH = 640, parameter HEIGHT = 480)
-	(CLOCK_50, reset, x, y, r, g, b, VGA_R, VGA_G, VGA_B, VGA_BLANK_N, VGA_CLK, VGA_HS, VGA_SYNC_N, VGA_VS); 
+	(CLOCK_50, reset, x, y, r, g, b, VGA_R, VGA_G, VGA_B, VGA_BLANK_N, VGA_CLK, VGA_HS, VGA_SYNC_N, VGA_VS, CLOCK_25); 
 	input  logic CLOCK_50;
 	input  logic reset;
 	output logic [9:0] x;
@@ -8,6 +8,7 @@ module video_driver
 	input  logic [7:0] r, g, b;
 	output logic [7:0] VGA_R, VGA_G, VGA_B;
 	output logic VGA_BLANK_N, VGA_CLK, VGA_HS, VGA_SYNC_N, VGA_VS;
+	output logic CLOCK_25;
 	
 	localparam integer X_BLOCK = 640 / WIDTH;
 	localparam integer Y_BLOCK = 480 / HEIGHT;
@@ -30,7 +31,7 @@ module video_driver
 	logic vga_data_enable;
 	
 	logic read_enable_last;
-	logic CLOCK_25;
+	//logic CLOCK_25;
 	logic locked; // ignore - is PLL locked?
 	logic [9:0] xt;
 	logic [8:0] yt;

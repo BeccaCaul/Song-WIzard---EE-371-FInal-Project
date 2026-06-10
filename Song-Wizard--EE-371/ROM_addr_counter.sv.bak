@@ -1,0 +1,32 @@
+
+/* address counter, iterating through all read addresses in 1 note period: 0-1328*/
+
+module ROM_addr_counter (clk, reset, write, addr); //addr_counter
+  input logic clk;
+  input logic reset; 
+  input logic write;
+  output logic [15:0] addr;
+  wire max;
+  
+  reg [15:0] count;
+  
+  assign max = (addr == 16'h052F); //max address before 0 frequency is 1328; should move to 0 at next write
+  
+
+  always @(posedge clk or posedge reset) begin //always_ff
+    if (reset) begin
+      count <= 16'h0000; //reset to 0
+    end 
+	 else if(write && ~max) begin
+		count <= count + 1'b1;
+	 end else if (write && max) begin
+		count <= 16'h0000;
+	 end else begin
+		count <= count; //if write is not true, stay at current address
+	 end
+  end //always_ff
+  
+  //comb logic
+  assign addr = count;
+	 
+endmodule //addr_counter
