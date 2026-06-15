@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at n8_driver.sv(6): object "A" differs only in case from object "a" in the same scope File: C:/Users/becca/Documents/GitHub/Song-WIzard---EE-371-FInal-Project/Song-Wizard--EE-371/n8_driver.sv Line: 6
+Info (10281): Verilog HDL Declaration information at n8_driver.sv(6): object "B" differs only in case from object "b" in the same scope File: C:/Users/becca/Documents/GitHub/Song-WIzard---EE-371-FInal-Project/Song-Wizard--EE-371/n8_driver.sv Line: 6
