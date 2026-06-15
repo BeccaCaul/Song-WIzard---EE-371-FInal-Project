@@ -1,4 +1,4 @@
-# Song-WIzard---EE-371-FInal-Project
+# Song-Wizard---EE-371-FInal-Project
 This program runs on the DE1_SoC with connection to an N8 controller, VGA display, and audio codex.
 <img width="2232" height="1142" alt="Recording 2026-06-14 172840" src="https://github.com/user-attachments/assets/7e799d5f-78bd-4eb5-9ac7-e100fa034fe5" />
 
